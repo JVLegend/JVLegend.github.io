@@ -190,16 +190,12 @@ nav-menu: true
 	<li><a href="" class="button special fit small">Tensorflow</a></li>
 </ul>
 <ul class="actions fit small">
-	<li><a href="" class="button special fit small">PySift</a></li>
+	<li><a href="" class="button special fit small">Scikit-Learn</a></li>
 	<li><a href="" class="button special fit small">Keras</a></li>
 </ul>
 <ul class="actions fit small">
 	<li><a href="" class="button special fit small">SciPy</a></li>
 	<li><a href="" class="button special fit small">NumPy</a></li>
-</ul>
-<ul class="actions fit small">
-	<li><a href="" class="button special fit small">Scikit-Learn</a></li>
-	<li><a href="" class="button special fit small">OpenCV</a></li>
 </ul>
 <ul class="actions fit small">
 	<li><a href="" class="button special fit small">NLTK</a></li>
@@ -215,7 +211,7 @@ nav-menu: true
 </ul>
 <ul class="actions fit small">
 	<li><a href="" class="button special fit small">Gephi</a></li>
-	<li><a href="" class="button special fit small">Caret</a></li>
+	<li><a href="" class="button special fit small">OpenCV</a></li>
 </ul>
 <ul class="actions fit small">
 	<li><a href="" class="button special fit small">Docker</a></li>
