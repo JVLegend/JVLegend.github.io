@@ -595,6 +595,7 @@ nav-menu: true
 <!-- Teaching -->
 <h4>Teaching</h4>
 <ul class="alt">
+	<li>Introduction to Neural Networks <strong>[Captalys, 2021]</strong></li>
 	<li>Innovation Class in Ophthalmology: ML for Physicians <strong>[USP HC, 2020]</strong></li>
 	<li>Statistical Power for Data Scientists <strong>[Everis, 2019]</strong></li>
 	<li>Innovation Class in Ophthalmology: How to train your algorithm <strong>[USP HC, 2019]</strong></li>
