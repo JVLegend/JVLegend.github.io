@@ -380,6 +380,12 @@ nav-menu: true
 		</thead>
 		<tbody>
 			<tr>
+				<td>Strabismus and Artificial Intelligence App: Optimizing Diagnostic and Accuracy</td>
+				<td>DE FIGUEIREDO, L. A.; DIAS, J. V. P.; POLATI, M.; CARRICONDO, P. C.; DEBERT, I.</td>
+				<td>Translational Vision Science  & Technology/TVST</td>
+				<td>2021</td>
+			</tr>
+			<tr>
 				<td>A polícia e os 'black blocs'. A percepção dos policiais sobre junho de 2013</td>
 				<td>RUEDIGER, M. A. ; SOUZA, R. M. ; GRASSI, A. S. ; LUZ, M. ; DIAS, J. V. P.</td>
 				<td>Fundação Getúlo Vargas/DAPP</td>
