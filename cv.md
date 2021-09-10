@@ -29,8 +29,11 @@ nav-menu: true
 		<h3>Senior Vice President of Data Science and Analytics</h3>
 		<h5>Company: Captalys [08/2020-Present]</h5>
 		<ul>
-			<li>Probabilistic Scorecards creation,</li>
-			<li>Application Scoring and Pricing models with Machine Learning.</li>
+			<li>Artificial Intelligence in Private Debt,</li>
+			<li>Credit Scoring 2.0,</li>
+			<li>Data Lake and Warehouse,</li>
+			<li>lternative Data,</li>
+			<li>Helping build and lead a great Data Science, Business Intelligence and Data Engineering teams to deliver world-class products.</li>
 		</ul>
 		<h3>Lead Data Scientist</h3>
 		<h5>Company: everis [08/2019-07/2020]</h5>
