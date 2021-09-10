@@ -509,6 +509,7 @@ nav-menu: true
 <!-- Press -->
 <h4>Press</h4>
 <ul class="alt">
+	<li>How do data driven companies monetize their data? <strong>[Chief Data & Analytics Officer Brazil, 2021]</strong></li>
 	<li>Podcast: What is A.I.? <strong>[IPP - Radio Pinheiros, 2019]</strong></li>
 	<li><strong><a href="https://universovisual.com.br/secao/materias/111/grandes-artistas-na-oftalmologia">LINK</a></strong> - Grandes artistas na oftalmologia <strong>[Revista Universo Visual, 2018]</strong></li>
 	<li><strong><a href="https://www.linkedin.com/in/joaovictordias/detail/treasury/position:555011179/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAAAQ6G5cBjKhP4N4kQBF6cwrFPZbnUGIuU_w%2C50458490)&section=position%3A555011179&treasuryCount=2">LINK</a></strong> - Brazil's election: as polarised as can be <strong>[Financial Times, 2014]</strong></li>
