@@ -22,9 +22,6 @@ nav-menu: true
 <!-- Two -->
 <section id="two" class="spotlights">
 	<section>
-		<a href="generic.html" class="image">
-			<img src="assets/images/colirios_back_1.jpg" alt="Eye drops Identifier" data-position="center center" />
-		</a>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
@@ -35,9 +32,6 @@ nav-menu: true
 		</div>
 	</section>
 	<section>
-		<a href="generic.html" class="image">
-			<img src="assets/images/insurance1.jpg" alt="" data-position="top center" />
-		</a>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
@@ -48,9 +42,6 @@ nav-menu: true
 		</div>
 	</section>
 	<section>
-		<a href="generic.html" class="image">
-			<img src="assets/images/pic10.jpg" alt="" data-position="25% 25%" />
-		</a>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
@@ -69,9 +60,6 @@ nav-menu: true
 			<h2>Subway Proximities - Rio de Janeiro</h2>
 		</header>
 		<p>A project where...</p>
-		<ul class="actions">
-			<li><a href="generic.html" class="button next">Learn More</a></li>
-		</ul>
 	</div>
 </section>
 
