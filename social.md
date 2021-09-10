@@ -23,9 +23,6 @@ nav-menu: true
 <!-- Two -->
 <section id="two" class="spotlights">
 	<section>
-		<a href="landing.html" class="image">
-			<img src="assets/images/pic10.jpg" alt="" data-position="center center" />
-		</a>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
@@ -39,9 +36,6 @@ nav-menu: true
 		</div>
 	</section>
 	<section>
-		<a href="social.html" class="image">
-			<img src="assets/images/pic10.jpg" alt="" data-position="top center" />
-		</a>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
