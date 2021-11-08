@@ -582,6 +582,12 @@ nav-menu: true
 	<li>VI NIC.br Annual Workshop on Survey Methodology <strong>[NIC.br, 2016]</strong></li>
 </ul>
 
+<!-- Hackathons -->
+<h4>Hackathons</h4>
+<ul class="alt">
+	<li>AI Mentor <strong>[HackHealthTech, 2021]</strong></li>
+</ul>
+	
 
 <!-- Seminars -->
 <h4>Seminars</h4>
