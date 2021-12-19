@@ -22,8 +22,6 @@ nav-menu: true
 <p>He has experience in creating Data Science teams, leading them and teaching new managers/directors how to make them successful. he also helps saving data/analytics teams and areas from serious problems.<p>
 		
 <p>He is a specialist in the implementation of newly published Artificial Intelligence solutions, usually State of the Art updates, in the areas of Computational Vision and Natural Language Processing. He works in Private Credit, Healthcare, Banking and Retail projects, among others.</p> 
- 
-<p>He has had some of his works published in the Financial Times, The Guardian, and several articles in magazines and newspapers of great circulation in Brazil. In 2012 he founded one of the largest Statistical websites in Brazil, and is currently producing new content on the recently launched portal www.datarockstar.com.</p>
 
 <h2>Work Experience</h2>
 <div class="row">
@@ -31,11 +29,11 @@ nav-menu: true
 		<h3>Senior Vice President of Data Science and Analytics</h3>
 		<h5>Company: Captalys [08/2020-Present]</h5>
 		<ul>
-			<li>Artificial Intelligence in Private Debt,</li>
-			<li>Credit Scoring 2.0,</li>
-			<li>Data Lake and Warehouse,</li>
-			<li>lternative Data,</li>
-			<li>Helping build and lead a great Data Science, Business Intelligence and Data Engineering teams to deliver world-class products.</li>
+			<li>Structured the areas and set up the Analytics, BI, Data Science and Data Engineering teams,</li>
+			<li>Led the transformation of the company into an AI-Ready company,</li>
+			<li>Implemented: the Data Lake, the Machine Learning model deployment environment, GraphQL to unify the API queries and the models documentation,</li>
+			<li>Designed systems focused on scale, reproducibility and automation,</li>
+			<li>Our teams provide world-class products.</li>
 		</ul>
 		<h3>Lead Data Scientist</h3>
 		<h5>Company: everis [08/2019-07/2020]</h5>
