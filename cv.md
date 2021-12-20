@@ -36,7 +36,7 @@ nav-menu: true
 			<li>Our teams provide world-class products.</li>
 		</ul>
 		<h3>Lead Data Scientist</h3>
-		<h5>Company: everis [08/2019-07/2020]</h5>
+		<h5>Company: NTT DATA [08/2019-07/2020]</h5>
 		<ul>
 			<li>Planning and executing large data science projects,</li>
 			<li>Organizing the career development of the Data Scientists at the company,</li>
@@ -45,9 +45,9 @@ nav-menu: true
 			<li>Implementing DataPrivacyOps with Federated Learning, Differential Privacy and Multi-party Computation.</li>
 		</ul>	
 		<h3>Data Scientist</h3>
-		<h5>Company: everis [08/2017-08/2019]</h5>
+		<h5>Company: NTT DATA [08/2017-08/2019]</h5>
 		<ul>
-			<li>Coordinating everis Machine Learning Community Americas,</li>
+			<li>Coordinating NTT DATA Machine Learning Community Americas,</li>
 			<li>Driving the Data Science team on publishing research papers,</li>
 			<li>Evangelizing AI and helping attracting more talent to the company,</li>
 			<li>Supervising Neural Networks architecture framework implementation,</li>
@@ -358,7 +358,7 @@ nav-menu: true
 <!-- Awards -->
 <h4>Awards</h4>
 <ul class="alt">
-	<li>Most Valuable Professional <strong>[everis, 2018]</strong></li>
+	<li>Most Valuable Professional <strong>[NTT DATA, 2018]</strong></li>
 	<li>Global Finalist - NTT DATA Hackathon <strong>[NTT DATA, 2018]</strong></li>
 	<li>TOP 46 - Valuable Young Leader <strong>[Harvard Business Review, 2018]</strong></li>
 	<li>Semifinalist - Data For Climate Action <strong>[UN GLobal Pulse, 2017]</strong></li>
@@ -610,13 +610,13 @@ nav-menu: true
 <ul class="alt">
 	<li>Introduction to Neural Networks <strong>[Captalys, 2021]</strong></li>
 	<li>Innovation Class in Ophthalmology: ML for Physicians <strong>[USP HC, 2020]</strong></li>
-	<li>Statistical Power for Data Scientists <strong>[Everis, 2019]</strong></li>
+	<li>Statistical Power for Data Scientists <strong>[NTT DATA, 2019]</strong></li>
 	<li>Innovation Class in Ophthalmology: How to train your algorithm <strong>[USP HC, 2019]</strong></li>
-	<li>The Grammar of Graphics <strong>[Everis, 2019]</strong></li>
-	<li>Data Visualization with Python and R <strong>[Everis, 2019]</strong></li>
-	<li>Introduction to Neural Networks <strong>[Everis, 2018]</strong></li>
-	<li>Machine Learning Hands-On <strong>[Everis, 2018]</strong></li>
-	<li>Convolutional Neural Networks <strong>[Everis, 2018]</strong></li>
+	<li>The Grammar of Graphics <strong>[NTT DATA, 2019]</strong></li>
+	<li>Data Visualization with Python and R <strong>[NTT DATA, 2019]</strong></li>
+	<li>Introduction to Neural Networks <strong>[NTT DATA, 2018]</strong></li>
+	<li>Machine Learning Hands-On <strong>[NTT DATA, 2018]</strong></li>
+	<li>Convolutional Neural Networks <strong>[NTT DATA, 2018]</strong></li>
 	<li>Introduction to TensorFlow <strong>[Mackenzie, 2017]</strong></li>
 </ul>
 
