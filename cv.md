@@ -38,19 +38,19 @@ nav-menu: true
 		<h3>Lead Data Scientist</h3>
 		<h5>Company: NTT DATA [08/2019-07/2020]</h5>
 		<ul>
-			<li>Planning and executing large data science projects,</li>
-			<li>Organizing the career development of the Data Scientists at the company,</li>
-			<li>Participating in management meetings to help establish data roadmap and strategies,</li>
-			<li>Building a great team by both recruiting great talent and helping them grow,</li>
-			<li>Implementing DataPrivacyOps with Federated Learning, Differential Privacy and Multi-party Computation.</li>
+			<li>Planned and executed large data science projects,</li>
+			<li>Organized the career development of the Data Scientists at the company,</li>
+			<li>Participated in management meetings to help establish data roadmap and strategies,</li>
+			<li>Built a great team by both recruiting great talent and helping them grow,</li>
+			<li>Implemented DataPrivacyOps with Federated Learning, Differential Privacy and Multi-party Computation.</li>
 		</ul>	
 		<h3>Data Scientist</h3>
 		<h5>Company: NTT DATA [08/2017-08/2019]</h5>
 		<ul>
-			<li>Coordinating NTT DATA Machine Learning Community Americas,</li>
-			<li>Driving the Data Science team on publishing research papers,</li>
-			<li>Evangelizing AI and helping attracting more talent to the company,</li>
-			<li>Supervising Neural Networks architecture framework implementation,</li>
+			<li>Coordinated NTT DATA Machine Learning Community Americas,</li>
+			<li>Led the Data Science team on publishing research papers,</li>
+			<li>Spread AI culture and helped attracting more talent to the company,</li>
+			<li>Supervised Neural Networks architecture framework implementation,</li>
 			<li>GAN architectures for data augmentation,</li>
 			<li>Automatic documents classification with ELMO + BI-LSTM + CNN + CRF,</li>
 			<li>Developed a hybrid model for Automated Offline Handwritten Signature Verification on checkbooks using Convolutional Networks,</li>
