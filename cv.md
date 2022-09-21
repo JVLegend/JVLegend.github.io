@@ -578,6 +578,7 @@ nav-menu: true
 <!-- Workshops -->
 <h4>Workshops</h4>
 <ul class="alt">
+	<li>No Code AI <strong>[XIII SBO, 2022]</strong></li>
 	<li>DRY AI - A mobile app to assist physicians on assessment of dry eye as an alternative of noninvasive tear break-up time <strong>[ARVO Learn, 2019]</strong></li>
 	<li>VII NIC.br Annual Workshop on Survey Methodology <strong>[NIC.br, 2017]</strong></li>
 	<li>VI NIC.br Annual Workshop on Survey Methodology <strong>[NIC.br, 2016]</strong></li>
