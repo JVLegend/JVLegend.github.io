@@ -29,7 +29,7 @@ nav-menu: true
 		<h3>Senior Vice President of Data Science and Analytics</h3>
 		<h5>Company: Captalys [08/2020-Present]</h5>
 		<ul>
-			<li>Structured the areas and set up the Analytics, BI, Data Science and Data Engineering teams,</li>
+			<li>Structured the areas and set up the Analytics, BI, Data Science, Portfolio Monitoring and Data Engineering teams,</li>
 			<li>Led the transformation of the company into an AI-Ready company,</li>
 			<li>Implemented: the Data Lake, the Machine Learning model deployment environment, GraphQL to unify the API queries and the models documentation,</li>
 			<li>Designed systems focused on scale, reproducibility and automation,</li>
