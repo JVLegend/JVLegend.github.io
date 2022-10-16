@@ -17,7 +17,7 @@ nav-menu: true
 
 <!-- Content -->
 <h2 id="content">Quick BIO</h2>
-<p>João Victor Dias is a Senior Vice President of Data Science and Analytics at Captalys and coordinates the Artificial Intelligence area of the Innovation Group in Ophthalmology at the Hospital das Clínicas de São Paulo.</p>
+<p>João Victor Dias is a Data Science and Analytics Senior Manager and coordinates the Artificial Intelligence area of the Innovation Group in Ophthalmology at the Hospital das Clínicas de São Paulo.</p>
 
 <p>He has experience in creating Data Science teams, leading them and teaching new managers/directors how to make them successful. he also helps saving data/analytics teams and areas from serious problems.<p>
 		
@@ -27,7 +27,7 @@ nav-menu: true
 <div class="row">
 	<div class="6u 12u$(small)">
 		<h3>Senior Vice President of Data Science and Analytics</h3>
-		<h5>Company: Captalys [08/2020-Present]</h5>
+		<h5>Company: Captalys [08/2020-10-2022]</h5>
 		<ul>
 			<li>Structured the areas and set up the Analytics, BI, Data Science, Portfolio Monitoring and Data Engineering teams,</li>
 			<li>Led the transformation of the company into an AI-Ready company,</li>
