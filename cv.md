@@ -26,7 +26,7 @@ nav-menu: true
 <h2>Work Experience</h2>
 <div class="row">
 	<div class="6u 12u$(small)">
-		<h3>Head od Data & Analytics</h3>
+		<h3>Head of Data & Analytics</h3>
 		<h5>Company: Zoop [11/2022-Present]</h5>
 		<ul>
 			<li>Datalake expansion,</li>
