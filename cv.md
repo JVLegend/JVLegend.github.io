@@ -192,7 +192,10 @@ nav-menu: true
 	<li><a href="" class="button fit small">Data Visualisation</a></li>
 </ul>
 
-
+<!-- Aditional Activities -->
+<h4>Aditional Activities</h4>
+<p>Special Student - Analysis of Algorithms - University of São Paulo - 2016</p>
+		
 <!-- Tools -->
 <h4>Tools</h4>
 <ul class="actions fit small">
@@ -349,10 +352,6 @@ nav-menu: true
 		</tbody>
 	</table>
 </div>	
-
-<!-- Aditional Activities -->
-<h4>Aditional Activities</h4>
-<p>Special Student - Analysis of Algorithms - University of São Paulo - 2016</p>
 
 </div>
 </div>
