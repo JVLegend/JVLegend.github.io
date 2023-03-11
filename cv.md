@@ -618,6 +618,7 @@ nav-menu: true
 <!-- Teaching -->
 <h4>Teaching</h4>
 <ul class="alt">
+	<li>Innovation Class in Ophthalmology: How to train your algorithm <strong>[USP HC, 2023]</strong></li>
 	<li>Introduction to Neural Networks <strong>[Captalys, 2021]</strong></li>
 	<li>Innovation Class in Ophthalmology: ML for Physicians <strong>[USP HC, 2020]</strong></li>
 	<li>Statistical Power for Data Scientists <strong>[NTT DATA, 2019]</strong></li>
