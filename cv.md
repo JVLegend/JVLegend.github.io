@@ -17,15 +17,22 @@ nav-menu: true
 
 <!-- Content -->
 <h2 id="content">Quick BIO</h2>
-<p>João Victor Dias is a Data Science and Analytics Senior Manager and coordinates the Artificial Intelligence area of the Innovation Group in Ophthalmology at the Hospital das Clínicas de São Paulo.</p>
+<p>João Victor Dias is a Data Science and Engineering Senior Manager and coordinates the Artificial Intelligence area of the Innovation Group in Ophthalmology at the Hospital das Clínicas de São Paulo.</p>
 
 <p>He has experience in creating Data Science teams, leading them and teaching new managers/directors how to make them successful. he also helps saving data/analytics teams and areas from serious problems.<p>
 		
-<p>He is a specialist in the implementation of newly published Artificial Intelligence solutions, usually State of the Art updates, in the areas of Computational Vision and Natural Language Processing. He works in Private Credit, Healthcare, Banking and Retail projects, among others.</p> 
+<p>He is a specialist in the implementation of newly published Artificial Intelligence solutions, usually State of the Art updates, in the areas of Computational Vision and Natural Language Processing. He works in Finance, Private Credit, Healthcare and Retail projects, among others.</p> 
 
 <h2>Work Experience</h2>
 <div class="row">
 	<div class="6u 12u$(small)">
+		<h3>Head od Data & Analytics</h3>
+		<h5>Company: Zoop [11/2022-Present]</h5>
+		<ul>
+			<li>Datalake expansion,</li>
+			<li>Built Data Products,</li>
+			<li>Data Contracts, Data Quality</li>
+		</ul>
 		<h3>Senior Vice President of Data Science and Analytics</h3>
 		<h5>Company: Captalys [08/2020-10-2022]</h5>
 		<ul>
@@ -69,9 +76,7 @@ nav-menu: true
 				newspapers, covers such as the Financial Times,</li>
 			<li>Co implemented a Bayesian spatial model using Twitter data applied on calculating ideological ideal points for legislative actors in Brazil.</li>
 		</ul>
-		<h3>External Jounalism Operator</h3>
-		<h5>Company: Rede Globo [07/2008-09/2009]</h5>
-		<p>Acted in aid of adjustment of satellite signals from mobile units of telejournalism, color correction, equipment assembly and lighting for journalism outdoors production.</p>
+		
 	</div>
 	<div class="6u$ 12u$(small)">
 		<h3>Head of Artificial Intelligence</h3>
@@ -108,6 +113,11 @@ nav-menu: true
 		<h3>Co Founder</h3>
 		<h5>Company: estatisti.CO [12/2012-12/2013]</h5>
 		<p>At 2012 he co-founded www.estatisti.co, a statistics based website focused on establishing a place where people could stay informed about the latest news, tips on career, Big Data, theoretical statistics, scientific articles, biographies, job opportunities, among other issues. It quickly became one of the brazilians most famous statistics website.</p>
+		
+		<h3>External Jounalism Operator</h3>
+		<h5>Company: Rede Globo [07/2008-09/2009]</h5>
+		<p>Acted in aid of adjustment of satellite signals from mobile units of telejournalism, color correction, equipment assembly and lighting for journalism outdoors production.</p>
+		
 		<h3>Competitions</h3>
 		<h5>Company: Kaggle</h5>
 		<ul>
