@@ -13,7 +13,7 @@ Companies, training and consultancy in the DATA ROCKSTAR group, and social proje
   <h4>We are a ecosystem of high-tech companies.</h4>
 The following are the companies in our group:
 
-<h3>1.1-Rockstar Consulting</h3>
+<h3>1.1- Data Rockstar Consulting</h3>
 Consulting on Analytics, Data Lake, Artificial Intelligence Models and Data Science projects
 
 <h3>1.2- <a href="https://www.iaparamedicos.com.br/">AI for Doctors</a></h3>
@@ -22,10 +22,10 @@ Where physicians and those interested in Medicine can improve themselves in the 
 <h3>1.3- <a href="http://www.medicosatualizados.com.br/">Updated Doctors Group</a></h3>
 The best courses to boost your medical career with the best of high technology.
 
-<h3>1.4- Rockstar Training</h3>
+<h3>1.4- Data Rockstar Training</h3>
 Tailor-made training for students, companies and physician groups.  
   
-<h3>1.5-Rockstar Medical Social Media</h3>
+<h3>1.5- Data Rockstar Medical Social Media</h3>
 Production of content for social networks in order to educate the medical community.
 
 <h3>1.6- <a href="https://www.lifelongmedicine.org/">Lifelong Medicine</a></h3>
