@@ -28,7 +28,7 @@ Tailor-made training for students, companies and physician groups.
 <h3>1.5-Rockstar Medical Social Media</h3>
 Production of content for social networks in order to educate the medical community.
 
-<h3>1.6- <a href="https://www.lifelongmedicine.org/">Lifelong Medicine</a>/h3>
+<h3>1.6- <a href="https://www.lifelongmedicine.org/">Lifelong Medicine</a></h3>
 A laboratory for our scientific advancement projects.
 
   
