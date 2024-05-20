@@ -17,9 +17,9 @@ nav-menu: true
 
 <!-- Content -->
 <h2 id="content">Quick BIO</h2>
-<p>João Victor Dias is a Data Science and Engineering Senior Manager and coordinates the Artificial Intelligence area of the Innovation Group in Ophthalmology at the Hospital das Clínicas de São Paulo.</p>
+<p>João Victor Dias is a Senior Manager in Data Science and Data Engineering, with over 12 years of experience in Artificial Intelligence, leading teams for investment banks and hospitals. He has an AI Boutique, online training courses and an EdTech to empower profissionals with AI.</p>
 
-<p>He has experience in creating Data Science teams, leading them and teaching new managers/directors how to make them successful. he also helps saving data/analytics teams and areas from serious problems.<p>
+<p>He has experience in creating Data Science teams, leading them and teaching new managers/directors how to make them successful. He also helps saving data/analytics teams and areas from serious problems.<p>
 		
 <p>He is a specialist in the implementation of newly published Artificial Intelligence solutions, usually State of the Art updates, in the areas of Computational Vision and Natural Language Processing. He works in Finance, Private Credit, Healthcare and Retail projects, among others.</p> 
 
