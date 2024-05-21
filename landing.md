@@ -1,5 +1,5 @@
 ---
-title: Proposito
+title: Purpose
 layout: landing
 description: 'My vision and mission.'
 image: assets/images/tech_back.jpg
