@@ -1,7 +1,7 @@
 ---
-title: Projects
+title: Proposito
 layout: landing
-description: 'My personal projects<br />by category.'
+description: 'My vision and mission.'
 image: assets/images/tech_back.jpg
 nav-menu: true
 ---
@@ -15,7 +15,8 @@ nav-menu: true
 		<header class="major">
 			<h2>My vision</h2>
 		</header>
-		<p>My research interests are in applying Artificial Intelligence in Healthcare projects, especially the ones related to Medical Images. Over the years, during my learning journey, I became involved in projects in different areas, allowing me to gain a broad knowledge and work with incredible professionals.</p>
+		<p><b>Missão:</b> Impulsionar a transformação digital e a inovação em áreas-chave, como inteligência artificial, educação, saúde e comunidade, por meio de soluções de ponta, capacitação de talentos e conexão de pessoas.</p> 
+		<p><b>Visão:</b> Ser referência global em consultoria em IA, desenvolvimento de software, educação e publicações, construção de comunidades e tecnologia médica, contribuindo para um mundo mais inteligente, conectado e saudável.</p>
 	</div>
 </section>
 
@@ -25,9 +26,10 @@ nav-menu: true
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>Eye drops Identifier</h3>
+					<h3>Segmento de Consultoria em IA e Desenvolvimento de Software</h3>
 				</header>
-				<p>Low vision patients experience great challenges in trying to correctly identify the packaging and containers of eye drops in stressful situations. We developed, in partnership with the GeekVision group, an eyelash identifier through the use of a Convolutional Neural Network architecture that classifies the packaging and container label.</p>
+				<p>Oferecer serviços de consultoria e desenvolvimento de soluções inovadoras em IA e software para impulsionar a transformação digital de nossos clientes.</p>    
+				<p>Desenvolver projetos de ponta que demonstrem o poder da IA aplicada a diferentes setores.</p>
 			</div>
 		</div>
 	</section>
@@ -35,9 +37,10 @@ nav-menu: true
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>Deep Learning Car Damage Report</h3>
+					<h3>Segmento de Educação e Publicações</h3>
 				</header>
-				<p>Nowadays, in in the Insurance sector, sinister damage identification takes lots of time and effort to process. From the very beginning with a call/email, through the damage assessment, and finishing up with the sinister payment (where applicable). Therefore, a new application based on multiple AI algorithms to detect vehicle brand, damages, and number plates are used to ease up sinister pre-classification.</p>
+				<p>Capacitar profissionais e entusiastas com cursos online e presenciais de alta qualidade sobre IA, tecnologia e inovação.</p>    
+				<p>Disseminar conhecimento por meio de publicações relevantes, como livros, blogs e artigos, contribuindo para o avanço da ciência e da tecnologia.</p>
 			</div>
 		</div>
 	</section>
@@ -45,22 +48,25 @@ nav-menu: true
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>Stock Price Prediction</h3>
+					<h3>Segmento de Comunidade e Fé</h3>
 				</header>
-				<p>Machine Learning models to infer the Relevance of market indicators with stock movements and predict the future value of the shares on the Brazilian stock exchange.</p>
+				<p>Construir e fortalecer comunidades online e offline que conectem pessoas interessadas em fé e tecnologia, promovendo diálogo, aprendizado e crescimento espiritual.</p>    
+				<p>Utilizar a tecnologia como ferramenta para amplificar a mensagem de amor, esperança e transformação.</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>Segmento de Saúde e Tecnologia Médica</h3>
+				</header>
+				<p>Desenvolver soluções em IA aplicadas à medicina, melhorando diagnósticos, tratamentos e a qualidade de vida dos pacientes.</p>    
+				<p>Oferecer gadgets e aplicativos inovadores para consultórios médicos, otimizando processos e melhorando a experiência dos profissionais de saúde e seus pacientes.</p>
 			</div>
 		</div>
 	</section>
 </section>
 
-<!-- Three -->
-<section id="three">
-	<div class="inner">
-		<header class="major">
-			<h2>Subway Proximities - Rio de Janeiro</h2>
-		</header>
-		<p>A project where...</p>
-	</div>
-</section>
 
 </div>
