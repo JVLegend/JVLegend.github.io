@@ -8,11 +8,6 @@ nav-menu: true
 
 The business units and initiatives under my leadership and involvement are structured into four strategic pillars.   
 
-1) DATA ROCKSTAR: AI Consulting and Software Development Segment,
-2) INSTITUTO RUMO AO TOPO: Community and Faith Segment,
-3) EDUCATION GPT: Education and Publications Segment,
-4) IA PARA MÉDICOS: Health and Medical Technology Segment.
-  
 <h1><a href="https://www.datarockstar.com.br/">1- Data Rockstar</a></h1>
 Responsible for AI consulting projects, software development, and AI initiatives.    
 Offers consulting services, an AI boutique, and software factory.
