@@ -573,8 +573,9 @@ nav-menu: true
 <!-- Congress -->
 <h4>Congress</h4>
 <ul class="alt">
-	<li>60th ISI World Statistics Congress <strong>[ISI, 2015]</strong></li>
+	<li>Congresso Brasileiro de Oftalmologia 2024 - Brasília <strong>[CBO, 2024]</strong></li>
 	<li>Congresso de tecnologia da informação para instituições financeiras <strong>[CIAB, 2018]</strong></li>
+	<li>60th ISI World Statistics Congress <strong>[ISI, 2015]</strong></li>
 </ul>
 
 <!-- Symposium -->
@@ -620,6 +621,7 @@ nav-menu: true
 <!-- Teaching -->
 <h4>Teaching</h4>
 <ul class="alt">
+	<li>AI in scientific research. For PhD students only <strong>[USP HC, 02-10-2024]</strong></li>
 	<li>Innovation Class in Ophthalmology: How to train your algorithm <strong>[USP HC, 2023]</strong></li>
 	<li>Introduction to Neural Networks <strong>[Captalys, 2021]</strong></li>
 	<li>Innovation Class in Ophthalmology: ML for Physicians <strong>[USP HC, 2020]</strong></li>
