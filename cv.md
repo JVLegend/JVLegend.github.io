@@ -26,12 +26,19 @@ nav-menu: true
 <h2>Work Experience</h2>
 <div class="row">
 	<div class="6u 12u$(small)">
-		<h3>Head of Data & Analytics</h3>
-		<h5>Company: Zoop [11/2022-Present]</h5>
+		<h3>CTO</h3>
+		<h5>Company: Wings AI [02/2025-Present]</h5>
 		<ul>
-			<li>Datalake expansion,</li>
-			<li>Built Data Products,</li>
-			<li>Data Contracts, Data Quality</li>
+			<li>Vertical AI,</li>
+			<li>Built MicroSaaS Leverage,</li>
+			<li>International Expansion.</li>
+		</ul>
+		<h3>Data & Analytics Management</h3>
+		<h5>Company: iFood Pago [07/2024-02/2025]</h5>
+		<ul>
+			<li>Management of transactional data ingestion into the Data Lake using AWS DMS, S3 and PySpark,</li>
+			<li>Continuous optimization of Data Lake jobs with AWS EMR and Glue,</li>
+			<li>Creation of interactive dashboards for general analysis, anti-money laundering (AML) and fraud detection</li>
 		</ul>
 		<h3>Senior Vice President of Data Science and Analytics</h3>
 		<h5>Company: Captalys [08/2020-10-2022]</h5>
@@ -79,6 +86,13 @@ nav-menu: true
 		
 	</div>
 	<div class="6u$ 12u$(small)">
+                <h3>Head of Data & Analytics</h3>
+		<h5>Company: Zoop [11/2022-07/2024]</h5>
+		<ul>
+			<li>Datalake expansion,</li>
+			<li>Built Data Products,</li>
+			<li>Data Contracts, Data Quality</li>
+		</ul>
 		<h3>StartupMentor</h3>
 		<h5>Company: Bluefields Aceleradora [05/2019-Present]</h5>
 		<p>Artificial Intelligence Mentoring.</p>
