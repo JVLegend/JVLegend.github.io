@@ -15,8 +15,8 @@ nav-menu: true
 		<header class="major">
 			<h2>My vision</h2>
 		</header>
-		<p><b>Missão:</b> Impulsionar a transformação digital e a inovação em áreas-chave, como inteligência artificial, educação, saúde e comunidade, por meio de soluções de ponta, capacitação de talentos e conexão de pessoas.</p> 
-		<p><b>Visão:</b> Ser referência global em consultoria em IA, desenvolvimento de software, educação e publicações, construção de comunidades e tecnologia médica, contribuindo para um mundo mais inteligente, conectado e saudável.</p>
+		<p><b>Mission:</b> Driving digital transformation and innovation in key areas such as artificial intelligence, education, healthcare and community through cutting-edge solutions, talent empowerment and people connection.</p> 
+		<p><b>Vision:</b> To be a global reference in AI implementation, publications, community building and medical technology, contributing to a smarter, more connected and healthier world.</p>
 	</div>
 </section>
 
@@ -26,10 +26,10 @@ nav-menu: true
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>Segmento de Consultoria em IA e Desenvolvimento de Software</h3>
+					<h3>AI Consulting and Software Development Segment</h3>
 				</header>
-				<p>Oferecer serviços de consultoria e desenvolvimento de soluções inovadoras em IA e software para impulsionar a transformação digital de nossos clientes.</p>    
-				<p>Desenvolver projetos de ponta que demonstrem o poder da IA aplicada a diferentes setores.</p>
+				<p>Offer consulting services and development of innovative AI and software solutions to drive the digital transformation of our clients.</p>    
+				<p>Develop cutting-edge projects that demonstrate the power of AI applied to different sectors.</p>
 			</div>
 		</div>
 	</section>
@@ -37,10 +37,10 @@ nav-menu: true
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>Segmento de Educação e Publicações</h3>
+					<h3>Education and Publications Segment</h3>
 				</header>
-				<p>Capacitar profissionais e entusiastas com cursos online e presenciais de alta qualidade sobre IA, tecnologia e inovação.</p>    
-				<p>Disseminar conhecimento por meio de publicações relevantes, como livros, blogs e artigos, contribuindo para o avanço da ciência e da tecnologia.</p>
+				<p>Empowering professionals and enthusiasts with high-quality online and in-person courses on AI, technology and innovation.</p>    
+				<p>Disseminate knowledge through relevant publications, such as books, blogs and articles, contributing to the advancement of science and technology.</p>
 			</div>
 		</div>
 	</section>
@@ -48,10 +48,10 @@ nav-menu: true
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>Segmento de Comunidade e Fé</h3>
+					<h3>Community and Faith Segment</h3>
 				</header>
-				<p>Construir e fortalecer comunidades online e offline que conectem pessoas interessadas em fé e tecnologia, promovendo diálogo, aprendizado e crescimento espiritual.</p>    
-				<p>Utilizar a tecnologia como ferramenta para amplificar a mensagem de amor, esperança e transformação.</p>
+				<p>Build and strengthen online and offline communities that connect people interested in faith and technology, promoting dialogue, learning and spiritual growth.</p>    
+				<p>Using technology as a tool to amplify the message of love, hope and transformation.</p>
 			</div>
 		</div>
 	</section>
@@ -59,10 +59,10 @@ nav-menu: true
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>Segmento de Saúde e Tecnologia Médica</h3>
+					<h3>Health and Medical Technology Segment</h3>
 				</header>
-				<p>Desenvolver soluções em IA aplicadas à medicina, melhorando diagnósticos, tratamentos e a qualidade de vida dos pacientes.</p>    
-				<p>Oferecer gadgets e aplicativos inovadores para consultórios médicos, otimizando processos e melhorando a experiência dos profissionais de saúde e seus pacientes.</p>
+				<p>Develop AI solutions applied to medicine, improving diagnoses, treatments and patients' quality of life.</p>    
+				<p>Offer innovative gadgets and applications for medical offices, optimizing processes and improving the experience of healthcare professionals and their patients.</p>
 			</div>
 		</div>
 	</section>
