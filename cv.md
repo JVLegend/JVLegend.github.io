@@ -17,11 +17,11 @@ nav-menu: true
 
 <!-- Content -->
 <h2 id="content">Quick BIO</h2>
-<p>João Victor Dias is a Senior Manager in Data Science and Data Engineering, with over 12 years of experience in Artificial Intelligence, leading teams for investment banks and hospitals. He has an AI Boutique, online training courses and an EdTech to empower profissionals with AI.</p>
+<p>João Victor Dias is the co-founder and CTO of WingsAI, where he implements vertical AI solutions in both Brazil and the United States. He also serves as a technology advisor to the Brazilian Ophthalmology Council and is currently pursuing a Ph.D. in Medical Ophthalmological Sciences.</p>
 
 <p>He has experience in creating Data Science teams, leading them and teaching new managers/directors how to make them successful. He also helps saving data/analytics teams and areas from serious problems.<p>
 		
-<p>He is a specialist in the implementation of newly published Artificial Intelligence solutions, usually State of the Art updates, in the areas of Computational Vision and Natural Language Processing. He works in Finance, Private Credit, Healthcare and Retail projects, among others.</p> 
+<p>With over 12 years of experience in artificial intelligence, João has successfully led teams in investment banks and hospitals. He specializes in deploying cutting-edge AI solutions—particularly in computer vision and natural language processing—and has contributed to projects across finance, private credit, healthcare, and retail, among other sectors.</p> 
 
 <h2>Work Experience</h2>
 <div class="row">
