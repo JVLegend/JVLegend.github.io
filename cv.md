@@ -602,6 +602,7 @@ nav-menu: true
 <!-- Symposium -->
 <h4>Symposium</h4>
 <ul class="alt">
+	<li>Inovações e I.A. em Oftalmologia <strong>[XXXI SIOJT, 06/2025]</strong></li>
 	<li>Uso de I.A. para o desenvolvimento de ferramentas diagnósticas para avaliação de pacientes com Orbitopatia Distireodiana <strong>[USP Eye Research Symposium, 09/2024]</strong></li>
 	<li>Web Scraping as a alternative data sources to predict E-Commerce indicators <strong>[StatCan International Methodology Symposium, 2018]</strong></li>
 </ul>
