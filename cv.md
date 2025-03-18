@@ -169,6 +169,12 @@ nav-menu: true
 		</thead>
 		<tbody>
 			<tr>
+				<td>University of São Paulo, Medical School(FMUSP-HC)</td>
+				<td>PhD in Ophthalmological Medical Sciences</td>
+				<td>2024-2029</td>
+				<td>Germany</td>
+			</tr>
+			<tr>
 				<td>University of Mannheim [Incomplete]</td>
 				<td>MS in Survey and Data Science</td>
 				<td>2019</td>
@@ -177,7 +183,7 @@ nav-menu: true
 			<tr>
 				<td>National School of Statistical Sciences</td>
 				<td>B.S. in Statistics</td>
-				<td>2015</td>
+				<td>2010-2015</td>
 				<td>Brazil</td>
 			</tr>
 			<tr>
