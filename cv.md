@@ -331,38 +331,73 @@ nav-menu: true
                             </tbody>
                         </table>
                     </div>
+
+                    <!-- Research Grants -->
+                    <h4>Research Grants</h4>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Provider</th>
+                                    <th>Year</th>
+                                    <th>Country</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Milu Villela grant ($ 500 USD)</td>
+                                    <td>TVST</td>
+                                    <td>2021</td>
+                                    <td>United States of America</td>
+                                </tr>
+                                <tr>
+                                    <td>Knights Templar Eye Foundation Travel Grant ($ 1,110 USD)</td>
+                                    <td>ARVO</td>
+                                    <td>2020</td>
+                                    <td>United States of America</td>
+                                </tr>
+                                <tr>
+                                    <td>Tools for Formatting and Validation of Research Microdata</td>
+                                    <td>CNPq PIBIC</td>
+                                    <td>2012</td>
+                                    <td>Brazil</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
-                <!-- Research Grants -->
-                <h4>Research Grants</h4>
+                <!-- Research Reports -->
+                <h4>Research Reports</h4>
                 <div class="table-wrapper">
                     <table>
                         <thead>
                             <tr>
                                 <th>Title</th>
-                                <th>Provider</th>
+                                <th>Team</th>
+                                <th>Institution</th>
                                 <th>Year</th>
-                                <th>Country</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Milu Villela grant ($ 500 USD)</td>
-                                <td>TVST</td>
+                                <td>Strabismus and Artificial Intelligence App: Optimizing Diagnostic and Accuracy</td>
+                                <td>DE FIGUEIREDO, L. A.; DIAS, J. V. P.; POLATI, M.; CARRICONDO, P. C.; DEBERT, I.</td>
+                                <td>Translational Vision Science  & Technology/TVST</td>
                                 <td>2021</td>
-                                <td>United States of America</td>
                             </tr>
                             <tr>
-                                <td>Knights Templar Eye Foundation Travel Grant ($ 1,110 USD)</td>
-                                <td>ARVO</td>
-                                <td>2020</td>
-                                <td>United States of America</td>
+                                <td>A polícia e os 'black blocs'. A percepção dos policiais sobre junho de 2013</td>
+                                <td>RUEDIGER, M. A. ; SOUZA, R. M. ; GRASSI, A. S. ; LUZ, M. ; DIAS, J. V. P.</td>
+                                <td>Fundação Getúlo Vargas/DAPP</td>
+                                <td>2014</td>
                             </tr>
                             <tr>
-                                <td>Tools for Formatting and Validation of Research Microdata</td>
-                                <td>CNPq PIBIC</td>
-                                <td>2012</td>
-                                <td>Brazil</td>
+                                <td>Mobilidade urbana e cidadania: percepções dos usuários de transporte público no Brasil.</td>
+                                <td>RUEDIGER, M. A. ; SOUZA, R. M. ; GRASSI, A. S. ; LUZ, M. ; DIAS, J. V. P.</td>
+                                <td>Fundação Getúlo Vargas/DAPP</td>
+                                <td>2014</td>
                             </tr>
                         </tbody>
                     </table>
