@@ -172,7 +172,7 @@ nav-menu: true
 				<td>University of São Paulo, Medical School(FMUSP-HC)</td>
 				<td>PhD in Ophthalmological Medical Sciences</td>
 				<td>2024-2029</td>
-				<td>Germany</td>
+				<td>Brazil</td>
 			</tr>
 			<tr>
 				<td>University of Mannheim [Incomplete]</td>
