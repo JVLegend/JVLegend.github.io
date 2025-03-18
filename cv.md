@@ -260,6 +260,42 @@ nav-menu: true
 	<li>Japanese [Beginner]</li>
 </ul>
 
+<!-- Research Grants -->
+<h4>Research Grants</h4>
+<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Provider</th>
+				<th>Year</th>
+				<th>Country</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Milu Villela grant ($ 500 USD)</td>
+				<td>TVST</td>
+				<td>2021</td>
+				<td>United States of America</td>
+			</tr>
+			<tr>
+				<td>Knights Templar Eye Foundation Travel Grant ($ 1,110 USD)</td>
+				<td>ARVO</td>
+				<td>2020</td>
+				<td>United States of America</td>
+			</tr>
+			<tr>
+				<td>Tools for Formatting and Validation of Research Microdata</td>
+				<td>CNPq PIBIC</td>
+				<td>2012</td>
+				<td>Brazil</td>
+			</tr>
+		</tbody>
+	</table>
+</div>	
+
+</div>
 
 <!-- Certification -->
 <h4>Certification</h4>
@@ -338,43 +374,6 @@ nav-menu: true
 	</table>
 </div>
 
-
-<!-- Research Grants -->
-<h4>Research Grants</h4>
-<div class="table-wrapper">
-	<table>
-		<thead>
-			<tr>
-				<th>Title</th>
-				<th>Provider</th>
-				<th>Year</th>
-				<th>Country</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Milu Villela grant ($ 500 USD)</td>
-				<td>TVST</td>
-				<td>2021</td>
-				<td>United States of America</td>
-			</tr>
-			<tr>
-				<td>Knights Templar Eye Foundation Travel Grant ($ 1,110 USD)</td>
-				<td>ARVO</td>
-				<td>2020</td>
-				<td>United States of America</td>
-			</tr>
-			<tr>
-				<td>Tools for Formatting and Validation of Research Microdata</td>
-				<td>CNPq PIBIC</td>
-				<td>2012</td>
-				<td>Brazil</td>
-			</tr>
-		</tbody>
-	</table>
-</div>	
-
-</div>
 </div>
 
 <hr class="major" />
