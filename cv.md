@@ -275,6 +275,12 @@ nav-menu: true
 		</thead>
 		<tbody>
 			<tr>
+				<td>Treinamento Turnitin Autochecagem</td>
+				<td>Turnitin</td>
+				<td>2025</td>
+				<td>Brazil</td>
+			</tr>
+			<tr>
 				<td>AI for Everyone</td>
 				<td>Coursera</td>
 				<td>2019</td>
