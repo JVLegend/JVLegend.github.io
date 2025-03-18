@@ -630,7 +630,8 @@ nav-menu: true
                     <!-- Teaching -->
                     <h4>Teaching</h4>
                     <ul class="alt">
-                        <li>AI in scientific research. For PhD students only <strong>[USP HC, 02-10-2024]</strong></li>
+					    <li>Telemedicine applied to Ophthalmology<strong>[FM-USP, MOF-5770-31, 2024/03/14]</strong></li>
+                        <li>AI in scientific research. For PhD students only <strong>[FM-USP, MOF-5741, 2024/10/02]</strong></li>
                         <li>Innovation Class in Ophthalmology: How to train your algorithm <strong>[USP HC, 2023]</strong></li>
                         <li>Introduction to Neural Networks <strong>[Captalys, 2021]</strong></li>
                         <li>Innovation Class in Ophthalmology: ML for Physicians <strong>[USP HC, 2020]</strong></li>
