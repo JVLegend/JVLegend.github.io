@@ -205,7 +205,7 @@ nav-menu: true
 </ul>
 <ul class="actions fit small">
 	<li><a href="" class="button fit small">Machine Learning</a></li>
-	<li><a href="" class="button fit small">Language Model</a></li>
+	<li><a href="" class="button fit small">LLMs</a></li>
 </ul>
 <ul class="actions fit small">
 	<li><a href="" class="button fit small">Team Coordination</a></li>
@@ -240,17 +240,12 @@ nav-menu: true
 </ul>
 <ul class="actions fit small">
 	<li><a href="" class="button special fit small">Transformers</a></li>
-	<li><a href="" class="button special fit small">Shiny Pi</a></li>
+	<li><a href="" class="button special fit small">Agile</a></li>
 </ul>
 <ul class="actions fit small">
 	<li><a href="" class="button special fit small">Gephi</a></li>
 	<li><a href="" class="button special fit small">OpenCV</a></li>
 </ul>
-<ul class="actions fit small">
-	<li><a href="" class="button special fit small">Docker</a></li>
-	<li><a href="" class="button special fit small">Agile</a></li>
-</ul>
-
 
 </div>
 <div class="6u$ 12u$(medium)">
