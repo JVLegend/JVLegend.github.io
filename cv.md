@@ -584,6 +584,7 @@ nav-menu: true
 <!-- Invited Talks and Panels -->
 <h4>Invited Talks and Panels</h4>
 <ul class="alt">
+	<li>Risks and Opportunities for Privacy and AI Marketing <strong>[Jacto, 2024]</strong></li>
 	<li>Data Privacy Ops and GDPR <strong>[CIAB, 2020]</strong></li>
 	<li>AI for Strabimus <strong>[ARVO, 2020]</strong></li>
 	<li>Tracking Systems for Banking Sector <strong>[CIAB, 2018]</strong></li>
