@@ -24,4 +24,7 @@ Handles projects related to medicine, such as the AI for Doctors website, medica
 <h1><a href="#">3- Instituto Rumo ao Topo</a></h1>
 Builds and manages online and offline communities focused on faith and technology.
 
+<h1><a href="/palestras.html">4- Palestras</a></h1>
+More information about how to hire and what are the topics of the lectures, keynotes, and professional presentations delivered by JV.
+
 
