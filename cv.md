@@ -211,6 +211,7 @@ nav-menu: true
                     <!-- Aditional Activities -->
                     <h4>Aditional Activities</h4>
                     <p>Special Student - Analysis of Algorithms - University of São Paulo - 2016</p>
+                    <p>Participated in the Focus Group for the Technical Course in Data Science - São Paulo State Department of Education - 2024</p>
 
                     <!-- Tools -->
                     <h4>Tools</h4>
@@ -571,6 +572,8 @@ nav-menu: true
                     <!-- Press -->
                     <h4>Press</h4>
                     <ul class="alt">
+                        <li>Podcast: How AI is Rapidly Accelerating the Growth of Small Businesses <strong>[Rede Tela, 2025]</strong></li>
+                        <li>Podcast: The Future is Here! Is Your Company Ready for AI? <strong>[Rede Tela, 2025]</strong></li>
                         <li>How do data driven companies monetize their data? <strong>[Chief Data & Analytics Officer Brazil, 2021]</strong></li>
                         <li>Podcast: What is A.I.? <strong>[IPP - Radio Pinheiros, 2019]</strong></li>
                         <li><strong><a href="https://universovisual.com.br/secao/materias/111/grandes-artistas-na-oftalmologia">LINK</a></strong> - Grandes artistas na oftalmologia <strong>[Revista Universo Visual, 2018]</strong></li>
@@ -610,6 +613,11 @@ nav-menu: true
                     <!-- Invited Talks and Panels -->
                     <h4>Invited Talks and Panels</h4>
                     <ul class="alt">
+                        <li>Webinar: The New Lean Startup <strong>[FIAP, 2025]</strong></li>
+                        <li>Webinar: What's Coming and What's Already Reality in Medical Offices <strong>[BRASCRS, 2025]</strong></li>
+                        <li>Panel: AI and the Future of Ophthalmology <strong>[OftalmoHack, 2025]</strong></li>
+                        <li>Talk: The History of Artificial Intelligence <strong>[XXXI International Symposium of Ophthalmology, 2025]</strong></li>
+                        <li>Panel: AI in Business and Purpose-Driven Work <strong>[Igreja Butantã, 2025]</strong></li>
                         <li>Risks and Opportunities for Privacy and AI Marketing <strong>[Jacto, 2024]</strong></li>
                         <li>Data Privacy Ops and GDPR <strong>[CIAB, 2020]</strong></li>
                         <li>AI for Strabimus <strong>[ARVO, 2020]</strong></li>
@@ -671,6 +679,7 @@ nav-menu: true
                     <!-- Workshops -->
                     <h4>Workshops</h4>
                     <ul class="alt">
+                        <li>Coordinated WetLab - Development of Artificial Intelligence Models <strong>[Brazilian Congress of Ophthalmology, 2025]</strong></li>
                         <li>Intro to LLMs and RAGs - 7th Week of Scientific Initiation<strong>[IBGE, 2024]</strong></li>
                         <li>No Code AI <strong>[XIII SBO, 2022]</strong></li>
                         <li>DRY AI - A mobile app to assist physicians on assessment of dry eye as an alternative of noninvasive tear break-up time <strong>[ARVO Learn, 2019]</strong></li>
@@ -681,6 +690,7 @@ nav-menu: true
                     <!-- Hackathons -->
                     <h4>Hackathons</h4>
                     <ul class="alt">
+                        <li>Gold Medal - OftalmoHack Hackathon <strong>[FMUSP, 2025]</strong></li>
                         <li>AI Mentor <strong>[HackHealthTech, 2021]</strong></li>
                     </ul>
 
@@ -700,6 +710,8 @@ nav-menu: true
                     <!-- Teaching -->
                     <h4>Teaching</h4>
                     <ul class="alt">
+                        <li>Vertical AI in Marketing <strong>[ESPM, 2025]</strong></li>
+                        <li>Vertical AI <strong>[Mackenzie University, 2025]</strong></li>
                         <li>Telemedicine applied to Ophthalmology<strong>[FM-USP, MOF-5770-31, 2024/03/14]</strong></li>
                         <li>AI in scientific research. For PhD students only <strong>[FM-USP, MOF-5741, 2024/10/02]</strong></li>
                         <li>Innovation Class in Ophthalmology: How to train your algorithm <strong>[USP HC, 2023]</strong></li>
