@@ -367,41 +367,6 @@ nav-menu: true
                             </tbody>
                         </table>
                     </div>
-
-                    <!-- Research Reports -->
-                    <h4>Research Reports</h4>
-                    <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Title</th>
-                                    <th>Team</th>
-                                    <th>Institution</th>
-                                    <th>Year</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Strabismus and Artificial Intelligence App: Optimizing Diagnostic and Accuracy</td>
-                                    <td>DE FIGUEIREDO, L. A.; DIAS, J. V. P.; POLATI, M.; CARRICONDO, P. C.; DEBERT, I.</td>
-                                    <td>Translational Vision Science  & Technology/TVST</td>
-                                    <td>2021</td>
-                                </tr>
-                                <tr>
-                                    <td>A polícia e os 'black blocs'. A percepção dos policiais sobre junho de 2013</td>
-                                    <td>RUEDIGER, M. A. ; SOUZA, R. M. ; GRASSI, A. S. ; LUZ, M. ; DIAS, J. V. P.</td>
-                                    <td>Fundação Getúlo Vargas/DAPP</td>
-                                    <td>2014</td>
-                                </tr>
-                                <tr>
-                                    <td>Mobilidade urbana e cidadania: percepções dos usuários de transporte público no Brasil.</td>
-                                    <td>RUEDIGER, M. A. ; SOUZA, R. M. ; GRASSI, A. S. ; LUZ, M. ; DIAS, J. V. P.</td>
-                                    <td>Fundação Getúlo Vargas/DAPP</td>
-                                    <td>2014</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
                 </div>
 
             <hr class="major" />
@@ -557,42 +522,6 @@ nav-menu: true
                             </tbody>
                         </table>
                     </div>
-
-                    <!-- Research Reports -->
-                    <h4>Research Reports</h4>
-                    <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Title</th>
-                                    <th>Team</th>
-                                    <th>Institution</th>
-                                    <th>Year</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Strabismus and Artificial Intelligence App: Optimizing Diagnostic and Accuracy</td>
-                                    <td>DE FIGUEIREDO, L. A.; DIAS, J. V. P.; POLATI, M.; CARRICONDO, P. C.; DEBERT, I.</td>
-                                    <td>Translational Vision Science  & Technology/TVST</td>
-                                    <td>2021</td>
-                                </tr>
-                                <tr>
-                                    <td>A polícia e os 'black blocs'. A percepção dos policiais sobre junho de 2013</td>
-                                    <td>RUEDIGER, M. A. ; SOUZA, R. M. ; GRASSI, A. S. ; LUZ, M. ; DIAS, J. V. P.</td>
-                                    <td>Fundação Getúlo Vargas/DAPP</td>
-                                    <td>2014</td>
-                                </tr>
-                                <tr>
-                                    <td>Mobilidade urbana e cidadania: percepções dos usuários de transporte público no Brasil.</td>
-                                    <td>RUEDIGER, M. A. ; SOUZA, R. M. ; GRASSI, A. S. ; LUZ, M. ; DIAS, J. V. P.</td>
-                                    <td>Fundação Getúlo Vargas/DAPP</td>
-                                    <td>2014</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
                 </div>
                 <div class="6u$ 12u$(medium)">
 
@@ -666,41 +595,6 @@ nav-menu: true
                         <li>Congresso de tecnologia da informação para instituições financeiras <strong>[CIAB, 2018]</strong></li>
                         <li>60th ISI World Statistics Congress <strong>[ISI, 2015]</strong></li>
                     </ul>
-
-                    <!-- Research Reports -->
-                    <h4>Research Reports</h4>
-                    <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Title</th>
-                                    <th>Team</th>
-                                    <th>Institution</th>
-                                    <th>Year</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Strabismus and Artificial Intelligence App: Optimizing Diagnostic and Accuracy</td>
-                                    <td>DE FIGUEIREDO, L. A.; DIAS, J. V. P.; POLATI, M.; CARRICONDO, P. C.; DEBERT, I.</td>
-                                    <td>Translational Vision Science  & Technology/TVST</td>
-                                    <td>2021</td>
-                                </tr>
-                                <tr>
-                                    <td>A polícia e os 'black blocs'. A percepção dos policiais sobre junho de 2013</td>
-                                    <td>RUEDIGER, M. A. ; SOUZA, R. M. ; GRASSI, A. S. ; LUZ, M. ; DIAS, J. V. P.</td>
-                                    <td>Fundação Getúlo Vargas/DAPP</td>
-                                    <td>2014</td>
-                                </tr>
-                                <tr>
-                                    <td>Mobilidade urbana e cidadania: percepções dos usuários de transporte público no Brasil.</td>
-                                    <td>RUEDIGER, M. A. ; SOUZA, R. M. ; GRASSI, A. S. ; LUZ, M. ; DIAS, J. V. P.</td>
-                                    <td>Fundação Getúlo Vargas/DAPP</td>
-                                    <td>2014</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
 
                     <!-- Symposium -->
                     <h4>Symposium</h4>
