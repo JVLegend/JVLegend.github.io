@@ -10,8 +10,8 @@ nav-menu: true
 <section id="palestrante-banner" style="background: #242943; color: #fff; padding: 3em 0; text-align: center;">
   <div style="width: 100%; margin: 0 auto;">
     <img src="assets/images/header_cv_jv_v5.png" alt="Foto do palestrante" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 5px solid #6fc3df; margin-bottom: 1em;">
-    <div style="font-size: 1em; color: #9bf1ff; font-weight: bold; letter-spacing: 1px;">INTELIGENCIA ARTIFICIAL, MEDICINA E FUTURISMO</div>
-    <h1 style="font-size: 2.5em; font-weight: bold; margin: 0.2em 0; color: #fff;">JOAO VICTOR</h1>
+    <div style="font-size: 1em; color: #9bf1ff; font-weight: bold; letter-spacing: 1px;">INTELIGÊNCIA ARTIFICIAL, MEDICINA E FUTURISMO</div>
+    <h1 style="font-size: 2.5em; font-weight: bold; margin: 0.2em 0; color: #fff;">JV (JOÃO VICTOR)</h1>
     <div style="font-size: 1.3em; margin-bottom: 1em; color: #fff;">Doutorando e CTO</div>
     <div style="display: flex; justify-content: center; gap: 2em; font-size: 1em; margin-bottom: 2em; color: #fff;">
       <span><i class="fa fa-map-marker"></i> São Paulo, SP</span>
@@ -30,11 +30,9 @@ nav-menu: true
     <h3 style="font-size: 1.5em; font-weight: bold; margin-top: 1em; color: #fff;">14 anos de I.A. aplicada</h3>
     <div style="margin-top: 1.5em; font-size: 1.1em; line-height: 1.7; color: #fff;">
       <!-- Espaço reservado para inserir o texto sobre o palestrante -->
-      <p>João Victor Dias é cofundador e CTO da WingsAI, onde desenvolve soluções verticais de inteligência artificial no Brasil e nos Estados Unidos. Além disso, é consultor tecnológico do Conselho Brasileiro de Oftalmologia e atualmente está cursando doutorado em Ciências Médicas Oftalmológicas.
-
-Com mais de 12 anos de experiência em inteligência artificial, João tem ampla prática na criação e liderança de equipes de Data Science, capacitando novos gestores e diretores para garantir o sucesso dessas equipes. Ele também atua na reestruturação de times e departamentos de dados e analytics, solucionando desafios críticos.
-
-Ao longo de sua carreira, liderou projetos inovadores em bancos de investimento e hospitais, com foco na aplicação de IA avançada, especialmente em visão computacional e processamento de linguagem natural. Seus trabalhos abrangem diversos setores, incluindo finanças, crédito privado, saúde e varejo, consolidando sua expertise em transformar dados em resultados estratégicos.</p>
+      <p>João Victor Dias é cofundador e CTO da WingsAI, onde desenvolve soluções verticais de inteligência artificial no Brasil e nos Estados Unidos. Além disso, é consultor tecnológico do Conselho Brasileiro de Oftalmologia e atualmente está cursando doutorado em Ciências Médicas Oftalmológicas. 
+      <p>Com mais de 12 anos de experiência em inteligência artificial, João tem ampla prática na criação e liderança de equipes de Data Science, capacitando novos gestores e diretores para garantir o sucesso dessas equipes. Ele também atua na reestruturação de times e departamentos de dados e analytics, solucionando desafios críticos.</p>
+      <p>Ao longo de sua carreira, liderou projetos inovadores em bancos de investimento e hospitais, com foco na aplicação de IA avançada, especialmente em visão computacional e processamento de linguagem natural. Seus trabalhos abrangem diversos setores, incluindo finanças, crédito privado, saúde e varejo, consolidando sua expertise em transformar dados em resultados estratégicos.</p>
     </div>
   </div>
 </section>
