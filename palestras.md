@@ -25,7 +25,7 @@ nav-menu: true
 
 <!-- Seção de descrição -->
 <section id="sobre-palestrante" style="background: #2a2f4a; color: #fff; padding: 3em 0;">
-  <div style="max-width: 900px; margin: 0 auto;">
+  <div style="max-width: 1800px; margin: 0 auto;">
     <h2 style="color: #9bf1ff; font-size: 2em; font-weight: bold;">MAIS SOBRE O PALESTRANTE</h2>
     <h3 style="font-size: 1.5em; font-weight: bold; margin-top: 1em; color: #fff;">14 anos de I.A. aplicada</h3>
     <div style="margin-top: 1.5em; font-size: 1.1em; line-height: 1.7; color: #fff;">
@@ -41,7 +41,7 @@ Ao longo de sua carreira, liderou projetos inovadores em bancos de investimento 
 
 <!-- Temas Abordados -->
 <section id="temas-abordados" style="background: #242943; color: #fff; padding: 3em 0;">
-  <div style="max-width: 900px; margin: 0 auto;">
+  <div style="max-width: 1800px; margin: 0 auto;">
     <h2 style="color: #9bf1ff; font-size: 2em; font-weight: bold;">TEMAS ABORDADOS</h2>
     <div style="display: flex; gap: 1em; flex-wrap: wrap; margin: 2em 0;">
       <span style="border: 2px solid #6fc3df; color: #6fc3df; border-radius: 8px; padding: 0.5em 1.2em; font-weight: bold; background: #242943;">INTELIGENCIA ARTIFICIAL</span>
@@ -59,7 +59,7 @@ Ao longo de sua carreira, liderou projetos inovadores em bancos de investimento 
 
 <!-- Lista de Palestras -->
 <section id="lista-palestras" style="background: #2a2f4a; color: #fff; padding: 3em 0;">
-  <div style="max-width: 900px; margin: 0 auto;">
+  <div style="max-width: 1800px; margin: 0 auto;">
     <h2 style="color: #9bf1ff; font-size: 2em; font-weight: bold;">PALESTRAS</h2>
     <div style="margin-top: 2em;">
       <div style="display: flex; flex-direction: column; align-items: flex-start; border-bottom: 2px solid #6fc3df; padding: 0.7em 0;">
@@ -125,7 +125,7 @@ eficiência dos modelos.
 
 <!-- Perguntas Frequentes (FAQ) -->
 <section id="faq" style="background: #242943; color: #fff; padding: 3em 0;">
-  <div style="max-width: 900px; margin: 0 auto;">
+  <div style="max-width: 1800px; margin: 0 auto;">
     <h2 style="color: #9bf1ff; font-size: 2em; font-weight: bold;">PERGUNTAS FREQUENTES</h2>
     <p style="margin-bottom: 2em; color: #fff;">Não encontrou sua dúvida? Entre em contato conosco!</p>
     <div style="border: 1.5px solid #6fc3df; border-radius: 2px;">
