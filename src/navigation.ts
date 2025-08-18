@@ -46,22 +46,10 @@ export const footerData = {
       ],
     },
     {
-      title: 'Produtos',
-      links: [
-        { text: 'SmartFin', href: 'https://www.smartfin.ai/' },
-        { text: 'RHR', href: 'https://www.rhrx.vercel.app/' },
-        { text: 'BeloPrato', href: 'https://www.beloprato.com.br/' },
-        { text: 'DigitalPubli', href: 'https://www.digitalpubli.ai/' },
-        { text: 'Traduzai', href: 'https://www.traduzai.com.br/' },
-        { text: 'Mind10X', href: 'https://www.mind10x.ai/' },
-      ],
-    },
-    {
       title: 'Recursos',
       links: [
         { text: 'Blog', href: getBlogPermalink() },
         { text: 'Newsletter', href: '#' },
-        { text: 'Palestras', href: getPermalink('/speaking') },
       ],
     },
   ],
