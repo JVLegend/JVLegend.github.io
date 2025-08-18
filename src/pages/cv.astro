@@ -1,0 +1,854 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features from '~/components/widgets/Features.astro';
+import Timeline from '~/components/ui/Timeline.astro';
+
+import pic09 from '~/assets/images/pic09.jpg';
+import pic05 from '~/assets/images/pic05.jpg';
+
+const metadata = {
+  title: 'CV - João Victor Dias',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero2
+    tagline="Curriculum Vitae"
+    title="João Victor Dias"
+    subtitle="CTO at WingsAI | PhD Candidate | AI Expert"
+    image={{ src: pic09, alt: 'João Victor Dias' }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10">
+        <span class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase">Quick BIO</span>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-4 font-heading dark:text-white">Perfil Profissional</h2>
+      </div>
+      <div class="max-w-5xl mx-auto">
+        <div class="text-lg dark:text-slate-400 space-y-6">
+          <p>João Victor Dias é co-fundador e CTO da WingsAI, onde implementa soluções de IA vertical no Brasil e Estados Unidos. Também atua como consultor tecnológico do Conselho Brasileiro de Oftalmologia e está cursando doutorado em Ciências Médicas Oftalmológicas.</p>
+
+          <p>Tem experiência na criação de equipes de Data Science, liderando-as e ensinando novos gerentes/diretores como torná-las bem-sucedidas. Também ajuda a salvar equipes e áreas de dados/analytics de problemas sérios.</p>
+
+          <p>Com mais de 12 anos de experiência em inteligência artificial, João liderou com sucesso equipes em bancos de investimento e hospitais. Especializa-se na implementação de soluções de IA de ponta—particularmente em visão computacional e processamento de linguagem natural—e contribuiu para projetos em finanças, crédito privado, saúde e varejo, entre outros setores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+
+  <!-- Work Experience Section -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <span class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase">Experiência</span>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-4 font-heading dark:text-white">Experiência Profissional</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Left Column -->
+        <div class="space-y-8">
+          <!-- CTO Wings AI -->
+          <div class="border-l-4 border-blue-500 pl-6">
+            <h3 class="text-xl font-bold dark:text-white mb-2">CTO</h3>
+            <h5 class="text-blue-600 dark:text-blue-400 font-semibold mb-3">Wings AI [02/2025-Present]</h5>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-1">
+              <li>• Vertical AI</li>
+              <li>• Built MicroSaaS Leverage</li>
+              <li>• International Expansion</li>
+            </ul>
+          </div>
+
+          <!-- Data & Analytics Management -->
+          <div class="border-l-4 border-green-500 pl-6">
+            <h3 class="text-xl font-bold dark:text-white mb-2">Data & Analytics Management</h3>
+            <h5 class="text-green-600 dark:text-green-400 font-semibold mb-3">iFood Pago [07/2024-02/2025]</h5>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-1 text-sm">
+              <li>• Management of transactional data ingestion into the Data Lake using AWS DMS, S3 and PySpark</li>
+              <li>• Continuous optimization of Data Lake jobs with AWS EMR and Glue</li>
+              <li>• Creation of interactive dashboards for general analysis, anti-money laundering (AML) and fraud detection</li>
+            </ul>
+          </div>
+
+          <!-- Senior Vice President -->
+          <div class="border-l-4 border-purple-500 pl-6">
+            <h3 class="text-xl font-bold dark:text-white mb-2">Senior Vice President of Data Science and Analytics</h3>
+            <h5 class="text-purple-600 dark:text-purple-400 font-semibold mb-3">Captalys [08/2020-10/2022]</h5>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-1 text-sm">
+              <li>• Structured the areas and set up the Analytics, BI, Data Science, Portfolio Monitoring and Data Engineering teams</li>
+              <li>• Led the transformation of the company into an AI-Ready company</li>
+              <li>• Implemented: the Data Lake, the Machine Learning model deployment environment, GraphQL to unify the API queries and the models documentation</li>
+              <li>• Designed systems focused on scale, reproducibility and automation</li>
+              <li>• Our teams provide world-class products</li>
+            </ul>
+          </div>
+
+          <!-- Lead Data Scientist NTT DATA -->
+          <div class="border-l-4 border-red-500 pl-6">
+            <h3 class="text-xl font-bold dark:text-white mb-2">Lead Data Scientist</h3>
+            <h5 class="text-red-600 dark:text-red-400 font-semibold mb-3">NTT DATA [08/2019-07/2020]</h5>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-1 text-sm">
+              <li>• Planned and executed large data science projects</li>
+              <li>• Organized the career development of the Data Scientists at the company</li>
+              <li>• Participated in management meetings to help establish data roadmap and strategies</li>
+              <li>• Built a great team by both recruiting great talent and helping them grow</li>
+              <li>• Implemented DataPrivacyOps with Federated Learning, Differential Privacy and Multi-party Computation</li>
+            </ul>
+          </div>
+
+          <!-- Statistical Analyst FGV -->
+          <div class="border-l-4 border-yellow-500 pl-6">
+            <h3 class="text-xl font-bold dark:text-white mb-2">Statistical Analyst</h3>
+            <h5 class="text-yellow-600 dark:text-yellow-400 font-semibold mb-3">Fundação Getúlio Vargas [01/2014-12/2015]</h5>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-1 text-sm">
+              <li>• Created the sentiment analysis model for political debate in social media</li>
+              <li>• Developed a spam filtering machine learning model applied to text data and Twitter account attributes</li>
+              <li>• Co implemented social network graphs framework, which illustrated major national and international newspapers, covers such as the Financial Times</li>
+              <li>• Co implemented a Bayesian spatial model using Twitter data applied on calculating ideological ideal points for legislative actors in Brazil</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="space-y-8">
+          <!-- Head of Data & Analytics -->
+          <div class="border-l-4 border-indigo-500 pl-6">
+            <h3 class="text-xl font-bold dark:text-white mb-2">Head of Data & Analytics</h3>
+            <h5 class="text-indigo-600 dark:text-indigo-400 font-semibold mb-3">Zoop [11/2022-07/2024]</h5>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-1">
+              <li>• Datalake expansion</li>
+              <li>• Built Data Products</li>
+              <li>• Data Contracts, Data Quality</li>
+            </ul>
+          </div>
+
+          <!-- StartupMentor -->
+          <div class="border-l-4 border-orange-500 pl-6">
+            <h3 class="text-xl font-bold dark:text-white mb-2">StartupMentor</h3>
+            <h5 class="text-orange-600 dark:text-orange-400 font-semibold mb-3">Bluefields Aceleradora [05/2019-Present]</h5>
+            <p class="text-gray-600 dark:text-gray-300">Artificial Intelligence Mentoring.</p>
+          </div>
+
+          <!-- Head of AI -->
+          <div class="border-l-4 border-teal-500 pl-6">
+            <h3 class="text-xl font-bold dark:text-white mb-2">Head of Artificial Intelligence</h3>
+            <h5 class="text-teal-600 dark:text-teal-400 font-semibold mb-3">IA para Médicos [06/2018-Present]</h5>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-1 text-sm">
+              <li>• Editor of Artificial Intelligence Futurism news applied to Medicine</li>
+              <li>• Workshops about productionizing AI projects</li>
+            </ul>
+          </div>
+
+          <!-- AI Coordinator GeekVision -->
+          <div class="border-l-4 border-pink-500 pl-6">
+            <h3 class="text-xl font-bold dark:text-white mb-2">Artificial Intelligence Coordinator</h3>
+            <h5 class="text-pink-600 dark:text-pink-400 font-semibold mb-3">GeekVision - Clinical Hospital, University of São Paulo [05/2017-Present]</h5>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-1 text-sm">
+              <li>• Supports AI innovation at University of São Paulo's Ophthalmology Clinics Hospital</li>
+              <li>• Implemented Convolutional Neural Networks to assist low vision patients on identifying chosen elevators</li>
+              <li>• Developed an Eye Drops Identifier with RetinaNet</li>
+              <li>• Implemented Dashboards integrated with non relational databases to structure clinics data and deliver on a mobile solution</li>
+              <li>• Developed a Dry-Eye disease solution with Neural Networks on Smartphones</li>
+            </ul>
+          </div>
+
+          <!-- Data Scientist NTT DATA -->
+          <div class="border-l-4 border-cyan-500 pl-6">
+            <h3 class="text-xl font-bold dark:text-white mb-2">Data Scientist</h3>
+            <h5 class="text-cyan-600 dark:text-cyan-400 font-semibold mb-3">NTT DATA [08/2017-08/2019]</h5>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-1 text-sm">
+              <li>• Coordinated NTT DATA Machine Learning Community Americas</li>
+              <li>• Led the Data Science team on publishing research papers</li>
+              <li>• Spread AI culture and helped attracting more talent to the company</li>
+              <li>• Supervised Neural Networks architecture framework implementation</li>
+              <li>• GAN architectures for data augmentation</li>
+              <li>• Automatic documents classification with ELMO + BI-LSTM + CNN + CRF</li>
+              <li>• Developed a hybrid model for Automated Offline Handwritten Signature Verification on checkbooks using Convolutional Networks</li>
+              <li>• Stock price estimation using LSTM + Attention</li>
+              <li>• Object Detection, Recognition and Segmentation</li>
+              <li>• Face Recognition, Alignment and De-identification</li>
+              <li>• Developed a pedestrian tracking surveillance on Raspberry Pi 3</li>
+              <li>• Developed a Retrieval-based banking chatbot on Facebook Messenger with Tensorflow</li>
+            </ul>
+          </div>
+
+          <!-- Statistician NIC.br -->
+          <div class="border-l-4 border-gray-500 pl-6">
+            <h3 class="text-xl font-bold dark:text-white mb-2">Statistician</h3>
+            <h5 class="text-gray-600 dark:text-gray-400 font-semibold mb-3">NIC.br [01/2016-08/2017]</h5>
+            <ul class="text-gray-600 dark:text-gray-300 space-y-1 text-sm">
+              <li>• Developed an automated and optimized system focused on enduring brazilian´s complex Internet Traffic Measurement System database</li>
+              <li>• Implemented prototypes of Disclosure Control Methods for MicroData databases</li>
+            </ul>
+          </div>
+
+          <!-- Additional positions -->
+          <div class="space-y-6">
+            <div class="border-l-4 border-emerald-500 pl-6">
+              <h3 class="text-xl font-bold dark:text-white mb-2">Trainee</h3>
+              <h5 class="text-emerald-600 dark:text-emerald-400 font-semibold mb-3">Fundação Getúlio Vargas [2013-2014]</h5>
+              <ul class="text-gray-600 dark:text-gray-300 space-y-1 text-sm">
+                <li>• Developed a social Twitter bots identifier through NLP methods and model ensembling</li>
+                <li>• Co implemented social network graphs framework using Gephi and R packages</li>
+                <li>• Created R Shiny visualisations for Urban Mobility</li>
+              </ul>
+            </div>
+
+            <div class="border-l-4 border-violet-500 pl-6">
+              <h3 class="text-xl font-bold dark:text-white mb-2">Co Founder</h3>
+              <h5 class="text-violet-600 dark:text-violet-400 font-semibold mb-3">estatisti.CO [12/2012-12/2013]</h5>
+              <p class="text-gray-600 dark:text-gray-300 text-sm">At 2012 he co-founded www.estatisti.co, a statistics based website focused on establishing a place where people could stay informed about the latest news, tips on career, Big Data, theoretical statistics, scientific articles, biographies, job opportunities, among other issues. It quickly became one of the brazilians most famous statistics website.</p>
+            </div>
+
+            <div class="border-l-4 border-rose-500 pl-6">
+              <h3 class="text-xl font-bold dark:text-white mb-2">External Journalism Operator</h3>
+              <h5 class="text-rose-600 dark:text-rose-400 font-semibold mb-3">Rede Globo [07/2008-09/2009]</h5>
+              <p class="text-gray-600 dark:text-gray-300 text-sm">Acted in aid of adjustment of satellite signals from mobile units of telejournalism, color correction, equipment assembly and lighting for journalism outdoors production.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Competitions Section -->
+      <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+        <h3 class="text-2xl font-bold dark:text-white mb-6">Competitions</h3>
+        <h5 class="text-blue-600 dark:text-blue-400 font-semibold mb-4">Kaggle</h5>
+        <div class="grid md:grid-cols-2 gap-4">
+          <ul class="text-gray-600 dark:text-gray-300 space-y-2">
+            <li><strong>148th of 2023</strong> - PetFinder.my Adoption Prediction <strong class="text-yellow-600">BRONZE MEDAL</strong></li>
+            <li><strong>1776th of 9038</strong> - Santander Customer Transaction Prediction</li>
+          </ul>
+          <ul class="text-gray-600 dark:text-gray-300 space-y-2">
+            <li><strong>666th of 3835</strong> - Mercedes-Benz Greener Manufacturing</li>
+            <li><strong>838th of 2931</strong> - APTOS 2019 Blindness Detection</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Topic Groups Section -->
+      <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
+        <h3 class="text-2xl font-bold dark:text-white mb-6">Topic Groups Member</h3>
+        <div class="border-l-4 border-blue-500 pl-6">
+          <h4 class="text-lg font-bold dark:text-white mb-2">AI For Health: Artificial Intelligence for Ophthalmology</h4>
+          <h5 class="text-blue-600 dark:text-blue-400 font-semibold">I.T.U./W.H.O. [09/2019-Present]</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="py-16 md:py-20 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <span class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase">Educação</span>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-4 font-heading dark:text-white">Formação Acadêmica</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Left Column -->
+        <div class="space-y-8">
+          <!-- Universities -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Universidades</h4>
+            <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+              <div class="overflow-x-auto">
+                <table class="w-full">
+                  <thead class="bg-gray-100 dark:bg-gray-800">
+                    <tr>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Instituição</th>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Curso</th>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Ano</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                    <tr>
+                      <td class="px-4 py-4 text-sm text-gray-900 dark:text-gray-300">University of São Paulo, Medical School(FMUSP-HC)</td>
+                      <td class="px-4 py-4 text-sm text-gray-600 dark:text-gray-400">PhD in Ophthalmological Medical Sciences</td>
+                      <td class="px-4 py-4 text-sm text-gray-600 dark:text-gray-400">2024-2029</td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-4 text-sm text-gray-900 dark:text-gray-300">University of Mannheim [Incomplete]</td>
+                      <td class="px-4 py-4 text-sm text-gray-600 dark:text-gray-400">MS in Survey and Data Science</td>
+                      <td class="px-4 py-4 text-sm text-gray-600 dark:text-gray-400">2019</td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-4 text-sm text-gray-900 dark:text-gray-300">National School of Statistical Sciences</td>
+                      <td class="px-4 py-4 text-sm text-gray-600 dark:text-gray-400">B.S. in Statistics</td>
+                      <td class="px-4 py-4 text-sm text-gray-600 dark:text-gray-400">2010-2015</td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-4 text-sm text-gray-900 dark:text-gray-300">State Technical School Henrique Lage</td>
+                      <td class="px-4 py-4 text-sm text-gray-600 dark:text-gray-400">Electronics Technician</td>
+                      <td class="px-4 py-4 text-sm text-gray-600 dark:text-gray-400">2007</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Habilidades Técnicas</h4>
+            <div class="grid grid-cols-2 gap-3">
+              <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-2 rounded-full text-sm font-medium text-center">Computer Vision</span>
+              <span class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-2 rounded-full text-sm font-medium text-center">Predictive Modelling</span>
+              <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-2 rounded-full text-sm font-medium text-center">Machine Learning</span>
+              <span class="bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-2 rounded-full text-sm font-medium text-center">LLMs</span>
+              <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-3 py-2 rounded-full text-sm font-medium text-center">Team Coordination</span>
+              <span class="bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-3 py-2 rounded-full text-sm font-medium text-center">Data Visualisation</span>
+            </div>
+          </div>
+
+          <!-- Additional Activities -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-4">Atividades Adicionais</h4>
+            <div class="space-y-3 text-gray-600 dark:text-gray-300">
+              <p>Special Student - Analysis of Algorithms - University of São Paulo - 2016</p>
+              <p>Participated in the Focus Group for the Technical Course in Data Science - São Paulo State Department of Education - 2024</p>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Ferramentas</h4>
+            <div class="grid grid-cols-2 gap-3">
+              <span class="bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 px-3 py-2 rounded-full text-sm font-medium text-center">PyTorch</span>
+              <span class="bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 px-3 py-2 rounded-full text-sm font-medium text-center">Tensorflow</span>
+              <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-2 rounded-full text-sm font-medium text-center">Scikit-Learn</span>
+              <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-2 rounded-full text-sm font-medium text-center">Keras</span>
+              <span class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-2 rounded-full text-sm font-medium text-center">SciPy</span>
+              <span class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-2 rounded-full text-sm font-medium text-center">NumPy</span>
+              <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-2 rounded-full text-sm font-medium text-center">NLTK</span>
+              <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-2 rounded-full text-sm font-medium text-center">Unix</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-2 rounded-full text-sm font-medium text-center">Git</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-2 rounded-full text-sm font-medium text-center">Raspberry Pi</span>
+              <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-3 py-2 rounded-full text-sm font-medium text-center">Transformers</span>
+              <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-3 py-2 rounded-full text-sm font-medium text-center">Agile</span>
+              <span class="bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 px-3 py-2 rounded-full text-sm font-medium text-center">Gephi</span>
+              <span class="bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 px-3 py-2 rounded-full text-sm font-medium text-center">OpenCV</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="space-y-8">
+          <!-- Languages -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-4">Idiomas</h4>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li>Portuguese [Native]</li>
+              <li>English [Fluent]</li>
+              <li>Spanish [Beginner]</li>
+              <li>Japanese [Beginner]</li>
+            </ul>
+          </div>
+
+          <!-- Certifications -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Certificações</h4>
+            <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+              <div class="overflow-x-auto">
+                <table class="w-full">
+                  <thead class="bg-gray-100 dark:bg-gray-800">
+                    <tr>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Título</th>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Provedor</th>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Ano</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200 dark:divide-gray-700 text-sm">
+                    <tr><td class="px-4 py-3 text-gray-900 dark:text-gray-300">Treinamento Turnitin Autochecagem</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">Turnitin</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">2025</td></tr>
+                    <tr><td class="px-4 py-3 text-gray-900 dark:text-gray-300">AI for Everyone</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">Coursera</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">2019</td></tr>
+                    <tr><td class="px-4 py-3 text-gray-900 dark:text-gray-300">Survey Skills Development Course</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">Brazilian Institute of Geography and Statistics</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">2016</td></tr>
+                    <tr><td class="px-4 py-3 text-gray-900 dark:text-gray-300">Big Data in Healthcare</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">Coursera - University of São Paulo</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">2015</td></tr>
+                    <tr><td class="px-4 py-3 text-gray-900 dark:text-gray-300">Laboratório - RJ</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">Fundação Estudar</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">2015</td></tr>
+                    <tr><td class="px-4 py-3 text-gray-900 dark:text-gray-300">Machine Learning</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">Coursera - Stanford University</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">2014</td></tr>
+                    <tr><td class="px-4 py-3 text-gray-900 dark:text-gray-300">The Data Scientist's Toolbox</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">Coursera - Johns Hopkins University</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">2014</td></tr>
+                    <tr><td class="px-4 py-3 text-gray-900 dark:text-gray-300">Practical Machine Learning</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">Coursera - Johns Hopkins University</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">2014</td></tr>
+                    <tr><td class="px-4 py-3 text-gray-900 dark:text-gray-300">Data Analysis with R</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">Udacity - Johns Hopkins University</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">2014</td></tr>
+                    <tr><td class="px-4 py-3 text-gray-900 dark:text-gray-300">Statistical Methods for Disclosure Control</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">Brazilian Institute of Geography and Statistics</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">2012</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Grants -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Bolsas de Pesquisa</h4>
+            <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+              <div class="overflow-x-auto">
+                <table class="w-full">
+                  <thead class="bg-gray-100 dark:bg-gray-800">
+                    <tr>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Título</th>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Provedor</th>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Ano</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200 dark:divide-gray-700 text-sm">
+                    <tr><td class="px-4 py-3 text-gray-900 dark:text-gray-300">Milu Villela grant ($ 500 USD)</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">TVST</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">2021</td></tr>
+                    <tr><td class="px-4 py-3 text-gray-900 dark:text-gray-300">Knights Templar Eye Foundation Travel Grant ($ 1,110 USD)</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">ARVO</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">2020</td></tr>
+                    <tr><td class="px-4 py-3 text-gray-900 dark:text-gray-300">Tools for Formatting and Validation of Research Microdata</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">CNPq PIBIC</td><td class="px-4 py-3 text-gray-600 dark:text-gray-400">2012</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Media Section -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <span class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase">Mídia</span>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-4 font-heading dark:text-white">Reconhecimentos e Publicações</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Left Column -->
+        <div class="space-y-8">
+          <!-- Awards -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Prêmios</h4>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3 p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <p class="text-gray-900 dark:text-gray-100">Most Valuable Professional</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400"><strong>NTT DATA, 2018</strong></p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3 p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <p class="text-gray-900 dark:text-gray-100">Global Finalist - NTT DATA Hackathon</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400"><strong>NTT DATA, 2018</strong></p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3 p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <div class="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <p class="text-gray-900 dark:text-gray-100">TOP 46 - Valuable Young Leader</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Harvard Business Review, 2018</strong></p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3 p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <div class="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <p class="text-gray-900 dark:text-gray-100">Semifinalist - Data For Climate Action</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400"><strong>UN Global Pulse, 2017</strong></p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3 p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <div class="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <p class="text-gray-900 dark:text-gray-100">Survey Skills Development Course</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400"><strong>IBGE, 2017</strong></p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3 p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <div class="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <p class="text-gray-900 dark:text-gray-100">Rio de Janeiro´s Semifinalist – SEBRAE Challenge</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400"><strong>SEBRAE, 2012</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Reports -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Relatórios de Pesquisa</h4>
+            <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+              <div class="overflow-x-auto">
+                <table class="w-full">
+                  <thead class="bg-gray-100 dark:bg-gray-800">
+                    <tr>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Título</th>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Instituição</th>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Ano</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200 dark:divide-gray-700 text-sm">
+                    <tr>
+                      <td class="px-4 py-3 text-gray-900 dark:text-gray-300">Strabismus and Artificial Intelligence App: Optimizing Diagnostic and Accuracy</td>
+                      <td class="px-4 py-3 text-gray-600 dark:text-gray-400">TVST</td>
+                      <td class="px-4 py-3 text-gray-600 dark:text-gray-400">2021</td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-3 text-gray-900 dark:text-gray-300">A polícia e os 'black blocs'. A percepção dos policiais sobre junho de 2013</td>
+                      <td class="px-4 py-3 text-gray-600 dark:text-gray-400">FGV/DAPP</td>
+                      <td class="px-4 py-3 text-gray-600 dark:text-gray-400">2014</td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-3 text-gray-900 dark:text-gray-300">Mobilidade urbana e cidadania: percepções dos usuários de transporte público no Brasil</td>
+                      <td class="px-4 py-3 text-gray-600 dark:text-gray-400">FGV/DAPP</td>
+                      <td class="px-4 py-3 text-gray-600 dark:text-gray-400">2014</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Press -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Imprensa</h4>
+            <div class="space-y-4">
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 mb-1">Podcast: How AI is Rapidly Accelerating the Growth of Small Businesses</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Rede Tela, 2025</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 mb-1">Podcast: The Future is Here! Is Your Company Ready for AI?</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Rede Tela, 2025</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 mb-1">How do data driven companies monetize their data?</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Chief Data & Analytics Officer Brazil, 2021</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 mb-1">Podcast: What is A.I.?</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>IPP - Radio Pinheiros, 2019</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 mb-1">
+                  <a href="https://universovisual.com.br/secao/materias/111/grandes-artistas-na-oftalmologia" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">Grandes artistas na oftalmologia</a>
+                </p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Revista Universo Visual, 2018</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 mb-1">
+                  <a href="https://www.linkedin.com/in/joaovictordias/detail/treasury/position:555011179/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAAAQ6G5cBjKhP4N4kQBF6cwrFPZbnUGIuU_w%2C50458490)&section=position%3A555011179&treasuryCount=2" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">Brazil's election: as polarised as can be</a>
+                </p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Financial Times, 2014</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 mb-1">What does a Statistician do?</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Rádio Família 104.5fm, 2013</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="space-y-8">
+          <!-- Books Published -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Livros Publicados</h4>
+            <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+              <div class="overflow-x-auto">
+                <table class="w-full">
+                  <thead class="bg-gray-100 dark:bg-gray-800">
+                    <tr>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Título</th>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Ano</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200 dark:divide-gray-700 text-xs">
+                    <tr><td class="px-4 py-2 text-gray-900 dark:text-gray-300">ICT IN HEALTH 2016</td><td class="px-4 py-2 text-gray-600 dark:text-gray-400">2017</td></tr>
+                    <tr><td class="px-4 py-2 text-gray-900 dark:text-gray-300">ICT IN HEALTH 2015</td><td class="px-4 py-2 text-gray-600 dark:text-gray-400">2016</td></tr>
+                    <tr><td class="px-4 py-2 text-gray-900 dark:text-gray-300">ICT HOUSEHOLDS 2016</td><td class="px-4 py-2 text-gray-600 dark:text-gray-400">2017</td></tr>
+                    <tr><td class="px-4 py-2 text-gray-900 dark:text-gray-300">ICT HOUSEHOLDS 2015</td><td class="px-4 py-2 text-gray-600 dark:text-gray-400">2016</td></tr>
+                    <tr><td class="px-4 py-2 text-gray-900 dark:text-gray-300">ICT ENTERPRISES 2015</td><td class="px-4 py-2 text-gray-600 dark:text-gray-400">2016</td></tr>
+                    <tr><td class="px-4 py-2 text-gray-900 dark:text-gray-300">ICT IN EDUCATION 2016</td><td class="px-4 py-2 text-gray-600 dark:text-gray-400">2017</td></tr>
+                    <tr><td class="px-4 py-2 text-gray-900 dark:text-gray-300">ICT IN EDUCATION 2015</td><td class="px-4 py-2 text-gray-600 dark:text-gray-400">2016</td></tr>
+                    <tr><td class="px-4 py-2 text-gray-900 dark:text-gray-300">ICT KIDS ONLINE BRAZIL 2016</td><td class="px-4 py-2 text-gray-600 dark:text-gray-400">2017</td></tr>
+                    <tr><td class="px-4 py-2 text-gray-900 dark:text-gray-300">ICT KIDS ONLINE BRAZIL 2015</td><td class="px-4 py-2 text-gray-600 dark:text-gray-400">2016</td></tr>
+                    <tr><td class="px-4 py-2 text-gray-900 dark:text-gray-300">ICT NONPROFIT ORGANIZATIONS 2016</td><td class="px-4 py-2 text-gray-600 dark:text-gray-400">2017</td></tr>
+                    <tr><td class="px-4 py-2 text-gray-900 dark:text-gray-300">ICT IN CULTURE 2016</td><td class="px-4 py-2 text-gray-600 dark:text-gray-400">2017</td></tr>
+                    <tr><td class="px-4 py-2 text-gray-900 dark:text-gray-300">CULTURA E TECNOLOGIAS NO BRASIL</td><td class="px-4 py-2 text-gray-600 dark:text-gray-400">2017</td></tr>
+                    <tr><td class="px-4 py-2 text-gray-900 dark:text-gray-300">ICT ELECTRONIC GOVERNMENT 2015</td><td class="px-4 py-2 text-gray-600 dark:text-gray-400">2016</td></tr>
+                    <tr><td class="px-4 py-2 text-gray-900 dark:text-gray-300">ICT PROVIDERS 2014</td><td class="px-4 py-2 text-gray-600 dark:text-gray-400">2015</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Redes Sociais</h4>
+            <div class="flex space-x-6 justify-center">
+              <a href="https://twitter.com/JoaoVictor_AC" target="_blank" rel="noopener" class="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+              <a href="https://github.com/jvlegend" target="_blank" rel="noopener" class="text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/joaovictordias/" target="_blank" rel="noopener" class="text-blue-700 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Activities Section -->
+  <section class="py-16 md:py-20 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <span class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase">Atividades Acadêmicas</span>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-4 font-heading dark:text-white">Conferências, Palestras e Ensino</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Left Column -->
+        <div class="space-y-8">
+          <!-- Conferences -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Conferências</h4>
+            <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+              <div class="overflow-x-auto">
+                <table class="w-full">
+                  <thead class="bg-gray-100 dark:bg-gray-800">
+                    <tr>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Título</th>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Conferência</th>
+                      <th class="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-white">Ano</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200 dark:divide-gray-700 text-sm">
+                    <tr>
+                      <td class="px-4 py-3 text-gray-900 dark:text-gray-300">Invited Session - Offline Signature Recognition with Machine Learning</td>
+                      <td class="px-4 py-3 text-gray-600 dark:text-gray-400">11th IASC-ARS Conference</td>
+                      <td class="px-4 py-3 text-gray-600 dark:text-gray-400">2019</td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-3 text-gray-900 dark:text-gray-300">Tools for Formatting and Validation of Research Microdata</td>
+                      <td class="px-4 py-3 text-gray-600 dark:text-gray-400">21º SINAPE</td>
+                      <td class="px-4 py-3 text-gray-600 dark:text-gray-400">2014</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Invited Talks and Panels -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Palestras e Painéis</h4>
+            <div class="space-y-4">
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">Webinar: The New Lean Startup</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>FIAP, 2025</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">Webinar: What's Coming and What's Already Reality in Medical Offices</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>BRASCRS, 2025</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">Panel: AI and the Future of Ophthalmology</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>OftalmoHack, 2025</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">Talk: The History of Artificial Intelligence</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>XXXI International Symposium of Ophthalmology, 2025</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">Panel: AI in Business and Purpose-Driven Work</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Igreja Butantã, 2025</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">Risks and Opportunities for Privacy and AI Marketing</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Jacto, 2024</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">Data Privacy Ops and GDPR</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>CIAB, 2020</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">AI for Strabimus</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>ARVO, 2020</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">Tracking Systems for Banking Sector</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>CIAB, 2018</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">IX International Life Sciences Institute Congress</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>ILSI, 2018</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Congress -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Congressos</h4>
+            <div class="space-y-3">
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Congresso Brasileiro de Oftalmologia 2024 - Brasília <strong>CBO, 2024</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Congresso de tecnologia da informação para instituições financeiras <strong>CIAB, 2018</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">60th ISI World Statistics Congress <strong>ISI, 2015</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Symposium -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Simpósios</h4>
+            <div class="space-y-3">
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Inovações e I.A. em Oftalmologia <strong>XXXI SIOJT, 06/2025</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Uso de I.A. para o desenvolvimento de ferramentas diagnósticas para avaliação de pacientes com Orbitopatia Distireodiana <strong>USP Eye Research Symposium, 09/2024</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Web Scraping as a alternative data sources to predict E-Commerce indicators <strong>StatCan International Methodology Symposium, 2018</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="space-y-8">
+          <!-- Workshops -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Workshops</h4>
+            <div class="space-y-4">
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">Coordinated WetLab - Development of Artificial Intelligence Models</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Brazilian Congress of Ophthalmology, 2025</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">Intro to LLMs and RAGs - 7th Week of Scientific Initiation</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>IBGE, 2024</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">No Code AI</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>XIII SBO, 2022</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">DRY AI - A mobile app to assist physicians on assessment of dry eye</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>ARVO Learn, 2019</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">VII NIC.br Annual Workshop on Survey Methodology</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>NIC.br, 2017</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">VI NIC.br Annual Workshop on Survey Methodology</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>NIC.br, 2016</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hackathons -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Hackathons</h4>
+            <div class="space-y-3">
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">Gold Medal - OftalmoHack Hackathon</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>FMUSP, 2025</strong></p>
+              </div>
+              <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                <p class="text-gray-900 dark:text-gray-100 font-medium">AI Mentor</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><strong>HackHealthTech, 2021</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seminars -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Seminários</h4>
+            <div class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+              <p class="text-gray-900 dark:text-gray-100 font-medium">AI, Privacy and Open Banking</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Bradesco Innovation Day, 2020</strong></p>
+            </div>
+          </div>
+
+          <!-- Meetups -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Meetups</h4>
+            <div class="space-y-3">
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Reproducing papers and evaluating benchmarks in the pre-training of Language Models in Portuguese <strong>Santander Meetups, 2019</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">DataOps Frameworks <strong>Itaú Meetups, 2019</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teaching -->
+          <div>
+            <h4 class="text-2xl font-bold dark:text-white mb-6">Ensino</h4>
+            <div class="space-y-3 max-h-96 overflow-y-auto">
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Vertical AI in Marketing <strong>ESPM, 2025</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Vertical AI <strong>Mackenzie University, 2025</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Telemedicine applied to Ophthalmology <strong>FM-USP, MOF-5770-31, 2024/03/14</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">AI in scientific research. For PhD students only <strong>FM-USP, MOF-5741, 2024/10/02</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Innovation Class in Ophthalmology: How to train your algorithm <strong>USP HC, 2023</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Introduction to Neural Networks <strong>Captalys, 2021</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Innovation Class in Ophthalmology: ML for Physicians <strong>USP HC, 2020</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Statistical Power for Data Scientists <strong>NTT DATA, 2019</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Innovation Class in Ophthalmology: How to train your algorithm <strong>USP HC, 2019</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">The Grammar of Graphics <strong>NTT DATA, 2019</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Data Visualization with Python and R <strong>NTT DATA, 2019</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Introduction to Neural Networks <strong>NTT DATA, 2018</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Machine Learning Hands-On <strong>NTT DATA, 2018</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Convolutional Neural Networks <strong>NTT DATA, 2018</strong></p>
+              </div>
+              <div class="p-3 bg-white dark:bg-gray-800 rounded-lg shadow text-sm">
+                <p class="text-gray-900 dark:text-gray-100">Introduction to TensorFlow <strong>Mackenzie, 2017</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

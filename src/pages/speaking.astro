@@ -1,0 +1,252 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import pic08 from '~/assets/images/pic08.jpg';
+import pic06 from '~/assets/images/pic06.jpg';
+
+const metadata = {
+  title: 'Palestras - João Victor Dias',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero2
+    tagline="Speaking"
+    title="Palestras e Keynotes"
+    subtitle="Compartilhando conhecimento sobre IA, liderança e inovação"
+    image={{ src: pic08, alt: 'Palestras' }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    tagline="Sobre as Apresentações"
+    title="Experiência em Speaking"
+  >
+    <Fragment slot="content">
+      <p>Com mais de 12 anos de experiência em IA e liderança tecnológica, ofereço palestras e keynotes que combinam conhecimento técnico profundo com insights práticos sobre implementação e gestão de projetos de inteligência artificial.</p>
+      
+      <p>Minhas apresentações são voltadas para líderes executivos, CTOs, gestores de tecnologia e profissionais que buscam entender como a IA pode transformar seus negócios e carreiras.</p>
+    </Fragment>
+  </Content>
+
+  <!-- Topics Section -->
+
+  <Features
+    id="topics"
+    tagline="Tópicos"
+    title="Temas de Palestras"
+    subtitle="Conteúdo especializado baseado em experiência prática"
+    items={[
+      {
+        title: 'O Futuro da Inteligência Artificial',
+        description:
+          'Tendências emergentes, impacto nos negócios e como se preparar para a próxima década da IA.',
+        icon: 'tabler:crystal-ball',
+      },
+      {
+        title: 'Liderança de Equipes de IA',
+        description:
+          'Como formar, motivar e reter talentos em Data Science e Machine Learning.',
+        icon: 'tabler:users-group',
+      },
+      {
+        title: 'IA na Prática: Cases de Sucesso',
+        description:
+          'Exemplos reais de implementação de IA em diferentes setores e lições aprendidas.',
+        icon: 'tabler:trophy',
+      },
+      {
+        title: 'Transformação Digital com IA',
+        description:
+          'Estratégias para integrar IA na cultura organizacional e processos de negócio.',
+        icon: 'tabler:transform',
+      },
+      {
+        title: 'IA na Medicina: Revolução na Saúde',
+        description:
+          'Como a inteligência artificial está transformando diagnósticos e tratamentos médicos.',
+        icon: 'tabler:heart-rate-monitor',
+      },
+      {
+        title: 'Ética e Responsabilidade em IA',
+        description:
+          'Considerações éticas, vieses algorítmicos e desenvolvimento responsável de IA.',
+        icon: 'tabler:scale',
+      },
+      {
+        title: 'Computer Vision: Aplicações Práticas',
+        description:
+          'Casos de uso em indústria, medicina e varejo com demonstrações ao vivo.',
+        icon: 'tabler:eye',
+      },
+      {
+        title: 'Empreendedorismo em IA',
+        description:
+          'Como construir startups de sucesso na era da inteligência artificial.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  />
+
+  <!-- Format Options -->
+
+  <Content
+    isReversed
+    tagline="Formatos"
+    title="Modalidades de Apresentação"
+    items={[
+      {
+        title: 'Keynote (45-60 min)',
+        description: 'Apresentação principal com visão estratégica e tendências de mercado.',
+      },
+      {
+        title: 'Palestra Técnica (30-45 min)',
+        description: 'Conteúdo aprofundado com demonstrações práticas e cases reais.',
+      },
+      {
+        title: 'Workshop (2-4 horas)',
+        description: 'Sessão hands-on com exercícios práticos e interação com participantes.',
+      },
+      {
+        title: 'Painel de Discussão',
+        description: 'Participação em debates e mesas redondas sobre temas específicos.',
+      },
+    ]}
+    image={{
+      src: pic06,
+      alt: 'Modalidades',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Flexibilidade e Personalização</h3>
+      Todas as apresentações podem ser customizadas para o público-alvo específico, 
+      incluindo adaptação de conteúdo, duração e nível técnico conforme necessário.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Audience Section -->
+
+  <Features
+    id="audience"
+    tagline="Público-Alvo"
+    title="Para Quem São as Palestras"
+    subtitle="Conteúdo adaptado para diferentes perfis profissionais"
+    items={[
+      {
+        title: 'C-Level e Executivos',
+        description:
+          'Visão estratégica sobre IA, ROI e impacto nos negócios.',
+        icon: 'tabler:crown',
+      },
+      {
+        title: 'CTOs e Diretores de TI',
+        description:
+          'Implementação técnica, arquitetura e gestão de projetos de IA.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Gestores de Produto',
+        description:
+          'Como integrar IA em produtos e serviços, UX com IA.',
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Profissionais de Dados',
+        description:
+          'Técnicas avançadas, melhores práticas e evolução na carreira.',
+        icon: 'tabler:database',
+      },
+      {
+        title: 'Empreendedores',
+        description:
+          'Oportunidades de negócio, validação de ideias e funding.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Profissionais de Saúde',
+        description:
+          'Aplicações específicas de IA na medicina e impacto no atendimento.',
+        icon: 'tabler:stethoscope',
+      },
+    ]}
+  />
+
+  <!-- Previous Events -->
+
+  <Content
+    tagline="Experiência"
+    title="Eventos Anteriores"
+  >
+    <Fragment slot="content">
+      <div class="space-y-6">
+        <div>
+          <h4 class="text-lg font-bold mb-2">Conferências Nacionais</h4>
+          <ul class="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300">
+            <li>FIAP Innovation Summit - "IA na Transformação Digital"</li>
+            <li>Campus Party Brasil - "Computer Vision na Prática"</li>
+            <li>Python Brasil - "ML em Produção: Desafios Reais"</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-bold mb-2">Eventos Corporativos</h4>
+          <ul class="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300">
+            <li>Masterclass para executivos de banco de investimento</li>
+            <li>Workshop de IA para diretoria de hospital público</li>
+            <li>Keynote sobre liderança técnica para startup unicórnio</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-2">Eventos Acadêmicos</h4>
+          <ul class="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300">
+            <li>Seminário de IA na USP - Aplicações Médicas</li>
+            <li>Congresso de Oftalmologia - Inovação Tecnológica</li>
+            <li>Simpósio de Telemedicina - Futuro da Saúde Digital</li>
+          </ul>
+        </div>
+      </div>
+    </Fragment>
+  </Content>
+
+  <!-- Testimonials would go here if we had them -->
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Solicitar Proposta',
+        href: '/contact',
+        icon: 'tabler:mail',
+      },
+      {
+        variant: 'secondary',
+        text: 'Ver Portfolio',
+        href: '/cv',
+        icon: 'tabler:file-text',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Quer levar conteúdo de<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">qualidade para seu evento?</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Entre em contato para discutir sua necessidade específica, customizar o conteúdo
+      <br class="hidden md:inline" />e agendar uma apresentação memorável.
+    </Fragment>
+  </CallToAction>
+</Layout>

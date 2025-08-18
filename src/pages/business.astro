@@ -1,0 +1,226 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import techBack from '~/assets/images/tech_back.jpg';
+import coliriosBack from '~/assets/images/colirios_back_1.jpg';
+import pic07 from '~/assets/images/pic07.jpg';
+
+const metadata = {
+  title: 'Negócios - João Victor Dias',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero2
+    tagline="Negócios"
+    title="Portfólio de Iniciativas"
+    subtitle="Startups e projetos que lidero ou participo"
+    image={{ src: techBack, alt: 'Negócios e Startups' }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    tagline="Visão Geral"
+    title="Estratégia de Negócios"
+  >
+    <Fragment slot="content">
+      <p>As unidades de negócio e iniciativas sob minha liderança e envolvimento estão estruturadas em quatro pilares estratégicos, abrangendo desde produtos de IA até comunidades de fé e tecnologia.</p>
+    </Fragment>
+  </Content>
+
+  <!-- Wings AI Section -->
+
+  <Features
+    id="wingsai"
+    tagline="Pilar 1"
+    title="Wings AI"
+    subtitle="Fábrica de IA Vertical com portfólio diversificado de produtos"
+    items={[
+      {
+        title: 'SmartFin',
+        description:
+          'Plataforma de inteligência financeira com IA para análise e otimização de investimentos.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'RHR',
+        description:
+          'Solução de recursos humanos com IA para recrutamento e gestão de talentos.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'BeloPrato',
+        description:
+          'Marketplace gastronômico com recomendações personalizadas por IA.',
+        icon: 'tabler:chef-hat',
+      },
+      {
+        title: 'DigitalPubli',
+        description:
+          'Plataforma de marketing digital com automação e targeting inteligente.',
+        icon: 'tabler:ad',
+      },
+      {
+        title: 'Traduzai',
+        description:
+          'Serviço de tradução automática com modelos especializados por domínio.',
+        icon: 'tabler:language',
+      },
+      {
+        title: 'LiveKlone',
+        description:
+          'Tecnologia de clonagem de voz e avatar para comunicação digital.',
+        icon: 'tabler:microphone',
+      },
+      {
+        title: 'Mind10X',
+        description:
+          'Plataforma de produtividade pessoal com IA para otimização cognitiva.',
+        icon: 'tabler:brain',
+      },
+    ]}
+  />
+
+  <!-- I.A. para Médicos Section -->
+
+  <Content
+    isReversed
+    tagline="Pilar 2"
+    title="I.A. para Médicos"
+    items={[
+      {
+        title: 'Website AI for Doctors',
+        description: 'Portal especializado em aplicações de IA na medicina com conteúdo educacional.',
+      },
+      {
+        title: 'Medical Gadgets Company',
+        description: 'Desenvolvimento de dispositivos inteligentes para consultórios médicos.',
+      },
+      {
+        title: 'Incubadora de Projetos',
+        description: 'Programa de aceleração para startups de IA aplicada à medicina.',
+      },
+      {
+        title: 'Consultoria CBO',
+        description: 'Assessoria tecnológica para o Conselho Brasileiro de Oftalmologia.',
+      },
+    ]}
+    image={{
+      src: coliriosBack,
+      alt: 'IA para Médicos',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Transformação Digital na Medicina</h3>
+      Lidero projetos relacionados à medicina, incluindo website especializado, empresa de dispositivos para consultórios médicos e incubadora de projetos de IA em medicina.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Instituto Rumo ao Topo Section -->
+
+  <Features
+    id="instituto"
+    tagline="Pilar 3"
+    title="Instituto Rumo ao Topo"
+    subtitle="Construção de comunidades focadas em fé e tecnologia"
+    items={[
+      {
+        title: 'Comunidades Online',
+        description:
+          'Plataformas digitais para conectar profissionais cristãos da área de tecnologia.',
+        icon: 'tabler:world',
+      },
+      {
+        title: 'Eventos Presenciais',
+        description:
+          'Organização de conferências e meetups sobre fé, ética e inovação tecnológica.',
+        icon: 'tabler:calendar-event',
+      },
+      {
+        title: 'Mentoria Espiritual',
+        description:
+          'Programa de mentoria para líderes cristãos em posições de destaque na tecnologia.',
+        icon: 'tabler:user-heart',
+      },
+      {
+        title: 'Conteúdo Educacional',
+        description:
+          'Produção de material sobre integração entre fé cristã e liderança tecnológica.',
+        icon: 'tabler:book',
+      },
+    ]}
+  />
+
+  <!-- Palestras Section -->
+
+  <Content
+    tagline="Pilar 4"
+    title="Palestras e Keynotes"
+    items={[
+      {
+        title: 'Inteligência Artificial',
+        description: 'Tendências, aplicações práticas e impacto da IA nos negócios.',
+      },
+      {
+        title: 'Liderança Tecnológica',
+        description: 'Como formar e liderar equipes de alta performance em tecnologia.',
+      },
+      {
+        title: 'Transformação Digital',
+        description: 'Estratégias para implementação de IA e automação em organizações.',
+      },
+      {
+        title: 'Inovação em Healthcare',
+        description: 'Aplicações de IA na medicina e o futuro da saúde digital.',
+      },
+    ]}
+    image={{
+      src: pic07,
+      alt: 'Palestras',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Compartilhando Conhecimento</h3>
+      Informações sobre como contratar e quais são os tópicos das palestras, keynotes e apresentações profissionais ministradas por JV.
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contato para Parcerias',
+        href: '/contact',
+        icon: 'tabler:users',
+      },
+      {
+        variant: 'secondary',
+        text: 'Ver Palestras',
+        href: '/speaking',
+        icon: 'tabler:microphone',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Interessado em<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Colaboração?</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Entre em contato para discutir oportunidades de parceria, investimento
+      <br class="hidden md:inline" />ou colaboração em projetos de IA e inovação.
+    </Fragment>
+  </CallToAction>
+</Layout>
