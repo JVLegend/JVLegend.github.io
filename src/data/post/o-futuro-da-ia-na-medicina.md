@@ -1,7 +1,7 @@
 ---
 publishDate: 2024-08-18T00:00:00Z
-title: 'O Futuro da IA na Medicina: Transformando o Diagnóstico Oftalmológico'
-excerpt: 'Como a inteligência artificial está revolucionando a medicina, especialmente na oftalmologia, com aplicações práticas que já impactam milhões de pacientes no Brasil.'
+title: "O Futuro da IA na Medicina: Transformando o Diagnóstico Oftalmológico"
+excerpt: "Como a inteligência artificial está revolucionando a medicina, especialmente na oftalmologia, com aplicações práticas que já impactam milhões de pacientes no Brasil."
 image: ~/assets/images/tech_back.jpg
 category: Inteligência Artificial
 tags:
@@ -46,15 +46,19 @@ Atualmente, desenvolvo em parceria com a Dra. Larissa Mansano um framework compl
 Claro que nem tudo são flores. Os principais desafios que enfrentamos incluem:
 
 ### 1. Qualidade dos Dados
+
 A IA é tão boa quanto os dados que a alimentam. No Brasil, temos um histórico de registros médicos inconsistentes, o que dificulta o treinamento de modelos robustos.
 
 ### 2. Regulamentação
+
 O CFM e ANVISA ainda estão definindo frameworks regulatórios para IA médica. É um processo necessário, mas que pode retardar a implementação de soluções já validadas.
 
 ### 3. Aceitação Médica
+
 Alguns profissionais ainda veem a IA como uma ameaça, não como uma ferramenta. A educação continuada é fundamental.
 
 ### 4. Infraestrutura
+
 Muitas instituições ainda não têm a infraestrutura tecnológica necessária para implementar soluções de IA.
 
 ## O Papel do CBO
@@ -84,4 +88,4 @@ O futuro da medicina é inteligente, personalizado e democrático. E estamos con
 
 ---
 
-*João Victor Dias é CTO da WingsAI, consultor tecnológico do Conselho Brasileiro de Oftalmologia e doutorando em Ciências Médicas Oftalmológicas pela FMUSP. Com mais de 12 anos de experiência em IA, lidera projetos que impactam diretamente a vida de milhões de brasileiros.*
+_João Victor Dias é CTO da WingsAI, consultor tecnológico do Conselho Brasileiro de Oftalmologia e doutorando em Ciências Médicas Oftalmológicas pela FMUSP. Com mais de 12 anos de experiência em IA, lidera projetos que impactam diretamente a vida de milhões de brasileiros._

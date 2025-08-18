@@ -112,9 +112,7 @@
                         "type": "number"
                       }
                     },
-                    "required": [
-                      "url"
-                    ],
+                    "required": ["url"],
                     "additionalProperties": false
                   }
                 },
@@ -149,9 +147,7 @@
           "type": "string"
         }
       },
-      "required": [
-        "title"
-      ],
+      "required": ["title"],
       "additionalProperties": false
     }
   },

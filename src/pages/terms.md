@@ -1,6 +1,6 @@
 ---
-title: 'Termos de Uso'
-layout: '~/layouts/MarkdownLayout.astro'
+title: "Termos de Uso"
+layout: "~/layouts/MarkdownLayout.astro"
 ---
 
 _Última atualização_: 18 de agosto de 2024
@@ -34,6 +34,7 @@ Você concorda em usar o Serviço apenas para fins legítimos e de acordo com es
 O Serviço e seu conteúdo original, recursos e funcionalidades são de propriedade exclusiva de João Victor Dias e são protegidos por direitos autorais, marcas registradas e outras leis de propriedade intelectual.
 
 Você não pode:
+
 - Reproduzir, distribuir ou criar trabalhos derivados do nosso conteúdo sem permissão expressa
 - Usar nosso nome, marca ou conteúdo para fins comerciais sem autorização
 - Remover avisos de direitos autorais ou propriedade de qualquer conteúdo
@@ -41,6 +42,7 @@ Você não pode:
 ## Conteúdo do Usuário
 
 Se você enviar comentários, sugestões ou outros conteúdos através do Serviço:
+
 - Você mantém a propriedade do seu conteúdo
 - Você nos concede uma licença não exclusiva para usar, modificar e exibir esse conteúdo
 - Você declara que possui todos os direitos necessários sobre o conteúdo enviado
@@ -48,6 +50,7 @@ Se você enviar comentários, sugestões ou outros conteúdos através do Servi�
 ## Isenção de Responsabilidade
 
 O Serviço é fornecido "como está" e "conforme disponível". Não garantimos que:
+
 - O Serviço atenderá às suas necessidades específicas
 - O Serviço será ininterrupto ou livre de erros
 - Quaisquer erros serão corrigidos
@@ -56,6 +59,7 @@ O Serviço é fornecido "como está" e "conforme disponível". Não garantimos q
 ## Limitação de Responsabilidade
 
 Em nenhuma circunstância João Victor Dias será responsável por quaisquer danos diretos, indiretos, especiais, incidentais ou consequenciais resultantes de:
+
 - Uso ou incapacidade de usar o Serviço
 - Qualquer conteúdo obtido através do Serviço
 - Acesso não autorizado ou alteração de suas transmissões ou dados
@@ -67,6 +71,7 @@ Nosso Serviço pode conter links para sites de terceiros. Não temos controle so
 ## Modificações no Serviço
 
 Reservamo-nos o direito de:
+
 - Modificar ou descontinuar o Serviço a qualquer momento
 - Alterar estes Termos periodicamente
 - Negar acesso ao Serviço a qualquer usuário
@@ -102,4 +107,4 @@ Estes termos estão em conformidade com a Lei Geral de Proteção de Dados (LGPD
 
 ---
 
-*Ao usar nosso Serviço, você reconhece que leu, entendeu e concorda em ficar vinculado a estes Termos de Uso.*
+_Ao usar nosso Serviço, você reconhece que leu, entendeu e concorda em ficar vinculado a estes Termos de Uso._
