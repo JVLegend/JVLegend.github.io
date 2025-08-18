@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://jvlegend.github.io/sitemap-index.xml
