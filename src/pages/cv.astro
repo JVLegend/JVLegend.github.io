@@ -2,8 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 
-// Using image from public folder
-const profileImage = '/images/jv-perfil-olhando-frentecima.JPG';
+import profileImage from '~/assets/images/jv-perfil-olhando-frentecima.JPG';
 
 const metadata = {
   title: 'CV - João Victor Dias',
@@ -17,7 +16,7 @@ const metadata = {
     tagline="Curriculum Vitae"
     title="João Victor Dias"
     subtitle="CTO at WingsAI | PhD Candidate | AI Expert"
-    image={{ src: profileImage, alt: 'João Victor Dias', inferSize: true }}
+    image={{ src: profileImage, alt: 'João Victor Dias' }}
   />
 
   <!-- Content Widget **************** -->
