@@ -17,15 +17,17 @@ const {
   isDark = false,
   classes = {},
   bg = await Astro.slots.render('bg'),
+  noAnimation = false,
 } = Astro.props;
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ''}`} bg={bg}>
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ''}`} bg={bg} noAnimation={noAnimation}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
   <ItemGrid
     items={items}
     columns={columns}
     defaultIcon={defaultIcon}
+    noAnimation={noAnimation}
     classes={{
       container: '',
       title: 'md:text-[1.3rem]',
