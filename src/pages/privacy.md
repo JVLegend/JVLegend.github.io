@@ -1,6 +1,6 @@
 ---
-title: 'Política de Privacidade'
-layout: '~/layouts/MarkdownLayout.astro'
+title: "Política de Privacidade"
+layout: "~/layouts/MarkdownLayout.astro"
 ---
 
 _Última atualização_: 18 de agosto de 2024
@@ -16,6 +16,7 @@ Ao usar nosso Serviço, você concorda com a coleta e uso de informações de ac
 ### Informações Fornecidas Voluntariamente
 
 Quando você entra em contato conosco através de formulários ou e-mail, podemos coletar:
+
 - Nome
 - Endereço de e-mail
 - Empresa
@@ -24,6 +25,7 @@ Quando você entra em contato conosco através de formulários ou e-mail, podemo
 ### Informações Coletadas Automaticamente
 
 Quando você visita nosso site, coletamos automaticamente certas informações, incluindo:
+
 - Endereço IP
 - Tipo de navegador
 - Páginas visitadas
@@ -33,6 +35,7 @@ Quando você visita nosso site, coletamos automaticamente certas informações, 
 ## Como Usamos Suas Informações
 
 Utilizamos as informações coletadas para:
+
 - Responder às suas consultas e solicitações
 - Melhorar nosso website e serviços
 - Enviar informações sobre palestras e eventos (apenas se solicitado)
@@ -41,6 +44,7 @@ Utilizamos as informações coletadas para:
 ## Compartilhamento de Informações
 
 Não vendemos, comercializamos ou transferimos suas informações pessoais para terceiros, exceto:
+
 - Quando necessário para cumprir a lei
 - Para proteger nossos direitos legais
 - Com seu consentimento explícito
@@ -48,6 +52,7 @@ Não vendemos, comercializamos ou transferimos suas informações pessoais para 
 ## Cookies
 
 Nosso site pode usar cookies para melhorar sua experiência. Os cookies são pequenos arquivos armazenados no seu dispositivo que nos ajudam a:
+
 - Lembrar suas preferências
 - Analisar o tráfego do site
 - Personalizar o conteúdo
@@ -61,6 +66,7 @@ Implementamos medidas de segurança apropriadas para proteger suas informações
 ## Seus Direitos
 
 Você tem o direito de:
+
 - Acessar suas informações pessoais
 - Corrigir informações imprecisas
 - Solicitar a exclusão de suas informações
@@ -95,4 +101,4 @@ Esta política é regida pelas leis brasileiras, incluindo a Lei Geral de Prote�
 
 ---
 
-*Esta política foi elaborada para garantir transparência sobre como tratamos suas informações pessoais e está em conformidade com a legislação brasileira de proteção de dados.*
+_Esta política foi elaborada para garantir transparência sobre como tratamos suas informações pessoais e está em conformidade com a legislação brasileira de proteção de dados._

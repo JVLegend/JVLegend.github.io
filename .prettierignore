@@ -1,0 +1,11 @@
+# Generated files
+dist/
+.astro/
+node_modules/
+
+# Build outputs
+*.min.js
+*.min.css
+
+# Dependency files
+package-lock.json
