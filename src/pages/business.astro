@@ -37,11 +37,25 @@ const metadata = {
 
   <!-- Wings AI Section -->
 
-  <Features
-    id="wingsai"
+  <Content
     tagline="Pilar 1"
     title="Wings AI"
-    subtitle="Plataforma de IA especializada em healthcare com foco em automação clínica"
+    image={{
+      src: techBack,
+      alt: 'Wings AI',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ecossistema de IA em 4 Verticais</h3>
+      <p class="mb-4">Portfólio integrado de soluções de inteligência artificial abrangendo múltiplos setores, desde micro-SaaS até educação especializada em saúde.</p>
+    </Fragment>
+  </Content>
+
+  <Features
+    id="wingsai-microsaas"
+    tagline="Vertical 1: MicroSaaS"
+    title="Portfólio de Produtos SaaS com IA"
+    subtitle="Soluções verticais especializadas para diversos setores"
     items={[
       {
         title: 'SmartFin',
@@ -84,6 +98,109 @@ const metadata = {
         description:
           'Plataforma de produtividade pessoal com IA para otimização cognitiva.',
         icon: 'tabler:brain',
+      },
+    ]}
+  />
+
+  <Features
+    id="wingsai-aihouse"
+    tagline="Vertical 2: AI House"
+    title="Soluções Customizadas de IA"
+    subtitle="Desenvolvimento sob medida de sistemas de inteligência artificial para empresas"
+    items={[
+      {
+        title: 'Consultoria em IA',
+        description:
+          'Assessoria estratégica para implementação de soluções de inteligência artificial.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Desenvolvimento Customizado',
+        description:
+          'Criação de modelos de IA personalizados para necessidades específicas de negócio.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Integração de Sistemas',
+        description:
+          'Integração de IA em infraestruturas tecnológicas existentes.',
+        icon: 'tabler:plug',
+      },
+      {
+        title: 'Automação Inteligente',
+        description:
+          'Implementação de processos automatizados com machine learning e IA.',
+        icon: 'tabler:robot',
+      },
+    ]}
+  />
+
+  <Content
+    isReversed
+    tagline="Vertical 3: HealthTech"
+    title="IA Aplicada à Medicina"
+    items={[
+      {
+        title: 'Protocolo Nacional de Imagens Médicas',
+        description: 'Framework nacional para padronização e otimização de qualidade em imagens médicas, desenvolvido com metodologia científica rigorosa.',
+      },
+      {
+        title: 'Framework de Qualidade Diagnóstica',
+        description: 'Algoritmos de IA para avaliação automática de qualidade em imagens oftalmológicas, validados em ambiente clínico.',
+      },
+      {
+        title: 'Automação Clínica Inteligente',
+        description: 'Sistemas de apoio à decisão médica com IA para otimização de diagnósticos e resultados clínicos.',
+      },
+      {
+        title: 'Telemedicina com IA',
+        description: 'Plataforma de atendimento remoto integrada com ferramentas de inteligência artificial para triagem e análise.',
+      },
+    ]}
+    image={{
+      src: coliriosBack,
+      alt: 'HealthTech AI',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Transformação Digital da Prática Médica</h3>
+      Desenvolvimento de soluções de IA para o setor de saúde, com foco em qualidade diagnóstica e evidence-based medicine. Experiência comprovada em pesquisa aplicada e implementação clínica.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Features
+    id="wingsai-educacional"
+    tagline="Vertical 4: Educacional"
+    title="Educação em IA para Profissionais de Saúde"
+    subtitle="Capacitação especializada em inteligência artificial aplicada à medicina"
+    items={[
+      {
+        title: 'Cursos Especializados',
+        description:
+          'Programas de formação em IA médica para profissionais da saúde, do básico ao avançado.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Mentorias Individuais',
+        description:
+          'Acompanhamento personalizado para médicos implementarem IA em suas práticas clínicas.',
+        icon: 'tabler:user-check',
+      },
+      {
+        title: 'Workshops Práticos',
+        description:
+          'Treinamentos hands-on sobre ferramentas de IA aplicadas ao diagnóstico e gestão médica.',
+        icon: 'tabler:tools',
+      },
+      {
+        title: 'Transformação Digital Médica',
+        description:
+          'Capacitação em estratégias de digitalização de consultórios e clínicas com IA.',
+        icon: 'tabler:device-laptop',
       },
     ]}
   />
@@ -193,6 +310,78 @@ const metadata = {
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Expertise em IA Médica</h3>
       Palestrante especialista em aplicações de IA na medicina. 15 anos de experiência + HC-FMUSP + liderança em tecnologia cristã. Temas alinhados com ponte medicina-tecnologia.
+    </Fragment>
+  </Content>
+
+  <!-- R12 EdTech Section -->
+
+  <Features
+    id="r12"
+    tagline="Pilar 5"
+    title="R12: Educação Tech com Impacto Social"
+    subtitle="Formação de jovens talentos em tecnologia para o futuro digital"
+    items={[
+      {
+        title: 'Formação em Programação',
+        description:
+          'Cursos completos de desenvolvimento de software (Python) e service desk para jovens talentos.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Capacitação em IA',
+        description:
+          'Treinamento em inteligência artificial, machine learning e metodologias ágeis.',
+        icon: 'tabler:robot',
+      },
+      {
+        title: 'Inclusão Digital',
+        description:
+          'Programas de inclusão tecnológica em regiões com baixa oferta de educação em tech.',
+        icon: 'tabler:accessible',
+      },
+      {
+        title: 'Desenvolvimento de Soft Skills',
+        description:
+          'Foco em habilidades comportamentais, comunicação e neurociência aplicada à aprendizagem.',
+        icon: 'tabler:users-group',
+      },
+      {
+        title: 'Preparação para o Mercado',
+        description:
+          'Empregabilidade e inserção produtiva de jovens no mercado de tecnologia.',
+        icon: 'tabler:briefcase',
+      },
+      {
+        title: 'Impacto Social e ESG',
+        description:
+          'Alinhamento com ODS 4, 8 e 10 da ONU para desenvolvimento sustentável e responsabilidade social.',
+        icon: 'tabler:world',
+      },
+    ]}
+  />
+
+  <Content
+    isReversed
+    tagline="Sobre a R12"
+    title="Missão e Visão"
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Empoderando a Próxima Geração Tech</h3>
+      <p class="mb-4">A R12 é uma EdTech focada em formar e empoderar jovens preparados para desenvolver o futuro tecnológico da humanidade. Com metodologia híbrida e foco em neurociência, oferecemos 3 níveis de capacitação:</p>
+      <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+        <li><strong>Level 1:</strong> Comunicação e Service Desk (3 meses)</li>
+        <li><strong>Level 2:</strong> Desenvolvimento de Software com Python (5 meses)</li>
+        <li><strong>Level 3:</strong> Programa completo de Tecnologia e Empregabilidade (8 meses)</li>
+      </ul>
+      <p class="mt-4">
+        <a href="https://www.r12.tech/edtech/#ar12" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold">
+          Saiba mais sobre a R12 →
+        </a>
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
