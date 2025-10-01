@@ -8,6 +8,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import techBack from '~/assets/images/tech_back.jpg';
 import coliriosBack from '~/assets/images/colirios_back_1.jpg';
 import pic07 from '~/assets/images/pic07.jpg';
+import digitalMedTwin from '~/assets/images/digitalmedtwin.png';
 
 const metadata = {
   title: 'Negócios - João Victor Dias',
@@ -158,7 +159,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: coliriosBack,
+      src: digitalMedTwin,
       alt: 'HealthTech AI',
     }}
   >
@@ -205,50 +206,11 @@ const metadata = {
     ]}
   />
 
-  <!-- I.A. para Médicos Section -->
-
-  <Content
-    isReversed
-    tagline="Pilar 2"
-    title="GeekVision: Consultório Inteligente"
-    items={[
-      {
-        title: 'Sistemas de Recepção Inteligente',
-        description: 'Algoritmos de processamento automatizado para check-in com validação de dados e integração HIS/EMR.',
-      },
-      {
-        title: 'Analytics e Business Intelligence',
-        description: 'Dashboard em tempo real com KPIs clínicos e inteligência de dados para decisões evidence-based.',
-      },
-      {
-        title: 'Framework de Qualidade em Imagens Médicas',
-        description: 'Algoritmos desenvolvidos em parceria com HC-FMUSP para otimização diagnóstica em oftalmologia.',
-      },
-      {
-        title: 'Plataforma de Telemedicina',
-        description: 'Infraestrutura completa com compliance CFM/LGPD para expansão digital do atendimento.',
-      },
-    ]}
-    image={{
-      src: coliriosBack,
-      alt: 'IA para Médicos',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Framework Integrado de IA Médica</h3>
-      Desenvolvimento de soluções tecnológicas para modernização da prática médica. Expertise comprovada HC-FMUSP com focus em qualidade diagnóstica e otimização de resultados clínicos.
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
   <!-- Instituto Rumo ao Topo Section -->
 
   <Features
     id="instituto"
-    tagline="Pilar 3"
+    tagline="Pilar 2"
     title="Instituto Rumo ao Topo"
     subtitle="Construção de comunidades focadas em fé e tecnologia"
     items={[
@@ -282,7 +244,7 @@ const metadata = {
   <!-- Palestras Section -->
 
   <Content
-    tagline="Pilar 4"
+    tagline="Pilar 3"
     title="Palestras e Keynotes"
     items={[
       {
@@ -317,7 +279,7 @@ const metadata = {
 
   <Features
     id="r12"
-    tagline="Pilar 5"
+    tagline="Pilar 4"
     title="R12: Educação Tech com Impacto Social"
     subtitle="Formação de jovens talentos em tecnologia para o futuro digital"
     items={[
@@ -360,31 +322,6 @@ const metadata = {
     ]}
   />
 
-  <Content
-    isReversed
-    tagline="Sobre a R12"
-    title="Missão e Visão"
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Empoderando a Próxima Geração Tech</h3>
-      <p class="mb-4">A R12 é uma EdTech focada em formar e empoderar jovens preparados para desenvolver o futuro tecnológico da humanidade. Com metodologia híbrida e foco em neurociência, oferecemos 3 níveis de capacitação:</p>
-      <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
-        <li><strong>Level 1:</strong> Comunicação e Service Desk (3 meses)</li>
-        <li><strong>Level 2:</strong> Desenvolvimento de Software com Python (5 meses)</li>
-        <li><strong>Level 3:</strong> Programa completo de Tecnologia e Empregabilidade (8 meses)</li>
-      </ul>
-      <p class="mt-4">
-        <a href="https://www.r12.tech/edtech/#ar12" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold">
-          Saiba mais sobre a R12 →
-        </a>
-      </p>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
@@ -404,7 +341,7 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      Interessado em<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Colaboração?</span>
+      Interessado em<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"> Colaboração?</span>
     </Fragment>
 
     <Fragment slot="subtitle">
