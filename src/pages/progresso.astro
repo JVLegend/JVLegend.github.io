@@ -1,0 +1,258 @@
+---
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Progresso e Inovação - A Grande Estagnação',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Progresso e Inovação"
+    image={{
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Progresso Tecnológico',
+      width: 2070,
+      height: 1380,
+    }}
+  >
+    <Fragment slot="title">
+      O Movimento do Progresso e <br />
+      <span class="text-accent dark:text-white">A Grande Estagnação</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Explorando a desaceleração do progresso tecnológico nas últimas décadas e as soluções para superá-la.
+      Apesar dos avanços científicos e tecnológicos, o crescimento econômico tem sido limitado devido a fatores
+      como custos crescentes de energia, financeirização excessiva e barreiras regulatórias.
+    </Fragment>
+  </Hero>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Desaceleração Tecnológica',
+        description:
+          'O progresso tecnológico desacelerou nas últimas décadas devido ao aumento dos custos de energia, financeirização excessiva e falta de transparência regulatória.',
+        icon: 'tabler:trending-down',
+      },
+      {
+        title: 'Progresso Limitado',
+        description:
+          'Nos últimos 50 anos, o progresso significativo ocorreu principalmente em tecnologia da informação, mas não tanto em outras áreas críticas.',
+        icon: 'tabler:alert-triangle',
+      },
+      {
+        title: 'Crise Energética dos Anos 70',
+        description:
+          'A crise do petróleo de 1970, globalização e competição aumentada por recursos contribuíram para limitar o crescimento econômico.',
+        icon: 'tabler:flame-off',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80',
+      alt: 'A Grande Estagnação',
+      width: 870,
+      height: 580,
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        A Grande Estagnação
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Setores em Estagnação"
+    subtitle="Áreas onde o progresso desacelerou significativamente nas últimas décadas"
+    columns={2}
+    items={[
+      {
+        title: 'Indústria Aeroespacial',
+        description:
+          'As velocidades máximas de aeronaves não aumentaram recentemente. No entanto, há potencial para superar a estagnação devido a avanços em materiais, computação e iniciativas como a Boom Supersonic.',
+        icon: 'tabler:plane',
+      },
+      {
+        title: 'Construção Civil',
+        description:
+          'A construção tornou-se mais cara e lenta. Os custos de terrenos, mão de obra e materiais aumentaram em bases ajustadas pela inflação.',
+        icon: 'tabler:building',
+      },
+      {
+        title: 'Custos de Energia',
+        description:
+          'Aumentos nos custos de energia têm sido um fator limitante significativo para o crescimento econômico e o desenvolvimento tecnológico.',
+        icon: 'tabler:bolt',
+      },
+      {
+        title: 'Burocracia Regulatória',
+        description:
+          'Falta de transparência da FDA e outras agências reguladoras tem criado barreiras significativas para inovação radical.',
+        icon: 'tabler:file-certificate',
+      },
+    ]}
+  />
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="Soluções Regulatórias para Desbloquear Progresso"
+    subtitle="Inovação radical precisa de ambientes regulatórios compatíveis. Investimento necessário em saúde, habitação, energia e transporte."
+    items={[
+      {
+        title: 'Sandboxes Regulatórios',
+        description:
+          'Criar ambientes controlados onde empresas inovadoras podem testar novas tecnologias com supervisão regulatória flexível.',
+      },
+      {
+        title: 'Mercados de Previsão de Políticas',
+        description:
+          'Utilizar mercados preditivos para avaliar o impacto potencial de novas políticas antes da implementação completa.',
+      },
+      {
+        title: 'Regulação Assistida por IA',
+        description:
+          'Empregar inteligência artificial para tornar processos regulatórios mais eficientes, transparentes e adaptáveis à inovação.',
+      },
+      {
+        title: 'Prêmios Regulatórios',
+        description:
+          'Incentivar soluções inovadoras através de prêmios para empresas que demonstrem conformidade regulatória de formas novas e mais eficientes.',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Avanços em Materiais',
+        description:
+          'Novos materiais compostos e processos de fabricação avançados estão abrindo possibilidades antes impossíveis na engenharia.',
+        icon: 'tabler:atom',
+      },
+      {
+        title: 'Poder Computacional',
+        description:
+          'Capacidade computacional exponencialmente maior permite simulações complexas e otimizações que aceleram a inovação.',
+        icon: 'tabler:cpu',
+      },
+      {
+        title: 'Aceitação de Risco',
+        description:
+          'Maior disposição para assumir riscos calculados em setores estagnados, equilibrando segurança com inovação.',
+        icon: 'tabler:target-arrow',
+      },
+      {
+        title: 'Novas Iniciativas',
+        description:
+          'Empresas como Boom Supersonic demonstram que é possível desafiar a estagnação com visão ousada e tecnologia moderna.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80',
+      alt: 'Superando a Estagnação',
+      width: 870,
+      height: 580,
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Potencial para Superar a Estagnação
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Mudança de Mentalidade"
+    subtitle="Do pessimismo indefinido ao otimismo definido"
+    columns={3}
+    items={[
+      {
+        title: 'Narrativa Dominante',
+        description:
+          'A narrativa atual é de pessimismo indefinido - acreditamos que o futuro será pior, mas não sabemos especificamente como.',
+        icon: 'tabler:mood-sad',
+      },
+      {
+        title: 'Necessidade de Mudança',
+        description:
+          'Precisamos mudar para uma mentalidade de otimismo definido - acreditar que podemos construir um futuro melhor e ter planos específicos de como fazer isso.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Habilitando o Progresso',
+        description:
+          'Somente com otimismo definido podemos mobilizar os recursos, talentos e vontade política necessários para impulsionar o verdadeiro progresso.',
+        icon: 'tabler:trending-up',
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Áreas Críticas para Investimento"
+    subtitle="Setores que precisam de atenção urgente e investimento em inovação"
+    columns={2}
+    items={[
+      {
+        title: 'Saúde',
+        description:
+          'Modernização de processos regulatórios, aceleração de aprovações de medicamentos e terapias, e adoção de tecnologias emergentes.',
+        icon: 'tabler:heartbeat',
+      },
+      {
+        title: 'Habitação',
+        description:
+          'Simplificação de regulamentos de construção, adoção de métodos de construção modulares e pré-fabricados, e redução de barreiras burocráticas.',
+        icon: 'tabler:home',
+      },
+      {
+        title: 'Energia',
+        description:
+          'Investimento em energias renováveis, nuclear de próxima geração, e tecnologias de armazenamento para garantir energia abundante e acessível.',
+        icon: 'tabler:solar-panel',
+      },
+      {
+        title: 'Transporte',
+        description:
+          'Desenvolvimento de transporte supersônico, veículos autônomos, hyperloop e outras tecnologias que podem revolucionar a mobilidade.',
+        icon: 'tabler:car',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Construindo um Futuro de Progresso Acelerado"
+    subtitle="O progresso não é inevitável - é algo que devemos escolher criar ativamente. Ao abordar obstáculos regulatórios, investir em setores críticos e adotar uma mentalidade de otimismo definido, podemos superar a Grande Estagnação e inaugurar uma nova era de inovação e prosperidade."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Entre em Contato',
+        href: '/contact',
+      },
+    ]}
+  />
+</Layout>

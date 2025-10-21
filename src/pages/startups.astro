@@ -1,0 +1,281 @@
+---
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Startups e Empreendedorismo',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Startups e Empreendedorismo"
+    image={{
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Empreendedorismo e Startups',
+      width: 2070,
+      height: 1380,
+    }}
+  >
+    <Fragment slot="title">
+      Construindo Startups que <br />
+      <span class="text-accent dark:text-white">Transformam o Mundo</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Recursos curados, conselhos práticos e insights de grandes fundadores e investidores para ajudar
+      empreendedores a construir empresas escaláveis e impactantes que melhoram significativamente a sociedade.
+    </Fragment>
+  </Hero>
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="Princípios Fundamentais para Startups"
+    subtitle="Conselhos essenciais para empreendedores que desejam construir empresas de sucesso"
+    items={[
+      {
+        title: 'Não Crie uma Startup Apenas por Criar',
+        description:
+          'Inicie uma startup somente se você arde em desejo de resolver um problema específico e construir uma grande solução. A motivação genuína é fundamental para superar os inevitáveis desafios.',
+      },
+      {
+        title: 'Converse com Seus Usuários',
+        description:
+          'Tente entender o que seus usuários realmente querem. Eles não dirão exatamente o que você deve construir, mas se você ouvir atentamente, compreenderá suas necessidades e desejos profundos.',
+      },
+      {
+        title: 'Construa e Lance Rápido',
+        description:
+          'Comece a construir um protótipo/MVP e lance para usuários potenciais o mais rápido possível. Isso pode ser tão simples quanto uma landing page onde pessoas podem se inscrever em uma lista de espera.',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Ideias "Zero to One"',
+        description:
+          'Foque em ideias altamente escaláveis que criam algo completamente novo, não apenas melhorias incrementais (de 1 para n).',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Impacto na Sociedade',
+        description:
+          'Construa soluções que melhorem significativamente a sociedade, não apenas que gerem receita. O impacto genuíno leva ao sucesso sustentável.',
+        icon: 'tabler:world',
+      },
+      {
+        title: 'Mentalidade de Crescimento',
+        description:
+          'Mentes brilhantes com paixão genuína e disposição para aprender rapidamente superam experiência prévia em muitos casos.',
+        icon: 'tabler:brain',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80',
+      alt: 'Inovação e Empreendedorismo',
+      width: 870,
+      height: 580,
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Construindo Algo Significativo
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Recursos Essenciais de Grandes Fundadores"
+    subtitle="Conteúdo curado dos melhores empreendedores e investidores do mundo"
+    columns={3}
+    items={[
+      {
+        title: 'Patrick Collison (Stripe)',
+        description:
+          'Cultura da Stripe e como contratar - insights sobre construir equipes de alto desempenho e cultura organizacional forte.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Brian Chesky (Airbnb)',
+        description:
+          'Cultura com Airbnb e Sequoia Capital - como construir e preservar cultura em empresas de rápido crescimento.',
+        icon: 'tabler:home-heart',
+      },
+      {
+        title: '"Don\'t Fuck Up the Culture"',
+        description:
+          'Brian Chesky sobre a importância crítica de proteger a cultura da empresa conforme ela escala.',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Programa de Fellowship e Grants"
+    subtitle="Oportunidades de financiamento e apoio para empreendedores"
+    columns={2}
+    items={[
+      {
+        title: 'Emergent Ventures Fellowship',
+        description:
+          'Programa de fellowship e grant do Mercatus Center que busca apoiar empreendedores e mentes brilhantes com ideias altamente escaláveis, "zero to one", para melhorar significativamente a sociedade.',
+        icon: 'tabler:award',
+      },
+      {
+        title: 'Apoio a Inovadores',
+        description:
+          'Fellowships oferecem não apenas capital, mas também mentoria, rede de contatos e validação de ideias que podem acelerar o crescimento de startups promissoras.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Validação Rápida',
+        description:
+          'Teste suas hipóteses o mais rápido possível com MVPs simples. Aprendizado é mais valioso que perfeição nas fases iniciais.',
+        icon: 'tabler:checkbox',
+      },
+      {
+        title: 'Iteração Baseada em Feedback',
+        description:
+          'Use feedback de usuários reais para iterar rapidamente. Dados qualitativos de conversas são tão importantes quanto métricas.',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Foco Implacável',
+        description:
+          'Diga não para a maioria das oportunidades. Foco extremo em resolver um problema central é melhor que dispersão.',
+        icon: 'tabler:target',
+      },
+      {
+        title: 'Distribuição é Chave',
+        description:
+          'Um produto excelente com distribuição medíocre perde para um produto bom com distribuição excelente. Pense em distribuição desde o dia 1.',
+        icon: 'tabler:share',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80',
+      alt: 'Execução de Startup',
+      width: 870,
+      height: 580,
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Execução e Crescimento
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Áreas de Foco para Startups de Impacto"
+    subtitle="Setores com alto potencial de criação de valor e impacto social"
+    columns={3}
+    items={[
+      {
+        title: 'Tecnologia de Saúde',
+        description:
+          'Soluções que democratizam acesso à saúde de qualidade, aceleram diagnósticos e tornam tratamentos mais eficazes.',
+        icon: 'tabler:heartbeat',
+      },
+      {
+        title: 'IA e Automação',
+        description:
+          'Ferramentas que amplificam capacidades humanas e resolvem problemas complexos em escala.',
+        icon: 'tabler:robot',
+      },
+      {
+        title: 'Clima e Sustentabilidade',
+        description:
+          'Tecnologias que endereçam mudanças climáticas e promovem desenvolvimento sustentável.',
+        icon: 'tabler:leaf',
+      },
+      {
+        title: 'Educação e Aprendizado',
+        description:
+          'Plataformas que personalizam educação e tornam aprendizado de qualidade acessível globalmente.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Fintech e Inclusão',
+        description:
+          'Serviços financeiros que incluem populações desbancarizadas e democratizam acesso a capital.',
+        icon: 'tabler:coin',
+      },
+      {
+        title: 'Infraestrutura e Energia',
+        description:
+          'Soluções que tornam infraestrutura mais eficiente e energia mais limpa e abundante.',
+        icon: 'tabler:bolt',
+      },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Construindo para o Longo Prazo"
+    subtitle="Princípios para criar empresas duradouras e impactantes"
+    columns={3}
+    items={[
+      {
+        title: 'Cultura Primeiro',
+        description:
+          'Cultura não é sobre mesas de pingue-pongue. É sobre valores compartilhados, padrões de excelência e como decisões são tomadas.',
+        icon: 'tabler:heart',
+      },
+      {
+        title: 'Contratação Excepcional',
+        description:
+          'Nos primeiros anos, gaste 30-50% do seu tempo contratando. Cada contratação molda a empresa por anos.',
+        icon: 'tabler:user-star',
+      },
+      {
+        title: 'Visão de Longo Prazo',
+        description:
+          'Otimize para impacto em 10 anos, não para valorização no próximo trimestre. Empresas duradouras são construídas com paciência.',
+        icon: 'tabler:telescope',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Pronto para Construir Algo Grande?"
+    subtitle="Empreendedorismo não é para todos, mas para aqueles que sentem a chamada de resolver problemas importantes e criar impacto duradouro, não há jornada mais recompensadora. Se você tem uma ideia que pode melhorar significativamente a vida das pessoas, este é o momento de começar."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Vamos Conversar',
+        href: '/contact',
+      },
+    ]}
+  />
+</Layout>

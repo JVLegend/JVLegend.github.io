@@ -26,6 +26,24 @@ const interests = [
     tags: ['Biotech', 'Healthspan', 'Pesquisa Médica', 'Biologia do Envelhecimento'],
     icon: 'tabler:heart-plus',
   },
+  {
+    title: 'Progresso e Inovação',
+    description:
+      'Investigando a Grande Estagnação tecnológica e soluções para desbloquear progresso acelerado. Foco em reforma regulatória, mudança de mentalidade e investimento em setores críticos.',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    href: '/progresso',
+    tags: ['Inovação', 'Regulação', 'Crescimento Econômico', 'Otimismo'],
+    icon: 'tabler:trending-up',
+  },
+  {
+    title: 'Startups e Empreendedorismo',
+    description:
+      'Recursos e insights para construir startups escaláveis e impactantes. Conselhos de grandes fundadores, princípios fundamentais e foco em empresas que transformam a sociedade.',
+    image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    href: '/startups',
+    tags: ['Zero to One', 'Scale-ups', 'Cultura', 'Impacto Social'],
+    icon: 'tabler:rocket',
+  },
 ];
 ---
 
@@ -37,6 +55,8 @@ const interests = [
     image={{
       src: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
       alt: 'Tecnologia e Inovação',
+      width: 2070,
+      height: 1380,
     }}
   >
     <Fragment slot="title">
@@ -190,7 +210,7 @@ const interests = [
         title: 'Questões Éticas Fundamentais',
         description:
           'Áreas que levantam questões profundas sobre o que significa ser humano e como queremos moldar nosso futuro.',
-        icon: 'tabler:balance',
+        icon: 'tabler:scale',
       },
       {
         title: 'Democratização do Conhecimento',
