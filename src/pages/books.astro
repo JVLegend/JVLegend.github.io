@@ -19,8 +19,24 @@ const metadata = {
     tagline="Leituras"
     title="Livros Recomendados"
     subtitle="Uma curadoria pessoal de livros que moldaram minha jornada"
-    image={{ src: pic06, alt: 'Livros' }}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-gradient-to-br from-amber-900/30 via-orange-900/30 to-red-900/30"></div>
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="books-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <rect x="30" y="20" width="15" height="60" stroke="white" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <rect x="50" y="15" width="15" height="65" stroke="white" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <rect x="70" y="25" width="15" height="55" stroke="white" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <line x1="30" y1="40" x2="45" y2="40" stroke="white" stroke-width="1" opacity="0.4"/>
+            <line x1="50" y1="35" x2="65" y2="35" stroke="white" stroke-width="1" opacity="0.4"/>
+            <line x1="70" y1="45" x2="85" y2="45" stroke="white" stroke-width="1" opacity="0.4"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#books-pattern)"/>
+      </svg>
+    </Fragment>
+  </Hero2>
 
   <!-- Introduction -->
 
@@ -80,57 +96,50 @@ const metadata = {
 
   <!-- Não-Ficção Section -->
 
-  <Content
-    isReversed
+  <Features
+    id="nao-ficcao"
     tagline="Não-Ficção"
-    title="Conhecimento Aplicado"
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Desenvolvimento Pessoal e Espiritual</h3>
-      <p class="mb-6">Livros práticos que oferecem ferramentas concretas para crescimento em liderança, fé e estratégia.</p>
-
-      <div class="space-y-6">
-        <div class="border-l-4 border-blue-600 pl-4">
-          <h4 class="text-lg font-bold mb-2">As 48 Leis do Poder</h4>
-          <p class="text-gray-600 dark:text-gray-300">Comentário: [Espaço para seu comentário pessoal sobre este livro]</p>
-        </div>
-
-        <div class="border-l-4 border-blue-600 pl-4">
-          <h4 class="text-lg font-bold mb-2">Responsabilidade Extrema</h4>
-          <p class="text-gray-600 dark:text-gray-300">Comentário: [Espaço para seu comentário pessoal sobre este livro]</p>
-        </div>
-
-        <div class="border-l-4 border-blue-600 pl-4">
-          <h4 class="text-lg font-bold mb-2">Surpreendido pelo Temor</h4>
-          <p class="text-gray-600 dark:text-gray-300">Comentário: [Espaço para seu comentário pessoal sobre este livro]</p>
-        </div>
-
-        <div class="border-l-4 border-blue-600 pl-4">
-          <h4 class="text-lg font-bold mb-2">Homem ao Máximo</h4>
-          <p class="text-gray-600 dark:text-gray-300">Comentário: [Espaço para seu comentário pessoal sobre este livro]</p>
-        </div>
-
-        <div class="border-l-4 border-blue-600 pl-4">
-          <h4 class="text-lg font-bold mb-2">Deus Responde Orações</h4>
-          <p class="text-gray-600 dark:text-gray-300">Comentário: [Espaço para seu comentário pessoal sobre este livro]</p>
-        </div>
-
-        <div class="border-l-4 border-blue-600 pl-4">
-          <h4 class="text-lg font-bold mb-2">O Verdadeiro Evangelho</h4>
-          <p class="text-gray-600 dark:text-gray-300">Comentário: [Espaço para seu comentário pessoal sobre este livro]</p>
-        </div>
-
-        <div class="border-l-4 border-blue-600 pl-4">
-          <h4 class="text-lg font-bold mb-2">A Batalha do Apocalipse</h4>
-          <p class="text-gray-600 dark:text-gray-300">Comentário: [Espaço para seu comentário pessoal sobre este livro]</p>
-        </div>
-      </div>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
+    title="Desenvolvimento Pessoal e Espiritual"
+    subtitle="Livros práticos que oferecem ferramentas concretas para crescimento em liderança, fé e estratégia"
+    columns={2}
+    items={[
+      {
+        title: 'As 48 Leis do Poder',
+        description: 'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
+        icon: 'tabler:crown',
+      },
+      {
+        title: 'Responsabilidade Extrema',
+        description: 'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
+        icon: 'tabler:target',
+      },
+      {
+        title: 'Surpreendido pelo Temor',
+        description: 'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
+        icon: 'tabler:sparkles',
+      },
+      {
+        title: 'Homem ao Máximo',
+        description: 'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
+        icon: 'tabler:flame',
+      },
+      {
+        title: 'Deus Responde Orações',
+        description: 'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
+        icon: 'tabler:heart',
+      },
+      {
+        title: 'O Verdadeiro Evangelho',
+        description: 'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
+        icon: 'tabler:book-2',
+      },
+      {
+        title: 'A Batalha do Apocalipse',
+        description: 'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
+        icon: 'tabler:shield',
+      },
+    ]}
+  />
 
   <!-- Biografias Section -->
 
