@@ -19,3 +19,161 @@ const metadata = {
     tagline="Leituras"
     title="Livros Recomendados"
     subtitle="Uma curadoria pessoal de livros que moldaram minha jornada"
+    image={{ src: pic06, alt: 'Livros' }}
+  />
+
+  <!-- Introduction -->
+
+  <Content
+    tagline="Sobre as Recomendações"
+    title="Minha Biblioteca Pessoal"
+  >
+    <Fragment slot="content">
+      <div class="max-w-3xl mx-auto">
+        <p class="mb-4">Ao longo dos anos, certos livros marcaram profundamente minha trajetória pessoal e profissional. Esta é uma seleção cuidadosa de obras que influenciaram meu pensamento em liderança, fé, tecnologia e visão de mundo.</p>
+
+        <p>Cada livro aqui listado vem acompanhado de um breve comentário sobre seu impacto e por que recomendo sua leitura.</p>
+      </div>
+    </Fragment>
+  </Content>
+
+  <!-- Ficção Section -->
+
+  <Features
+    id="ficcao"
+    tagline="Ficção"
+    title="Narrativas que Inspiram"
+    subtitle="Histórias épicas que expandem a imaginação e trazem reflexões profundas"
+    items={[
+      {
+        title: 'A Primeira Lei',
+        description:
+          'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
+        icon: 'tabler:book',
+      },
+      {
+        title: 'As Crônicas de Olam',
+        description:
+          'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
+        icon: 'tabler:book',
+      },
+      {
+        title: 'Palavras de Radiância',
+        description:
+          'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
+        icon: 'tabler:book',
+      },
+      {
+        title: 'O Senhor dos Anéis',
+        description:
+          'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
+        icon: 'tabler:book',
+      },
+      {
+        title: 'Paraíso Perdido',
+        description:
+          'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
+        icon: 'tabler:book',
+      },
+    ]}
+  />
+
+  <!-- Não-Ficção Section -->
+
+  <Content
+    isReversed
+    tagline="Não-Ficção"
+    title="Conhecimento Aplicado"
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Desenvolvimento Pessoal e Espiritual</h3>
+      <p class="mb-6">Livros práticos que oferecem ferramentas concretas para crescimento em liderança, fé e estratégia.</p>
+
+      <div class="space-y-6">
+        <div class="border-l-4 border-blue-600 pl-4">
+          <h4 class="text-lg font-bold mb-2">As 48 Leis do Poder</h4>
+          <p class="text-gray-600 dark:text-gray-300">Comentário: [Espaço para seu comentário pessoal sobre este livro]</p>
+        </div>
+
+        <div class="border-l-4 border-blue-600 pl-4">
+          <h4 class="text-lg font-bold mb-2">Responsabilidade Extrema</h4>
+          <p class="text-gray-600 dark:text-gray-300">Comentário: [Espaço para seu comentário pessoal sobre este livro]</p>
+        </div>
+
+        <div class="border-l-4 border-blue-600 pl-4">
+          <h4 class="text-lg font-bold mb-2">Surpreendido pelo Temor</h4>
+          <p class="text-gray-600 dark:text-gray-300">Comentário: [Espaço para seu comentário pessoal sobre este livro]</p>
+        </div>
+
+        <div class="border-l-4 border-blue-600 pl-4">
+          <h4 class="text-lg font-bold mb-2">Homem ao Máximo</h4>
+          <p class="text-gray-600 dark:text-gray-300">Comentário: [Espaço para seu comentário pessoal sobre este livro]</p>
+        </div>
+
+        <div class="border-l-4 border-blue-600 pl-4">
+          <h4 class="text-lg font-bold mb-2">Deus Responde Orações</h4>
+          <p class="text-gray-600 dark:text-gray-300">Comentário: [Espaço para seu comentário pessoal sobre este livro]</p>
+        </div>
+
+        <div class="border-l-4 border-blue-600 pl-4">
+          <h4 class="text-lg font-bold mb-2">O Verdadeiro Evangelho</h4>
+          <p class="text-gray-600 dark:text-gray-300">Comentário: [Espaço para seu comentário pessoal sobre este livro]</p>
+        </div>
+
+        <div class="border-l-4 border-blue-600 pl-4">
+          <h4 class="text-lg font-bold mb-2">A Batalha do Apocalipse</h4>
+          <p class="text-gray-600 dark:text-gray-300">Comentário: [Espaço para seu comentário pessoal sobre este livro]</p>
+        </div>
+      </div>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Biografias Section -->
+
+  <Features
+    id="biografias"
+    tagline="Biografias"
+    title="Vidas que Transformaram o Mundo"
+    subtitle="Histórias reais de pessoas extraordinárias que deixaram legados duradouros"
+    items={[
+      {
+        title: 'Nikola Tesla',
+        description:
+          'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
+        icon: 'tabler:bulb',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Ver Mais Conteúdo',
+        href: '/blog',
+        icon: 'tabler:book-2',
+      },
+      {
+        variant: 'secondary',
+        text: 'Entre em Contato',
+        href: '/contact',
+        icon: 'tabler:mail',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Gostou das recomendações?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Explore mais conteúdo no blog ou entre em contato para trocar ideias
+      <br class="hidden md:inline" />sobre livros, liderança e tecnologia.
+    </Fragment>
+  </CallToAction>
+</Layout>
