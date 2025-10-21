@@ -176,30 +176,94 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Features3 Widget ************** -->
+  <!-- Features2 Widget - Learning Resources ************** -->
 
-  <Features3
-    title="Recursos para Aprender sobre IA"
-    subtitle="Caminhos para aprofundar seus conhecimentos em Inteligência Artificial e Machine Learning"
-    columns={3}
+  <Features2
+    title="Recursos Recomendados para Aprender IA"
+    subtitle="Cursos, livros e plataformas curadas para aprofundar seus conhecimentos"
+    columns={2}
     items={[
       {
-        title: 'Cursos Online',
+        title: 'Coursera - Machine Learning Specialization',
         description:
-          'Plataformas como Coursera e Udacity oferecem cursos abrangentes desde introdução até tópicos avançados em IA e ML.',
+          'Curso do Andrew Ng, uma das melhores introduções a ML. Cobre algoritmos fundamentais, redes neurais e aplicações práticas.',
         icon: 'tabler:school',
       },
       {
-        title: 'Conferências e Meetups',
+        title: 'Fast.ai - Practical Deep Learning',
         description:
-          'Participe de eventos da comunidade de IA para networking, aprendizado das últimas tendências e discussões sobre aplicações práticas.',
-        icon: 'tabler:users-group',
+          'Abordagem top-down para aprender deep learning rapidamente. Focado em aplicações práticas desde a primeira aula.',
+        icon: 'tabler:code',
       },
       {
-        title: 'Literatura Fundamental',
+        title: 'Livro: "AI: A Modern Approach"',
         description:
-          'Comece com "AI: A Modern Approach" (Russell & Norvig) - referência essencial para fundamentos teóricos e práticos de IA.',
+          'Russell & Norvig - A bíblia da IA. Referência essencial cobrindo fundamentos teóricos, algoritmos e aplicações desde busca até aprendizado.',
         icon: 'tabler:book',
+      },
+      {
+        title: 'Livro: "Deep Learning" (Goodfellow)',
+        description:
+          'Ian Goodfellow, Yoshua Bengio e Aaron Courville - Texto definitivo sobre deep learning, matemática por trás e implementações.',
+        icon: 'tabler:book-2',
+      },
+      {
+        title: 'Papers with Code',
+        description:
+          'Plataforma conectando papers de pesquisa com implementações de código. Excelente para acompanhar o estado da arte.',
+        icon: 'tabler:file-code',
+      },
+      {
+        title: 'Hugging Face',
+        description:
+          'Hub de modelos pré-treinados e datasets. Comunidade ativa e ferramentas para NLP, visão computacional e mais.',
+        icon: 'tabler:robot',
+      },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Conferências e Comunidades"
+    subtitle="Onde se conectar com pesquisadores e profissionais de IA"
+    columns={3}
+    items={[
+      {
+        title: 'NeurIPS',
+        description:
+          'Conference on Neural Information Processing Systems - principal conferência de machine learning e neurociência computacional.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'ICML',
+        description:
+          'International Conference on Machine Learning - uma das top 3 conferências de ML com pesquisa de ponta.',
+        icon: 'tabler:chart-dots',
+      },
+      {
+        title: 'ICLR',
+        description:
+          'International Conference on Learning Representations - foco em deep learning e representações neurais.',
+        icon: 'tabler:network',
+      },
+      {
+        title: 'AI Alignment Forum',
+        description:
+          'Comunidade focada em segurança e alinhamento de IA, discussões técnicas sobre AGI segura.',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'r/MachineLearning',
+        description:
+          'Subreddit ativo com discussões sobre papers recentes, implementações e carreiras em ML.',
+        icon: 'tabler:brand-reddit',
+      },
+      {
+        title: 'Meetups Locais',
+        description:
+          'Busque por AI/ML meetups na sua cidade - networking presencial é valioso para troca de experiências.',
+        icon: 'tabler:users',
       },
     ]}
   />
