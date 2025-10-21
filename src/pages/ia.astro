@@ -1,0 +1,260 @@
+---
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Inteligência Artificial - IA e Machine Learning',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Inteligência Artificial"
+    image={{
+      src: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Inteligência Artificial',
+    }}
+  >
+    <Fragment slot="title">
+      Inteligência Artificial Geral (AGI) <br />
+      <span class="text-accent dark:text-white">e Machine Learning</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      A Inteligência Artificial representa a capacidade de um computador realizar tarefas que normalmente exigiriam
+      inteligência humana, como compreender linguagem natural e reconhecer objetos. Machine learning é um subconjunto
+      da IA que permite que computadores aprendam com dados e melhorem seu desempenho ao longo do tempo.
+    </Fragment>
+  </Hero>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Definição de IA',
+        description:
+          'Capacidade de computadores realizarem tarefas que tradicionalmente exigem inteligência humana, incluindo compreensão de linguagem natural, reconhecimento de padrões e tomada de decisões.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Machine Learning',
+        description:
+          'Subconjunto da IA que permite que sistemas aprendam e melhorem a partir de dados sem serem explicitamente programados para cada tarefa específica.',
+        icon: 'tabler:chart-dots',
+      },
+      {
+        title: 'Aplicações Práticas',
+        description:
+          'IA e ML estão sendo usados para desenvolver carros autônomos, melhorar diagnósticos médicos e criar experiências online mais personalizadas.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80',
+      alt: 'IA e Machine Learning',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Entendendo IA e Machine Learning
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Framework para AGI"
+    subtitle="Uma taxonomia de 5 níveis de desempenho e 2 níveis de generalidade para acompanhar o progresso em direção à Inteligência Artificial Geral"
+    columns={2}
+    items={[
+      {
+        title: 'Escopo de Capacidade (Generalidade)',
+        description:
+          'Avaliação do quão ampla é a capacidade da IA em realizar diferentes tipos de tarefas, desde tarefas específicas até capacidades totalmente gerais.',
+        icon: 'tabler:arrows-maximize',
+      },
+      {
+        title: 'Qualidade de Desempenho',
+        description:
+          'Medição da qualidade com que a IA executa tarefas em comparação com o desempenho humano, desde desempenho básico até superação de especialistas.',
+        icon: 'tabler:trophy',
+      },
+      {
+        title: 'AGI Não Requer Consciência',
+        description:
+          'Alcançar AGI não necessita de pensamento similar ao humano ou consciência, mas deve focar no escopo de capacidades e qualidade de desempenho.',
+        icon: 'tabler:bulb-off',
+      },
+      {
+        title: 'Taxonomia de 5 Níveis',
+        description:
+          'Sistema de classificação que permite rastrear o progresso da IA desde sistemas estreitos até AGI completa, com métricas claras de evolução.',
+        icon: 'tabler:stairs-up',
+      },
+    ]}
+  />
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="Segurança e Alinhamento de IA"
+    subtitle="Três áreas-chave para garantir que sistemas de IA sejam seguros e benéficos para a humanidade"
+    items={[
+      {
+        title: 'Controle',
+        description:
+          'Sistemas de IA devem permanecer sob controle humano, com mecanismos robustos para supervisão, interrupção e governança de suas ações e decisões.',
+      },
+      {
+        title: 'Valores e Objetivos',
+        description:
+          'IA deve estar alinhada com valores humanos fundamentais, assegurando que seus objetivos sejam compatíveis com o bem-estar e prosperidade da humanidade.',
+      },
+      {
+        title: 'Promoção do Bem-Estar Humano',
+        description:
+          'Sistemas de IA devem ser projetados explicitamente para promover o bem-estar humano e prevenir danos, com salvaguardas contra uso malicioso ou consequências não intencionais.',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Carros Autônomos',
+        description:
+          'IA permite que veículos naveguem de forma segura, processando dados de sensores em tempo real e tomando decisões complexas no trânsito.',
+        icon: 'tabler:car',
+      },
+      {
+        title: 'Saúde e Diagnóstico',
+        description:
+          'Machine learning melhora diagnósticos médicos, análise de imagens, descoberta de medicamentos e personalização de tratamentos.',
+        icon: 'tabler:heartbeat',
+      },
+      {
+        title: 'Experiências Personalizadas',
+        description:
+          'Algoritmos de IA criam experiências online personalizadas, desde recomendações de conteúdo até assistentes virtuais inteligentes.',
+        icon: 'tabler:user-check',
+      },
+      {
+        title: 'Processamento de Linguagem Natural',
+        description:
+          'IA compreende e gera linguagem humana, possibilitando chatbots, tradução automática e análise de sentimentos.',
+        icon: 'tabler:message-language',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80',
+      alt: 'Aplicações de IA',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Aplicações da Inteligência Artificial
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Recursos para Aprender sobre IA"
+    subtitle="Caminhos para aprofundar seus conhecimentos em Inteligência Artificial e Machine Learning"
+    columns={3}
+    items={[
+      {
+        title: 'Cursos Online',
+        description:
+          'Plataformas como Coursera e Udacity oferecem cursos abrangentes desde introdução até tópicos avançados em IA e ML.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Conferências e Meetups',
+        description:
+          'Participe de eventos da comunidade de IA para networking, aprendizado das últimas tendências e discussões sobre aplicações práticas.',
+        icon: 'tabler:users-group',
+      },
+      {
+        title: 'Literatura Fundamental',
+        description:
+          'Comece com "AI: A Modern Approach" (Russell & Norvig) - referência essencial para fundamentos teóricos e práticos de IA.',
+        icon: 'tabler:book',
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Áreas de Pesquisa e Desenvolvimento"
+    subtitle="Fronteiras da pesquisa em IA que estão moldando o futuro da tecnologia"
+    columns={3}
+    items={[
+      {
+        title: 'Deep Learning',
+        description:
+          'Redes neurais profundas que permitem avanços em visão computacional, processamento de linguagem e sistemas de recomendação.',
+        icon: 'tabler:network',
+      },
+      {
+        title: 'Reinforcement Learning',
+        description:
+          'Agentes que aprendem através de tentativa e erro, alcançando desempenho sobre-humano em jogos e robótica.',
+        icon: 'tabler:robot',
+      },
+      {
+        title: 'Computer Vision',
+        description:
+          'Sistemas que entendem e interpretam informações visuais, desde reconhecimento facial até diagnóstico médico por imagem.',
+        icon: 'tabler:eye',
+      },
+      {
+        title: 'IA Explicável (XAI)',
+        description:
+          'Tornar decisões de IA transparentes e compreensíveis para humanos, crucial para aplicações críticas e confiança.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'IA Generativa',
+        description:
+          'Sistemas capazes de criar novo conteúdo - texto, imagens, código, música - com qualidade cada vez mais próxima à humana.',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Edge AI',
+        description:
+          'Processamento de IA em dispositivos locais, permitindo respostas em tempo real e maior privacidade de dados.',
+        icon: 'tabler:device-mobile',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Interessado em IA e Machine Learning?"
+    subtitle="A Inteligência Artificial está transformando todas as indústrias e criando novas oportunidades. Seja você desenvolvedor, pesquisador, empreendedor ou entusiasta, o futuro da IA está sendo construído agora."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Entre em Contato',
+        href: '/contact',
+      },
+    ]}
+  />
+</Layout>

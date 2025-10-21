@@ -1,0 +1,229 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Áreas de Interesse - Pesquisa e Inovação',
+};
+
+const interests = [
+  {
+    title: 'Inteligência Artificial',
+    description:
+      'Explorando os limites da IA, desde machine learning até inteligência artificial geral (AGI). Pesquisa em aplicações práticas, segurança de IA e o futuro da tecnologia cognitiva.',
+    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    href: '/ia',
+    tags: ['AGI', 'Machine Learning', 'Deep Learning', 'IA Generativa'],
+    icon: 'tabler:brain',
+  },
+  {
+    title: 'Longevidade',
+    description:
+      'Pesquisa científica sobre envelhecimento saudável e extensão da healthspan. Investigação de mecanismos biológicos, terapias emergentes e o futuro da medicina regenerativa.',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    href: '/longevidade',
+    tags: ['Biotech', 'Healthspan', 'Pesquisa Médica', 'Biologia do Envelhecimento'],
+    icon: 'tabler:heart-plus',
+  },
+];
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Áreas de Interesse"
+    image={{
+      src: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Tecnologia e Inovação',
+    }}
+  >
+    <Fragment slot="title">
+      Explorando o Futuro da <br />
+      <span class="text-accent dark:text-white">Tecnologia e Ciência</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Áreas de pesquisa e desenvolvimento que moldam o futuro da humanidade. Da inteligência artificial à longevidade,
+      exploramos as fronteiras da ciência e tecnologia com impacto transformador.
+    </Fragment>
+  </Hero>
+
+  <!-- Main Interest Cards Section -->
+  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-7xl">
+    <div class="grid gap-8 md:gap-12">
+      {
+        interests.map((interest, index) => (
+          <a
+            href={interest.href}
+            class="group block"
+          >
+            <div
+              class:list={[
+                'relative overflow-hidden rounded-2xl bg-gradient-to-br transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl',
+                index === 0
+                  ? 'from-purple-900/20 via-blue-900/20 to-cyan-900/20 dark:from-purple-900/40 dark:via-blue-900/40 dark:to-cyan-900/40'
+                  : 'from-emerald-900/20 via-teal-900/20 to-blue-900/20 dark:from-emerald-900/40 dark:via-teal-900/40 dark:to-blue-900/40',
+                'border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700',
+              ]}
+            >
+              {/* Background Pattern */}
+              <div class="absolute inset-0 opacity-10">
+                <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgb(255 255 255 / 0.15) 1px, transparent 0); background-size: 40px 40px;" />
+              </div>
+
+              <div class="relative grid md:grid-cols-2 gap-8 p-8 md:p-12">
+                {/* Content Side */}
+                <div class="flex flex-col justify-center space-y-6">
+                  {/* Icon and Title */}
+                  <div class="space-y-4">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20">
+                      <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        {interest.icon === 'tabler:brain' ? (
+                          <>
+                            <path d="M15.5 13a3.5 3.5 0 0 0 -3.5 3.5v1a3.5 3.5 0 0 0 7 0v-1.8" />
+                            <path d="M8.5 13a3.5 3.5 0 0 1 3.5 3.5v1a3.5 3.5 0 0 1 -7 0v-1.8" />
+                            <path d="M17.5 16a3.5 3.5 0 0 0 0 -7h-.5" />
+                            <path d="M19 9.3v-2.8a3.5 3.5 0 0 0 -7 0" />
+                            <path d="M6.5 16a3.5 3.5 0 0 1 0 -7h.5" />
+                            <path d="M5 9.3v-2.8a3.5 3.5 0 0 1 7 0v10" />
+                          </>
+                        ) : (
+                          <>
+                            <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                            <path d="M12 6l0 13" />
+                            <path d="M15 9l-3 -3l-3 3" />
+                          </>
+                        )}
+                      </svg>
+                    </div>
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-cyan-400 transition-all duration-300">
+                      {interest.title}
+                    </h2>
+                  </div>
+
+                  {/* Description */}
+                  <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                    {interest.description}
+                  </p>
+
+                  {/* Tags */}
+                  <div class="flex flex-wrap gap-2">
+                    {interest.tags.map((tag) => (
+                      <span class="px-3 py-1 text-sm font-medium rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-gray-700 dark:text-gray-300">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* CTA */}
+                  <div class="flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold group-hover:gap-4 transition-all duration-300">
+                    <span>Explorar {interest.title}</span>
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Image Side */}
+                <div class="relative h-64 md:h-auto rounded-xl overflow-hidden">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10" />
+                  <img
+                    src={interest.image}
+                    alt={interest.title}
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+
+                  {/* Floating Stats/Info */}
+                  <div class="absolute bottom-4 left-4 right-4 z-20">
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                      <div class="flex items-center gap-2 text-white">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        <span class="font-medium">Área de Pesquisa Ativa</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Features3 Widget for Additional Context -->
+  <Features3
+    title="Por Que Essas Áreas Importam"
+    subtitle="Explorando os temas que definem o futuro da humanidade"
+    columns={3}
+    items={[
+      {
+        title: 'Impacto Transformador',
+        description:
+          'Tecnologias e descobertas que têm o potencial de transformar fundamentalmente a condição humana e nossa relação com o mundo.',
+        icon: 'tabler:transform',
+      },
+      {
+        title: 'Pesquisa Multidisciplinar',
+        description:
+          'Áreas que exigem colaboração entre diferentes campos - biologia, computação, ética, medicina e engenharia.',
+        icon: 'tabler:network',
+      },
+      {
+        title: 'Horizonte de Longo Prazo',
+        description:
+          'Investimento em pesquisa fundamental que pode não ter retorno imediato, mas cujo impacto será profundo nas próximas décadas.',
+        icon: 'tabler:telescope',
+      },
+      {
+        title: 'Avanços Exponenciais',
+        description:
+          'Campos onde o progresso está acelerando, com descobertas e capacidades crescendo de forma exponencial.',
+        icon: 'tabler:trending-up',
+      },
+      {
+        title: 'Questões Éticas Fundamentais',
+        description:
+          'Áreas que levantam questões profundas sobre o que significa ser humano e como queremos moldar nosso futuro.',
+        icon: 'tabler:balance',
+      },
+      {
+        title: 'Democratização do Conhecimento',
+        description:
+          'Compromisso com pesquisa aberta e acessível que beneficia toda a humanidade, não apenas grupos privilegiados.',
+        icon: 'tabler:world',
+      },
+    ]}
+  />
+
+  <!-- Closing Statement -->
+  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 max-w-4xl text-center">
+    <h3 class="text-2xl md:text-3xl font-bold mb-6 text-gray-900 dark:text-white">
+      Construindo o Futuro Através da Pesquisa
+    </h3>
+    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+      Essas áreas de interesse representam mais do que campos de estudo - são apostas no futuro da humanidade.
+      Ao combinar rigor científico com visão de longo prazo, buscamos contribuir para um futuro onde tecnologia
+      e ciência trabalham em harmonia para melhorar a condição humana.
+    </p>
+    <div class="flex justify-center gap-4">
+      <a
+        href="/contact"
+        class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-300"
+      >
+        Vamos Conversar
+      </a>
+      <a
+        href="/cv"
+        class="px-6 py-3 bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-900 dark:text-white font-semibold rounded-lg transition-colors duration-300"
+      >
+        Ver Meu CV
+      </a>
+    </div>
+  </section>
+</Layout>

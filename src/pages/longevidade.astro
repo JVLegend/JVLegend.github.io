@@ -1,0 +1,238 @@
+---
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Longevidade - Pesquisa e Desenvolvimento',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Longevidade"
+    image={{
+      src: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Longevidade e Saúde',
+    }}
+  >
+    <Fragment slot="title">
+      Pesquisa em Longevidade: <br />
+      <span class="text-accent dark:text-white">Vivendo com Mais Saúde por Mais Tempo</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      A pesquisa em longevidade não busca a imortalidade, mas sim compreender as causas do envelhecimento humano
+      para garantir que as pessoas vivam de forma mais saudável na terceira idade. Este campo investiga as causas
+      subjacentes das doenças relacionadas à idade e pode levar a intervenções que melhoram tanto a saúde quanto
+      a expectativa de vida humana.
+    </Fragment>
+  </Hero>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Impacto Econômico',
+        description:
+          'Um estudo recente mostrou que adicionar apenas um ano à expectativa de vida global beneficiaria a economia global em $38 trilhões.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'Saúde, Não Imortalidade',
+        description:
+          'A pesquisa em longevidade foca em resolver as causas subjacentes das doenças relacionadas à idade, não em buscar a imortalidade.',
+        icon: 'tabler:heart-plus',
+      },
+      {
+        title: 'Ciência Baseada em Evidências',
+        description:
+          'Pesquisas científicas rigorosas estão descobrindo mecanismos biológicos fundamentais do envelhecimento que podem ser alvos terapêuticos.',
+        icon: 'tabler:microscope',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80',
+      alt: 'Pesquisa Científica',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Por Que a Longevidade Importa
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Prioridades de Pesquisa em Longevidade"
+    subtitle="Áreas críticas que precisam de atenção e investimento para avançar nossa compreensão do envelhecimento"
+    columns={2}
+    items={[
+      {
+        title: 'Ativar Talentos',
+        description:
+          'Abordar a escassez de talentos no campo da longevidade, aumentando o recrutamento e a retenção em pesquisas sobre envelhecimento.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Avançar a Tecnologia de Biopreservação',
+        description:
+          'Focar em criônica, vitrificação e outros métodos de preservação para conectar as capacidades médicas atuais com avanços futuros.',
+        icon: 'tabler:snowflake',
+      },
+      {
+        title: 'Identificar Alvos Terapêuticos Adicionais',
+        description:
+          'Enfatizar a necessidade de novos alvos de medicamentos para estender a expectativa de vida, aproveitando screening de alta capacidade e estudos genômicos.',
+        icon: 'tabler:dna',
+      },
+      {
+        title: 'Aumentar Modelos Envelhecidos para Pesquisa',
+        description:
+          'Defender modelos animais envelhecidos mais acessíveis e diversos para estudar o envelhecimento e doenças associadas.',
+        icon: 'tabler:paw',
+      },
+      {
+        title: 'Caracterizar Danos Relacionados à Idade',
+        description:
+          'Aprofundar a compreensão sobre danos moleculares com a idade e desenvolver intervenções para reparo e remoção.',
+        icon: 'tabler:zoom-check',
+      },
+      {
+        title: 'Decifrar Mecanismos de Imortalidade Germinativa',
+        description:
+          'Investigar as capacidades de rejuvenescimento das células germinativas para aplicar essas descobertas em todo o corpo.',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Coleta e Análise de Dados Econômicos',
+        description:
+          'Construir conjuntos de dados abrangentes para entender os impactos econômicos de terapêuticas que estendem a saúde e informar políticas públicas.',
+        icon: 'tabler:coin',
+      },
+    ]}
+  />
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="Perspectivas Importantes"
+    subtitle="Conceitos fundamentais para entender a pesquisa em longevidade"
+    items={[
+      {
+        title: 'Longevidade vs. Imortalidade',
+        description:
+          'A pesquisa em longevidade não é sobre buscar a imortalidade, mas sim sobre compreender as causas do envelhecimento humano para garantir que as pessoas vivam mais saudáveis na terceira idade.',
+      },
+      {
+        title: 'Importância da Pesquisa',
+        description:
+          'A pesquisa em longevidade importa porque tenta resolver a causa subjacente das doenças relacionadas à idade e, portanto, pode levar a intervenções que melhoram a saúde e a expectativa de vida humana.',
+      },
+      {
+        title: 'Benefícios Econômicos',
+        description:
+          'Um estudo recente mostrou que adicionar apenas um ano à expectativa de vida global beneficiaria a economia global em $38 trilhões, demonstrando o imenso valor econômico de estender a vida saudável.',
+      },
+      {
+        title: 'Preocupações sobre Estagnação',
+        description:
+          'Embora existam preocupações sobre estagnação societal, a pesquisa em longevidade foca principalmente em estender anos saudáveis, não apenas anos de vida, permitindo que as pessoas contribuam produtivamente por mais tempo.',
+      },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Como se Envolver"
+    subtitle="Recursos e oportunidades para quem deseja participar da pesquisa e desenvolvimento em longevidade"
+    columns={3}
+    items={[
+      {
+        title: 'VitaDAO',
+        description:
+          'Uma organização autônoma descentralizada (DAO) focada em financiar e promover pesquisas em longevidade de forma comunitária.',
+        icon: 'tabler:building-community',
+      },
+      {
+        title: 'Programas de Fellowship',
+        description:
+          'Programas como On Deck Longevity Fellowship conectam pesquisadores, empreendedores e profissionais interessados no campo da longevidade.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Pesquisa Acadêmica',
+        description:
+          'Instituições acadêmicas em todo o mundo estão expandindo programas de pesquisa em biologia do envelhecimento e medicina geriátrica.',
+        icon: 'tabler:book',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Avanços Recentes',
+        description:
+          'Descobertas em reprogramação celular, senescência celular e vias metabólicas estão abrindo novas possibilidades terapêuticas.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Ensaios Clínicos',
+        description:
+          'Múltiplos ensaios clínicos estão testando intervenções para desacelerar o envelhecimento e prevenir doenças relacionadas à idade.',
+        icon: 'tabler:test-pipe',
+      },
+      {
+        title: 'Tecnologias Emergentes',
+        description:
+          'IA, aprendizado de máquina e sequenciamento de nova geração estão acelerando a descoberta de novos alvos terapêuticos.',
+        icon: 'tabler:cpu',
+      },
+      {
+        title: 'Abordagem Multidisciplinar',
+        description:
+          'A pesquisa em longevidade requer colaboração entre biologia, medicina, ciência de dados, ética e política pública.',
+        icon: 'tabler:network',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80',
+      alt: 'Tecnologia e Pesquisa',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        O Estado Atual da Pesquisa
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Interessado em Longevidade?"
+    subtitle="A pesquisa em longevidade é um campo em rápida expansão que combina ciência de ponta com o potencial de transformar a saúde humana. Se você é pesquisador, investidor, ou simplesmente curioso sobre o futuro da medicina, há muitas maneiras de se envolver."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Entre em Contato',
+        href: '/contact',
+      },
+    ]}
+  />
+</Layout>

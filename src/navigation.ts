@@ -23,6 +23,10 @@ export const headerData = {
       href: getPermalink("/books"),
     },
     {
+      text: "Interesses",
+      href: getPermalink("/interesses"),
+    },
+    {
       text: "Blog",
       href: getBlogPermalink(),
     },
@@ -56,6 +60,7 @@ export const footerData = {
       links: [
         { text: "Blog", href: getBlogPermalink() },
         { text: "Livros Recomendados", href: getPermalink("/books") },
+        { text: "Áreas de Interesse", href: getPermalink("/interesses") },
         { text: "Newsletter", href: "#" },
       ],
     },
