@@ -61,6 +61,25 @@ const metadata = {
         Por Que a Longevidade Importa
       </h3>
     </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-gradient-to-br from-emerald-600 via-teal-600 to-blue-600 opacity-90"></div>
+      <svg class="absolute inset-0 w-full h-full opacity-15" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="longevity-dna" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <path d="M20,10 Q30,30 20,50 Q10,70 20,90" stroke="white" stroke-width="2" fill="none" opacity="0.6"/>
+            <path d="M80,10 Q70,30 80,50 Q90,70 80,90" stroke="white" stroke-width="2" fill="none" opacity="0.6"/>
+            <line x1="20" y1="20" x2="80" y2="20" stroke="white" stroke-width="1.5" opacity="0.4"/>
+            <line x1="20" y1="50" x2="80" y2="50" stroke="white" stroke-width="1.5" opacity="0.4"/>
+            <line x1="20" y1="80" x2="80" y2="80" stroke="white" stroke-width="1.5" opacity="0.4"/>
+            <circle cx="20" cy="20" r="2" fill="white" opacity="0.7"/>
+            <circle cx="80" cy="20" r="2" fill="white" opacity="0.7"/>
+            <circle cx="20" cy="50" r="2" fill="white" opacity="0.7"/>
+            <circle cx="80" cy="50" r="2" fill="white" opacity="0.7"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#longevity-dna)"/>
+      </svg>
+    </Fragment>
   </Content>
 
   <!-- Features2 Widget ************** -->
@@ -299,6 +318,24 @@ const metadata = {
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
         O Estado Atual da Pesquisa
       </h3>
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-600 via-cyan-600 to-teal-600 opacity-90"></div>
+      <svg class="absolute inset-0 w-full h-full opacity-15" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="longevity-cells" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+            <circle cx="20" cy="20" r="8" stroke="white" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <circle cx="60" cy="20" r="8" stroke="white" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <circle cx="20" cy="60" r="8" stroke="white" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <circle cx="60" cy="60" r="8" stroke="white" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <circle cx="20" cy="20" r="2" fill="white" opacity="0.7"/>
+            <circle cx="60" cy="20" r="2" fill="white" opacity="0.7"/>
+            <circle cx="20" cy="60" r="2" fill="white" opacity="0.7"/>
+            <circle cx="60" cy="60" r="2" fill="white" opacity="0.7"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#longevity-cells)"/>
+      </svg>
     </Fragment>
   </Content>
 
