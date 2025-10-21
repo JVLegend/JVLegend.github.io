@@ -17,12 +17,6 @@ const metadata = {
 
   <Hero
     tagline="Inteligência Artificial"
-    image={{
-      src: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Inteligência Artificial',
-      width: 2070,
-      height: 1380,
-    }}
   >
     <Fragment slot="title">
       Inteligência Artificial Geral (AGI) <br />
@@ -38,41 +32,93 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <Content
-    isReversed
-    items={[
-      {
-        title: 'Definição de IA',
-        description:
-          'Capacidade de computadores realizarem tarefas que tradicionalmente exigem inteligência humana, incluindo compreensão de linguagem natural, reconhecimento de padrões e tomada de decisões.',
-        icon: 'tabler:brain',
-      },
-      {
-        title: 'Machine Learning',
-        description:
-          'Subconjunto da IA que permite que sistemas aprendam e melhorem a partir de dados sem serem explicitamente programados para cada tarefa específica.',
-        icon: 'tabler:chart-dots',
-      },
-      {
-        title: 'Aplicações Práticas',
-        description:
-          'IA e ML estão sendo usados para desenvolver carros autônomos, melhorar diagnósticos médicos e criar experiências online mais personalizadas.',
-        icon: 'tabler:rocket',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80',
-      alt: 'IA e Machine Learning',
-      width: 870,
-      height: 580,
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Entendendo IA e Machine Learning
-      </h3>
-    </Fragment>
-  </Content>
+  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-7xl">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-8">
+        <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+          Entendendo IA e Machine Learning
+        </h3>
+
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-blue-600 dark:bg-blue-700">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M15.5 13a3.5 3.5 0 0 0 -3.5 3.5v1a3.5 3.5 0 0 0 7 0v-1.8" />
+                  <path d="M8.5 13a3.5 3.5 0 0 1 3.5 3.5v1a3.5 3.5 0 0 1 -7 0v-1.8" />
+                  <path d="M17.5 16a3.5 3.5 0 0 0 0 -7h-.5" />
+                  <path d="M19 9.3v-2.8a3.5 3.5 0 0 0 -7 0" />
+                  <path d="M6.5 16a3.5 3.5 0 0 1 0 -7h.5" />
+                  <path d="M5 9.3v-2.8a3.5 3.5 0 0 1 7 0v10" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Definição de IA</h4>
+              <p class="text-gray-600 dark:text-gray-400">Capacidade de computadores realizarem tarefas que tradicionalmente exigem inteligência humana, incluindo compreensão de linguagem natural, reconhecimento de padrões e tomada de decisões.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-purple-600 dark:bg-purple-700">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 3v18h18" /><path d="M7 12l4 -4l4 4l4 -4" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Machine Learning</h4>
+              <p class="text-gray-600 dark:text-gray-400">Subconjunto da IA que permite que sistemas aprendam e melhorem a partir de dados sem serem explicitamente programados para cada tarefa específica.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-cyan-600 dark:bg-cyan-700">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" />
+                  <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" />
+                  <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Aplicações Práticas</h4>
+              <p class="text-gray-600 dark:text-gray-400">IA e ML estão sendo usados para desenvolver carros autônomos, melhorar diagnósticos médicos e criar experiências online mais personalizadas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative h-96 rounded-2xl overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-600 opacity-90"></div>
+        <svg class="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="ai-neural-net" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+              <circle cx="10" cy="10" r="3" fill="white" opacity="0.8"/>
+              <circle cx="40" cy="25" r="3" fill="white" opacity="0.8"/>
+              <circle cx="70" cy="10" r="3" fill="white" opacity="0.8"/>
+              <circle cx="25" cy="55" r="3" fill="white" opacity="0.8"/>
+              <circle cx="55" cy="55" r="3" fill="white" opacity="0.8"/>
+              <line x1="10" y1="10" x2="40" y2="25" stroke="white" stroke-width="1" opacity="0.5"/>
+              <line x1="70" y1="10" x2="40" y2="25" stroke="white" stroke-width="1" opacity="0.5"/>
+              <line x1="40" y1="25" x2="25" y2="55" stroke="white" stroke-width="1" opacity="0.5"/>
+              <line x1="40" y1="25" x2="55" y2="55" stroke="white" stroke-width="1" opacity="0.5"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#ai-neural-net)"/>
+        </svg>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="text-center text-white p-8">
+            <svg class="w-24 h-24 mx-auto mb-4 opacity-80" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Features2 Widget ************** -->
 
@@ -162,17 +208,25 @@ const metadata = {
         icon: 'tabler:message-language',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80',
-      alt: 'Aplicações de IA',
-      width: 870,
-      height: 580,
-    }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
         Aplicações da Inteligência Artificial
       </h3>
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 opacity-90"></div>
+      <svg class="absolute inset-0 w-full h-full opacity-15" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="ai-apps-grid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+            <rect x="5" y="5" width="20" height="20" fill="none" stroke="white" stroke-width="1" opacity="0.6"/>
+            <rect x="35" y="5" width="20" height="20" fill="none" stroke="white" stroke-width="1" opacity="0.6"/>
+            <rect x="5" y="35" width="20" height="20" fill="none" stroke="white" stroke-width="1" opacity="0.6"/>
+            <rect x="35" y="35" width="20" height="20" fill="none" stroke="white" stroke-width="1" opacity="0.6"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#ai-apps-grid)"/>
+      </svg>
     </Fragment>
   </Content>
 
