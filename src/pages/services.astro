@@ -3,11 +3,10 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import Content from '~/components/widgets/Content.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Services',
+  title: 'Produtos e Serviços - João Victor Dias',
 };
 ---
 
@@ -15,74 +14,76 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Services"
-    title="Elevate your projects with our stunning templates"
-    subtitle="Explore our meticulously crafted templates tailored to various industries and purposes. From captivating presentations to functional website designs, we offer the tools you need to succeed."
-    actions={[{ variant: 'primary', target: '_blank', text: 'Start exploring', href: '/' }]}
+    tagline="Produtos & Serviços"
+    title="Ecossistema Completo de IA Vertical"
+    subtitle="Soluções de inteligência artificial especializadas para medicina, educação científica, fintech e foodtech. Do desenvolvimento à implementação."
+    actions={[{ variant: 'primary', text: 'Entre em contato', href: '/contact' }]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
+      alt: 'Produtos e Serviços',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Explore our diverse templates"
-    subtitle="Discover our selection below to streamline and elevate your projects."
+    title="Produtos Lançados e em Desenvolvimento"
+    subtitle="Portfólio completo de soluções de IA especializadas para diferentes mercados."
     columns={3}
     items={[
       {
-        title: 'Educational',
+        title: 'Wings Group AI',
         description:
-          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
+          'Holding e deeptech focada em healthcare. Consultoria estratégica, desenvolvimento custom de Micro-SaaS, programas educacionais e mentoria 1:1 para implementação de IA na medicina.',
+        icon: 'tabler:brand-producthunt',
+      },
+      {
+        title: 'Protocolo Medicina',
+        description:
+          'Plataforma de análise de qualidade de imagens médicas oftalmológicas com IA. Taxa de sucesso de 94%, processamento em 1.2s. Sistema integrado ao SNPQIM brasileiro (Em breve).',
+        icon: 'tabler:eye',
+      },
+      {
+        title: 'SmartFin',
+        description:
+          'Copiloto de IA para gestão financeira empresarial. Análise automática de DRE, Fluxo de Caixa e Balanço via WhatsApp. Plano R$197/mês com trial gratuito (Lançado).',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'IA para Médicos',
+        description:
+          'Ecossistema educacional completo: plataforma de cursos (cursos.iaparamedicos.com.br), curso principal ArtigoAI+ com 15 assistentes especializados (R$297), e curso introdutório (R$37.90).',
         icon: 'tabler:school',
       },
       {
-        title: 'Interior Design',
+        title: 'Format Papers',
         description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
+          'Formatação automática de manuscritos científicos em ~2 minutos. Suporte para 22+ journals de alto impacto (Nature, Science, Cell, Lancet). Precisão de 99.7% (Lançado).',
+        icon: 'tabler:file-text',
       },
       {
-        title: 'Photography',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
-      },
-      {
-        title: 'E-commerce',
+        title: 'Humanizador',
         description:
-          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
-        icon: 'tabler:shopping-cart',
+          'Ferramenta de detecção de uso de IA em artigos científicos. Focada em garantir integridade acadêmica e conformidade com diretrizes de journals (Em breve).',
+        icon: 'tabler:brain',
       },
       {
-        title: 'Blog',
+        title: 'Belo Prato',
         description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
-        icon: 'tabler:article',
+          'Geração de imagens profissionais de pratos para cardápios. Planos: Básico (3 fotos grátis), Intermediário (30 fotos R$49.70), Avançado (90 fotos R$99.70) (Lançado).',
+        icon: 'tabler:tools-kitchen-2',
       },
       {
-        title: 'Business',
+        title: 'BlinkTracking',
         description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
-        icon: 'tabler:building-store',
+          'Sistema de análise de piscadas para pesquisa oftalmológica. Detecção de pontos faciais com dlib e MediaPipe. Projeto de doutorado FMUSP (Em desenvolvimento).',
+        icon: 'tabler:heartbeat',
       },
       {
-        title: 'Branding',
+        title: 'Consultoria & Mentoria',
         description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
-      },
-      {
-        title: 'Medical',
-        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
-        icon: 'tabler:vaccine',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
-        icon: 'tabler:tie',
+          'Consultoria tecnológica para hospitais, clínicas e startups. Mentoria em AI strategy, team building, e transformação digital. Casos de sucesso em bancos e healthtechs.',
+        icon: 'tabler:users',
       },
     ]}
   />
@@ -93,37 +94,37 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'High-Quality Designs',
+        title: 'IA Vertical Especializada',
         description:
-          'Our templates feature top-tier designs that ensure a professional and polished appearance for your projects.',
-        icon: 'tabler:wand',
+          'Soluções de inteligência artificial desenvolvidas especificamente para cada vertical: medicina, finanças, educação e foodtech.',
+        icon: 'tabler:target',
       },
       {
-        title: 'Customization Tools',
+        title: 'Comprovação Científica',
         description:
-          'Tailor each template to your unique needs with user-friendly customization tools that let you personalize colors, fonts, and content.',
-        icon: 'tabler:settings',
+          'Produtos baseados em pesquisa acadêmica e validação científica. Taxa de precisão de 94-99.7% em aplicações médicas.',
+        icon: 'tabler:certificate',
       },
       {
-        title: 'Pre-Designed Elements',
+        title: 'Escalabilidade e Performance',
         description:
-          'Save time and effort with our ready-to-use elements, including graphics, icons, and layouts that enhance the visual appeal of your creations.',
-        icon: 'tabler:presentation',
+          'Infraestrutura robusta com processamento em segundos. Pronto para uso em larga escala em instituições de qualquer porte.',
+        icon: 'tabler:rocket',
       },
       {
-        title: 'Preview and Mockup Views',
+        title: 'Compliance e Segurança',
         description:
-          'Visualize the final outcome before making any changes using our preview and mockup views, ensuring your projects meet your expectations.',
-        icon: 'tabler:carousel-horizontal',
+          'Conformidade com LGPD, GDPR e diretrizes de journals científicos. Processamento seguro sem retenção de dados sensíveis.',
+        icon: 'tabler:shield-check',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
+      src: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'Diferenciais',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Diferenciais Competitivos</h3>
     </Fragment>
   </Content>
 
@@ -133,80 +134,39 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Time Savings',
+        title: 'Healthcare AI',
         description:
-          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
-        icon: 'tabler:clock',
+          'Análise de qualidade de imagens médicas, detecção de doenças, ferramentas de pesquisa oftalmológica e educação científica para médicos.',
+        icon: 'tabler:heartbeat',
       },
       {
-        title: 'Professional Appearance',
+        title: 'Fintech Solutions',
         description:
-          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
-        icon: 'tabler:school',
-      },
-      {
-        title: 'Cost-Efficiency',
-        description:
-          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
+          'Copiloto financeiro com IA, análise automatizada de DRE, fluxo de caixa e balanço patrimonial via WhatsApp. Finalista Prêmio Fintech 2025.',
         icon: 'tabler:coin',
       },
       {
-        title: 'Instant Download',
+        title: 'Academic Tools',
         description:
-          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
-        icon: 'tabler:file-download',
+          'Formatação automática de artigos científicos para 22+ journals, detecção de uso de IA em textos acadêmicos, e plataforma educacional para pesquisadores.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Foodtech Innovation',
+        description:
+          'Geração inteligente de imagens profissionais de pratos para restaurantes, aumentando conversão e vendas através de cardápios mais atrativos.',
+        icon: 'tabler:tools-kitchen',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Benefits Image',
+      src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Verticais de Atuação',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Verticais de Atuação</h3>
     </Fragment>
   </Content>
-
-  <!-- Testimonials Widget *********** -->
-
-  <Testimonials
-    title="Words from real customers"
-    testimonials={[
-      {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
-        image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
-        },
-      },
-      {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
-        image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
-        },
-      },
-      {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
-        image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
-        },
-      },
-    ]}
-    callToAction={{
-      target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:chevron-right',
-    }}
-  />
 
   <!-- CallToAction Widget *********** -->
 
@@ -214,11 +174,18 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Start exploring',
-        href: '/',
+        text: 'Entre em contato',
+        href: '/contact',
+        icon: 'tabler:mail',
+      },
+      {
+        variant: 'secondary',
+        text: 'Ver CV completo',
+        href: '/cv',
+        icon: 'tabler:file-text',
       },
     ]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
+    title="Pronto para transformar seu negócio com IA?"
+    subtitle="Entre em contato para discutir como nossas soluções podem acelerar seus resultados em medicina, educação científica, finanças ou foodtech."
   />
 </Layout>
