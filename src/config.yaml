@@ -11,7 +11,7 @@ metadata:
   title:
     default: João Victor Dias
     template: "%s — João Victor Dias"
-  description: "CTO at WingsAI, PhD candidate in Medical Sciences, 12+ years in AI. Expertise in computer vision and NLP."
+  description: "Arquiteto de IA Médica — uma plataforma tecnológica, cinco verticais de saúde digital. Doutorando FMUSP. 15+ anos construindo IA com impacto clínico real."
   robots:
     index: true
     follow: true

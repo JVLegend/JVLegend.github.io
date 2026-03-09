@@ -47,11 +47,12 @@ export const footerData = {
       ],
     },
     {
-      title: "Negócios",
+      title: "Ecossistema",
       links: [
         { text: "WingsAI", href: "https://www.wingsgroup.ai/" },
-        { text: "I.A. para Médicos", href: "#" },
-        { text: "Instituto Rumo ao Topo", href: "#" },
+        { text: "IA para Médicos", href: "#" },
+        { text: "GeekVision", href: "#" },
+        { text: "ConnectAI", href: "#" },
         { text: "Palestras", href: getPermalink("/speaking") },
       ],
     },
@@ -88,6 +89,6 @@ export const footerData = {
     { ariaLabel: "RSS", icon: "tabler:rss", href: getAsset("/rss.xml") },
   ],
   footNote: `
-    © ${new Date().getFullYear()} João Victor Dias. Todos os direitos reservados.
+    © ${new Date().getFullYear()} João Victor Pacheco Dias. Todos os direitos reservados.
   `,
 };
