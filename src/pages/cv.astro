@@ -2,7 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 
-import profileImage from '~/assets/images/jv-perfil-olhando-frentecima.jpg';
+import profileImage from '~/assets/images/jv-perfil-2025.jpeg';
 
 const metadata = {
   title: 'CV - João Victor Dias',
@@ -14,8 +14,8 @@ const metadata = {
 
   <Hero2
     tagline="Curriculum Vitae"
-    title="João Victor Pacheco Dias"
-    subtitle="Arquiteto de IA Médica · Ecossistema de Saúde Digital · PhD Candidate FMUSP"
+    title="<span class='cv-title-part'>João Victor</span><span class='cv-title-part'>Pacheco Dias</span>"
+    subtitle="<span class='cv-subtitle-part'>Arquiteto de IA</span><span class='cv-subtitle-separator'> · </span><span class='cv-subtitle-part'>Produtos e Dados</span><span class='cv-subtitle-separator'> · </span><span class='cv-subtitle-part'>Automação Executiva</span><span class='cv-subtitle-separator'> · </span><span class='cv-subtitle-part'>PhD Candidate FMUSP</span>"
     image={{ src: profileImage, alt: 'João Victor Pacheco Dias' }}
   />
 
@@ -29,11 +29,30 @@ const metadata = {
       </div>
       <div class="max-w-5xl mx-auto">
         <div class="text-lg dark:text-slate-400 space-y-6">
-          <p>João Victor Pacheco Dias é o arquiteto de tecnologia por trás de um ecossistema de empresas de saúde digital. Projeta e mantém a infraestrutura de IA — uma plataforma compartilhada que potencializa cinco verticais simultaneamente: WingsAI (P&D e grants), IA para Médicos (educação médica), GeekVision (produtos digitais), ConnectAI (sales intelligence) e PacienteAlerta (adesão ao tratamento). Cada empresa tem seu CEO dedicado ao mercado; JV garante que a tecnologia nunca seja o gargalo. Também doutorando em Ciências Médicas Oftalmológicas na FMUSP (início 2024).</p>
+          <p>João Victor Pacheco Dias é Arquiteto de IA com mais de 15 anos de experiência transformando inteligência artificial, visão computacional, NLP e plataformas de dados em produtos reais para bancos, fintechs, saúde, educação e operações corporativas. Atua no desenho da solução, arquitetura, liderança técnica e entrega executiva, conectando estratégia de negócio com implementação em produção.</p>
 
-          <p>Com portfólio focado em oftalmologia e ferramentas para pesquisa científica, inclui: BlinkTracking (validação acadêmica FMUSP), Protocolo Medicina (análise de imagens médicas), IA para Médicos (educação científica), Format Papers e Humanizador (ferramentas acadêmicas). Background em fintech evidenciado pelo SmartFin, finalista do Prêmio Fintech 2025.</p>
+          <p>Seu histórico inclui o primeiro chatbot interno do Itaú substituindo IBM Watson, personalização probabilística de URA no Bradesco, visão computacional para analytics em agência piloto do Santander e Banco Central do Peru, avaliação de sinistros por foto, leitura inteligente do Diário Oficial para área jurídica, verificação de assinaturas em cheques, score de colaterais para crédito privado e modelos de anomalia em redes de telecomunicação.</p>
 
-          <p>Com mais de 15 anos de experiência em inteligência artificial, construiu e liderou equipes de Data Science em bancos de investimento (Captalys: 2020-2022), fintechs (iFood Pago: 2024-2025, Zoop: 2022-2024) e healthtech (GeekVision-HCFMUSP: 2017-presente). Especializa-se em Computer Vision, NLP e transformação de áreas de dados do zero até operação madura.</p>
+          <p>Atualmente lidera um ecossistema de produtos de IA que inclui WingsAI, IA para Médicos, GeekVision, SmartLab, BlinkTracking, Protocolo Medicina, Format Papers e Humanizador. Também é doutorando em Ciências Médicas Oftalmológicas na FMUSP, com foco em modelos aplicados à avaliação de qualidade de imagens, diagnóstico assistido e automação de pesquisa científica.</p>
+        </div>
+
+        <div class="mt-10 grid md:grid-cols-4 gap-4">
+          <div class="bg-white dark:bg-gray-900 rounded-lg p-5 shadow-md border border-gray-100 dark:border-gray-800">
+            <p class="text-3xl font-bold text-blue-600 dark:text-blue-400">70TB+</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">por semana no Data Lake do iFood Pago, com janelas críticas de madrugada até 5h.</p>
+          </div>
+          <div class="bg-white dark:bg-gray-900 rounded-lg p-5 shadow-md border border-gray-100 dark:border-gray-800">
+            <p class="text-3xl font-bold text-blue-600 dark:text-blue-400">0-100</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">score de qualidade para imagens médicas em ressonância, tomografia, ultrassom e raio-X.</p>
+          </div>
+          <div class="bg-white dark:bg-gray-900 rounded-lg p-5 shadow-md border border-gray-100 dark:border-gray-800">
+            <p class="text-3xl font-bold text-blue-600 dark:text-blue-400">Bancos</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Itaú, Bradesco, Santander, Captalys, Zoop, iFood Pago e projetos com crédito privado.</p>
+          </div>
+          <div class="bg-white dark:bg-gray-900 rounded-lg p-5 shadow-md border border-gray-100 dark:border-gray-800">
+            <p class="text-3xl font-bold text-blue-600 dark:text-blue-400">IA</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">LLMs, Computer Vision, NLP, risco, detecção de fraude, automação e analytics executivo.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -50,17 +69,21 @@ const metadata = {
       <div class="grid md:grid-cols-2 gap-8">
         <!-- Healthcare AI -->
         <div class="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
-          <h3 class="text-xl font-bold dark:text-white mb-4 text-blue-600 dark:text-blue-400">Healthcare AI</h3>
+          <h3 class="text-xl font-bold dark:text-white mb-4 text-blue-600 dark:text-blue-400">IA Aplicada à Saúde</h3>
           <div class="space-y-4">
             <div>
               <h4 class="font-semibold dark:text-white">Protocolo Medicina</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-400">Plataforma de análise de qualidade de imagens oftalmológicas com IA. Em desenvolvimento para integração com sistema nacional de qualidade médica. Validação técnica em andamento com parceiros institucionais.</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Plataforma de avaliação de qualidade de imagem médica com IA. Modelos analisam pixels e padrões técnicos para gerar score de 0 a 100 em ressonância, ultrassom, tomografia e raio-X, reduzindo retrabalho e custo operacional.</p>
               <a href="https://protocolomedicina.vercel.app/" target="_blank" class="text-xs text-blue-600 dark:text-blue-400 hover:underline">protocolomedicina.vercel.app</a>
             </div>
             <div>
               <h4 class="font-semibold dark:text-white">BlinkTracking v1.0</h4>
               <p class="text-sm text-gray-600 dark:text-gray-400">Sistema de análise de piscadas para pesquisa oftalmológica desenvolvido como parte do doutorado em Ciências Médicas Oftalmológicas (FMUSP, início 2024). Detecção facial com dlib e MediaPipe.</p>
               <a href="https://blinktracking.vercel.app/" target="_blank" class="text-xs text-blue-600 dark:text-blue-400 hover:underline">blinktracking.vercel.app</a>
+            </div>
+            <div>
+              <h4 class="font-semibold dark:text-white">SmartLab</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Plataforma para converter objetivos clínicos e acadêmicos em execução com IA, priorizando automação, documentação, produtividade e acompanhamento de resultados.</p>
             </div>
           </div>
         </div>
@@ -71,7 +94,7 @@ const metadata = {
           <div class="space-y-4">
             <div>
               <h4 class="font-semibold dark:text-white">IA para Médicos</h4>
-              <p class="text-sm text-gray-600 dark:text-gray-400">Ecossistema educacional para profissionais de saúde. Plataforma de cursos e ArtigoAI+ com 15 assistentes especializados para escrita científica médica. Modelo B2C em operação.</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Ecossistema educacional para profissionais de saúde. Plataforma de cursos, trilhas práticas e assistentes especializados para escrita científica médica. Modelo B2C em operação.</p>
               <a href="http://cursos.iaparamedicos.com.br/" target="_blank" class="text-xs text-blue-600 dark:text-blue-400 hover:underline">cursos.iaparamedicos.com.br</a>
             </div>
             <div>
@@ -89,12 +112,16 @@ const metadata = {
 
         <!-- Fintech Background -->
         <div class="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
-          <h3 class="text-xl font-bold dark:text-white mb-4 text-blue-600 dark:text-blue-400">Background em Fintech</h3>
+          <h3 class="text-xl font-bold dark:text-white mb-4 text-blue-600 dark:text-blue-400">Dados, Risco e Fintech</h3>
           <div class="space-y-4">
             <div>
               <h4 class="font-semibold dark:text-white">SmartFin</h4>
               <p class="text-sm text-gray-600 dark:text-gray-400">Copiloto financeiro com IA para análise de DRE, fluxo de caixa e balanço via WhatsApp. <strong>Finalista do Prêmio Fintech 2025</strong>. Demonstra expertise anterior em fintech aplicada a novo domínio.</p>
               <a href="https://www.smartfin.ai/" target="_blank" class="text-xs text-blue-600 dark:text-blue-400 hover:underline">smartfin.ai</a>
+            </div>
+            <div>
+              <h4 class="font-semibold dark:text-white">Crédito Privado e Colaterais</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Sistema de precificação e score para ativos de risco, sócios, empresas e colaterais oferecidos em operações de crédito privado, com visão executiva para tomada de decisão.</p>
             </div>
           </div>
         </div>
@@ -103,10 +130,11 @@ const metadata = {
         <div class="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
           <h3 class="text-xl font-bold dark:text-white mb-4 text-blue-600 dark:text-blue-400">Posicionamento Estratégico</h3>
           <div class="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-            <p><strong>Foco Principal:</strong> Healthcare AI com especialização em oftalmologia e ferramentas para pesquisa científica</p>
-            <p><strong>Validação Acadêmica:</strong> Produtos desenvolvidos em paralelo ao doutorado na FMUSP, garantindo rigor científico</p>
-            <p><strong>Track Record:</strong> 15+ anos liderando transformação de áreas de dados em bancos, fintechs e healthtech</p>
-            <p><strong>Diferencial:</strong> Combinação única de expertise técnica, validação científica e experiência em escalar produtos de IA do zero</p>
+            <p><strong>Foco Principal:</strong> arquitetura de IA aplicada a eficiência operacional, dados críticos, visão computacional, automação e produtos digitais</p>
+            <p><strong>Validação Acadêmica:</strong> produtos desenvolvidos em paralelo ao doutorado na FMUSP, com rigor científico e conexão com problemas reais</p>
+            <p><strong>Track Record:</strong> 15+ anos liderando transformação de áreas de dados em bancos, fintechs, saúde e tecnologia</p>
+            <p><strong>Diferencial:</strong> habilidade de traduzir dor executiva em roadmap técnico, MVP validável e operação escalável</p>
+            <p><strong>Showcase:</strong> <a href="https://jv-ai-showcase-vercel.vercel.app/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">jv-ai-showcase-vercel.vercel.app</a></p>
           </div>
         </div>
       </div>
@@ -160,9 +188,9 @@ const metadata = {
             <h3 class="text-xl font-bold dark:text-white mb-2">Data & Analytics Management</h3>
             <h5 class="text-blue-600 dark:text-blue-400 font-semibold mb-3">iFood Pago [07/2024-02/2025]</h5>
             <ul class="text-gray-600 dark:text-gray-300 space-y-1 text-sm">
-              <li>• Management of transactional data ingestion into the Data Lake using AWS DMS, S3 and PySpark</li>
-              <li>• Continuous optimization of Data Lake jobs with AWS EMR and Glue</li>
-              <li>• Creation of interactive dashboards for general analysis, anti-money laundering (AML) and fraud detection</li>
+              <li>• Responsável pelo Data Lake do iFood Pago, incluindo fluxos críticos de Pix e dados transacionais</li>
+              <li>• Otimização de ingestão e tratamento de mais de 70 TB semanais para entrega antes das 5h da manhã</li>
+              <li>• Operação com AWS DMS, S3, PySpark, EMR e Glue para dados de AML, fraude, pagamentos e análise executiva</li>
             </ul>
           </div>
 
@@ -174,8 +202,8 @@ const metadata = {
               <li>• Structured the areas and set up the Analytics, BI, Data Science, Portfolio Monitoring and Data Engineering teams</li>
               <li>• Led the transformation of the company into an AI-Ready company</li>
               <li>• Implemented: the Data Lake, the Machine Learning model deployment environment, GraphQL to unify the API queries and the models documentation</li>
+              <li>• Desenvolveu sistemas de score, precificação e monitoramento de risco para crédito privado, colaterais e ativos financeiros</li>
               <li>• Designed systems focused on scale, reproducibility and automation</li>
-              <li>• Our teams provide world-class products</li>
             </ul>
           </div>
 
@@ -184,11 +212,11 @@ const metadata = {
             <h3 class="text-xl font-bold dark:text-white mb-2">Lead Data Scientist</h3>
             <h5 class="text-blue-600 dark:text-blue-400 font-semibold mb-3">NTT DATA [08/2019-07/2020]</h5>
             <ul class="text-gray-600 dark:text-gray-300 space-y-1 text-sm">
-              <li>• Planned and executed large data science projects</li>
+              <li>• Planejamento e execução de projetos corporativos de IA para bancos, seguradoras e telecom</li>
               <li>• Organized the career development of the Data Scientists at the company</li>
               <li>• Participated in management meetings to help establish data roadmap and strategies</li>
               <li>• Built a great team by both recruiting great talent and helping them grow</li>
-              <li>• Implemented DataPrivacyOps with Federated Learning, Differential Privacy and Multi-party Computation</li>
+              <li>• Projetos de personalização de URA, visão computacional em ambientes físicos e detecção de anomalias em redes de comunicação</li>
             </ul>
           </div>
 
@@ -267,15 +295,10 @@ const metadata = {
               <li>• Coordinated NTT DATA Machine Learning Community Americas</li>
               <li>• Led the Data Science team on publishing research papers</li>
               <li>• Spread AI culture and helped attracting more talent to the company</li>
-              <li>• Supervised Neural Networks architecture framework implementation</li>
-              <li>• GAN architectures for data augmentation</li>
-              <li>• Automatic documents classification with ELMO + BI-LSTM + CNN + CRF</li>
-              <li>• Developed a hybrid model for Automated Offline Handwritten Signature Verification on checkbooks using Convolutional Networks</li>
-              <li>• Stock price estimation using LSTM + Attention</li>
-              <li>• Object Detection, Recognition and Segmentation</li>
-              <li>• Face Recognition, Alignment and De-identification</li>
-              <li>• Developed a pedestrian tracking surveillance on Raspberry Pi 3</li>
-              <li>• Developed a Retrieval-based banking chatbot on Facebook Messenger with Tensorflow</li>
+              <li>• Desenvolveu o primeiro chatbot interno do Itaú em substituição à solução IBM Watson então utilizada</li>
+              <li>• Criou modelo de verificação de assinaturas para cheques, com encaminhamento humano baseado em nível de segurança</li>
+              <li>• Implementou extração inteligente em documentos jurídicos e Diário Oficial para identificação de partes, juízes e tendências de decisão</li>
+              <li>• Projetos de visão computacional para sinistros automotivos, rastreamento de pessoas, reconhecimento facial e analytics físico</li>
             </ul>
           </div>
 
@@ -961,3 +984,26 @@ const metadata = {
     </div>
   </section>
 </Layout>
+
+<style>
+  :global(.cv-title-part),
+  :global(.cv-subtitle-part) {
+    display: block;
+  }
+
+  :global(.cv-subtitle-separator) {
+    display: none;
+  }
+
+  @media (min-width: 640px) {
+    :global(.cv-title-part),
+    :global(.cv-subtitle-part),
+    :global(.cv-subtitle-separator) {
+      display: inline;
+    }
+
+    :global(.cv-title-part + .cv-title-part)::before {
+      content: " ";
+    }
+  }
+</style>
