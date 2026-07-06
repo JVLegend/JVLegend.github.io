@@ -1,6 +1,6 @@
 site:
   name: João Victor Dias
-  site: "https://jvlegend.github.io"
+  site: "https://joaovictordias.org"
   base: "/"
   trailingSlash: false
 
@@ -11,7 +11,7 @@ metadata:
   title:
     default: João Victor Dias
     template: "%s — João Victor Dias"
-  description: "Arquiteto de IA Médica — uma plataforma tecnológica, cinco verticais de saúde digital. Doutorando FMUSP. 15+ anos construindo IA com impacto clínico real."
+  description: "Arquiteto de IA Médica: pesquisa clínica na FMUSP, produtos de saúde digital em produção e educação médica. Doutorando em Ciências Médicas Oftalmológicas."
   robots:
     index: true
     follow: true
@@ -28,7 +28,7 @@ metadata:
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: pt-BR
   textDirection: ltr
 
 apps:

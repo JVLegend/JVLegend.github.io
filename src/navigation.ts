@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from "./utils/permalinks";
+import { getPermalink, getAsset } from "./utils/permalinks";
 
 export const headerData = {
   links: [
@@ -26,10 +26,6 @@ export const headerData = {
       text: "Interesses",
       href: getPermalink("/interesses"),
     },
-    {
-      text: "Blog",
-      href: getBlogPermalink(),
-    },
   ],
   actions: [
     { text: "Contato", href: getPermalink("/contact"), icon: "tabler:mail" },
@@ -50,19 +46,15 @@ export const footerData = {
       title: "Ecossistema",
       links: [
         { text: "WingsAI", href: "https://www.wingsgroup.ai/" },
-        { text: "IA para Médicos", href: "#" },
-        { text: "GeekVision", href: "#" },
-        { text: "ConnectAI", href: "#" },
+        { text: "IA para Médicos", href: "http://cursos.iaparamedicos.com.br/" },
         { text: "Palestras", href: getPermalink("/speaking") },
       ],
     },
     {
       title: "Recursos",
       links: [
-        { text: "Blog", href: getBlogPermalink() },
         { text: "Livros Recomendados", href: getPermalink("/books") },
         { text: "Áreas de Interesse", href: getPermalink("/interesses") },
-        { text: "Newsletter", href: "#" },
       ],
     },
   ],
