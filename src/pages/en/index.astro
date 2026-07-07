@@ -1,0 +1,222 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Stats from '~/components/widgets/Stats.astro';
+
+import heroImage from '~/assets/images/jv-perfil-2025.jpeg';
+import techBack from '~/assets/images/tech_back.jpg';
+import coliriosBack from '~/assets/images/colirios_back_1.jpg';
+
+const metadata = {
+  title: 'João Victor Pacheco Dias · Medical AI Architect & PhD Candidate at FMUSP',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'View CV',
+        href: '/en/cv',
+        icon: 'tabler:user',
+      },
+      { text: 'Contact', href: '/en/contact' },
+    ]}
+    image={{ src: heroImage, alt: 'João Victor Dias', width: 640, height: 960 }}
+  >
+    <Fragment slot="title">
+      <span class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300" style="font-family: 'Poppins', sans-serif;">João Victor Dias</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">Medical AI Architect • Deeptech • PhD Candidate at FMUSP</span> · building AI that works in clinical practice since 2012.
+      </span>
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Medical AI Architect</span>
+      Clinical research, products in production and medical education. PhD candidate in Ophthalmological Medical Sciences at the University of São Paulo Medical School (FMUSP).
+    </Fragment>
+  </Hero>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    tagline="About"
+    title="Medical AI Architect"
+    items={[
+      {
+        title: 'One architecture, multiple markets',
+        description:
+          'I design and maintain the AI infrastructure for an ecosystem of digital health companies: each one has a CEO focused on its market, while I make sure the technology is world-class.',
+      },
+      {
+        title: 'Research with real impact: FMUSP',
+        description:
+          'Ongoing PhD in Ophthalmological Medical Sciences (FMUSP). ML pipeline for blink analysis and the NeuroGenetics project (retina × APOE, p<0.05). The lab feeds the products.',
+      },
+      {
+        title: 'Expanding research lines',
+        description:
+          'Oculomics and stroke prevention (INCT-PreAVC), antimicrobial resistance with AI (project started at a Harvard hackathon) and OCT retina segmentation (MICCAI 2026 challenge).',
+      },
+    ]}
+    image={{
+      src: techBack,
+      alt: 'João Victor at work',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Research, product and education. One focus: health.</h3>
+      João Victor Pacheco Dias designs and maintains the technology backbone of a healthtech ecosystem: the same AI, automations and medical integrations powering the group's companies.
+      Working with data and AI since 2012, he combines clinical research at HC-FMUSP with products in production.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="expertise"
+    tagline="Expertise"
+    title="Areas of Specialization"
+    subtitle="More than a decade building AI solutions with impact across industries."
+    items={[
+      {
+        title: 'Computer Vision',
+        description:
+          'Computer vision systems for medical and industrial applications.',
+        icon: 'tabler:eye',
+      },
+      {
+        title: 'Natural Language Processing',
+        description:
+          'Advanced natural language processing and text analytics solutions.',
+        icon: 'tabler:message-2',
+      },
+      {
+        title: 'Machine Learning',
+        description:
+          'ML algorithms for predictive analytics and intelligent automation.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Technical Leadership',
+        description:
+          'Building and leading Data Science teams across multiple industries.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Healthcare AI',
+        description:
+          'Specialization in AI applications for medicine, especially ophthalmology.',
+        icon: 'tabler:heart',
+      },
+      {
+        title: 'Scientific Organization',
+        description:
+          'P.A.R.A. system adapted for scientific writing and research.',
+        icon: 'tabler:book',
+      },
+      {
+        title: 'Fintech Innovation',
+        description:
+          'Financial data products and analytics for regulated industries.',
+        icon: 'tabler:coins',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'IA para Médicos (CEO: Karine Dias)',
+        description: 'The group\'s revenue engine. Active projects: NeuroApp, NeuroForm, NeuroGenetics, PacienteAlerta, HC-FMUSP. Educational ecosystem with courses and AI assistants for medical scientific writing.',
+      },
+      {
+        title: 'WingsAI (CEO: Eduardo Silva)',
+        description: 'Deeptech focused on applied health R&D. AEO Advogados, Blinktracking (PhD), FMUSP AI Unit, WingsAI Podcast.',
+      },
+      {
+        title: 'GeekVision (CEO: Dr. Pedro Carricondo)',
+        description: 'Digital products hub for medical AI. AEO Doctors (CDO: Henrique; Medical Advisor: Dr. Maria Fernanda) and BioGeek, statistical analysis for researchers.',
+      },
+      {
+        title: 'ConnectAI / Repport AI (CEO: Marcelo)',
+        description: 'Medical sales intelligence and AI-powered report automation.',
+      },
+      {
+        title: 'PacienteAlerta',
+        description: 'Treatment adherence and reminder system via WhatsApp. Under clinical validation.',
+      },
+      {
+        title: 'Lyen and Spero Science (CTO)',
+        description: 'Since 2026, also partner and CTO at Lyen (medical jobs platform) and CTO at Spero Science AI.',
+      },
+    ]}
+    image={{
+      src: coliriosBack,
+      alt: 'Projects and companies',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Digital Health Ecosystem</h3>
+      Specialized verticals, each with a CEO dedicated to its market. The competitive advantage is the shared architecture: what is built for one company benefits all the others, with startup speed and mature-company reliability.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    stats={[
+      { title: 'Working with data & AI since', amount: '2012' },
+      { title: 'Digital health companies', amount: '7' },
+      { title: 'Specialization', amount: 'Healthcare AI' },
+      { title: 'Clinical Research', amount: 'FMUSP' },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'View Full CV',
+        href: '/en/cv',
+        icon: 'tabler:file-text',
+      },
+      {
+        variant: 'secondary',
+        text: 'Contact',
+        href: '/en/contact',
+        icon: 'tabler:mail',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Building medical AI<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"> with real impact?</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Open to conversations about technology partnerships, international research
+      <br class="hidden md:inline" />and digital health projects.
+    </Fragment>
+  </CallToAction>
+</Layout>

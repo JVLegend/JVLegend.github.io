@@ -3,7 +3,7 @@ import Layout from '~/layouts/Layout.astro';
 import Header from '~/components/widgets/Header.astro';
 import Footer from '~/components/widgets/Footer.astro';
 
-import { headerData, footerData } from '~/navigation';
+import { headerData, headerDataEn, footerData, footerDataEn } from '~/navigation';
 
 import type { MetaData } from '~/types';
 
@@ -12,16 +12,18 @@ export interface Props {
 }
 
 const { metadata } = Astro.props;
+
+const isEn = Astro.url.pathname === '/en' || Astro.url.pathname.startsWith('/en/');
 ---
 
 <Layout metadata={metadata}>
   <slot name="header">
-    <Header {...headerData} isSticky showRssFeed showToggleTheme />
+    <Header {...(isEn ? headerDataEn : headerData)} isSticky showRssFeed showToggleTheme />
   </slot>
   <main>
     <slot />
   </main>
   <slot name="footer">
-    <Footer {...footerData} />
+    <Footer {...(isEn ? footerDataEn : footerData)} />
   </slot>
 </Layout>

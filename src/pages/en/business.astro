@@ -1,0 +1,390 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import techBack from '~/assets/images/tech_back.jpg';
+import pic07 from '~/assets/images/pic07.jpg';
+import digitalMedTwin from '~/assets/images/digitalmedtwin.png';
+
+const metadata = {
+  title: 'Medical AI Ecosystem - João Victor Dias',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero2
+    tagline="Ecosystem"
+    title="Medical AI Architect: one platform, multiple impact verticals"
+    subtitle="A shared technology architecture powers the group's digital health companies. Each CEO focuses on the market; technology is never the bottleneck."
+    image={{ src: techBack, alt: 'IA Médica e Tecnologia' }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    tagline="Model"
+    title="How the ecosystem works"
+  >
+    <Fragment slot="content">
+      <p>Instead of building one company at a time, João Victor developed a model where the same technology platform (AI, automations, medical integrations) powers multiple verticals simultaneously. It is the logic of a <strong>technology venture studio</strong>: a central architecture with real economies of scale, accelerating delivery across every company in the ecosystem. João Victor focuses exclusively on technology; sales and operations are the responsibility of each vertical's CEO.</p>
+      <br />
+      <table style="width:100%; border-collapse:collapse; font-size:0.9em">
+        <thead><tr style="border-bottom:2px solid #c9a84c"><th style="text-align:left;padding:6px">Company</th><th style="text-align:left;padding:6px">CEO</th><th style="text-align:left;padding:6px">Others</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #ddd"><td style="padding:6px"><strong>IA para Médicos</strong></td><td style="padding:6px">Karine Dias</td><td style="padding:6px">—</td></tr>
+          <tr style="border-bottom:1px solid #ddd"><td style="padding:6px"><strong>WingsAI</strong></td><td style="padding:6px">Eduardo Silva</td><td style="padding:6px">—</td></tr>
+          <tr style="border-bottom:1px solid #ddd"><td style="padding:6px"><strong>GeekVision</strong></td><td style="padding:6px">Dr. Pedro Carricondo</td><td style="padding:6px">Henrique (CDO) · Dra. Maria Fernanda (Medical Advisor)</td></tr>
+          <tr style="border-bottom:1px solid #ddd"><td style="padding:6px"><strong>ConnectAI / Repport AI</strong></td><td style="padding:6px">Marcelo</td><td style="padding:6px">Raul (Dev)</td></tr>
+          <tr><td style="padding:6px"><strong>PacienteAlerta</strong></td><td style="padding:6px">To be defined</td><td style="padding:6px">·</td></tr>
+        </tbody>
+      </table>
+      <br />
+      <p>Since 2026, João Victor is also <strong>partner and CTO at Lyen</strong> (medical jobs platform) and <strong>CTO at Spero Science AI</strong>.</p>
+    </Fragment>
+  </Content>
+
+  <!-- Wings AI Section -->
+
+  <Content
+    tagline="Company 1"
+    title="WingsAI"
+    image={{
+      src: techBack,
+      alt: 'Wings AI',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Deeptech · Applied R&amp;D</h3>
+      <p class="mb-4">Integrated portfolio of AI solutions spanning multiple sectors, from micro-SaaS to specialized health education.</p>
+    </Fragment>
+  </Content>
+
+  <Features
+    id="apps-publicados"
+    tagline="Products"
+    title="Apps published on the App Store"
+    subtitle="Ten apps on sale today. Source: App Store Connect, checked on 2026-07-06."
+    items={[
+      {
+        title: 'AutoRefratorGeek',
+        description:
+          'Refraction support for the ophthalmology practice. Part of the GeekVision B2B suite.',
+        icon: 'tabler:eye',
+      },
+      {
+        title: 'ClinicaDocs',
+        description:
+          'Fast clinical documentation for medical practices. Part of the GeekVision B2B suite.',
+        icon: 'tabler:files',
+      },
+      {
+        title: 'Visão Subnormal',
+        description:
+          'Support tool for low-vision patients.',
+        icon: 'tabler:accessible',
+      },
+      {
+        title: 'RepportAI and RepportAI Plus',
+        description:
+          'AI reports and sales intelligence for healthcare (ConnectAI / Repport AI).',
+        icon: 'tabler:report-medical',
+      },
+      {
+        title: 'Revela',
+        description:
+          'Event photos shared via QR code (B2C and B2B).',
+        icon: 'tabler:camera',
+      },
+      {
+        title: 'Consumer line',
+        description:
+          'David: The Anointed, Heroes of Faith, SuaAventura and Troféus do Mundo.',
+        icon: 'tabler:apps',
+      },
+    ]}
+  />
+
+  <Features
+    id="sites-plataformas"
+    tagline="Web"
+    title="Sites &amp; Platforms"
+    items={[
+      {
+        title: 'WingsAI',
+        description:
+          '<a href="https://www.wingsgroup.ai/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">wingsgroup.ai</a> · AI deeptech applied to health.',
+        icon: 'tabler:world',
+      },
+      {
+        title: 'IA para Médicos',
+        description:
+          '<a href="http://cursos.iaparamedicos.com.br/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">cursos.iaparamedicos.com.br</a> · courses and AI assistants for medical scientific writing.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Protocolo Medicina',
+        description:
+          '<a href="https://protocolomedicina.vercel.app/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">protocolomedicina.vercel.app</a> · AI medical image quality analysis.',
+        icon: 'tabler:photo',
+      },
+      {
+        title: 'BlinkTracking',
+        description:
+          '<a href="https://blinktracking.vercel.app/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">blinktracking.vercel.app</a> · blink analysis for research (FMUSP PhD).',
+        icon: 'tabler:eye-check',
+      },
+    ]}
+  />
+
+  <Features
+    id="wingsai-aihouse"
+    tagline="Vertical 2: AI House"
+    title="Custom AI Solutions"
+    subtitle="Tailor-made AI systems for companies"
+    items={[
+      {
+        title: 'AI Consulting',
+        description:
+          'Strategic advisory for implementing AI solutions.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Custom Development',
+        description:
+          'Custom AI models for specific business needs.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Systems Integration',
+        description:
+          'Integrating AI into existing technology infrastructure.',
+        icon: 'tabler:plug',
+      },
+      {
+        title: 'Intelligent Automation',
+        description:
+          'Automated processes with machine learning and AI.',
+        icon: 'tabler:robot',
+      },
+    ]}
+  />
+
+  <Content
+    isReversed
+    tagline="Vertical 3: HealthTech"
+    title="AI Applied to Medicine"
+    items={[
+      {
+        title: 'National Medical Imaging Protocol',
+        description: 'National framework for standardizing and optimizing medical image quality, developed with rigorous scientific methodology.',
+      },
+      {
+        title: 'Diagnostic Quality Framework',
+        description: 'AI algorithms for automatic quality assessment of ophthalmic images, validated in a clinical environment.',
+      },
+      {
+        title: 'Intelligent Clinical Automation',
+        description: 'AI-powered clinical decision support systems to optimize diagnostics and clinical outcomes.',
+      },
+      {
+        title: 'Telemedicine with AI',
+        description: 'Remote care platform integrated with AI tools for triage and analysis.',
+      },
+    ]}
+    image={{
+      src: digitalMedTwin,
+      alt: 'HealthTech AI',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Digital Transformation of Medical Practice</h3>
+      AI solutions for healthcare focused on diagnostic quality and evidence-based medicine. Proven experience in applied research and clinical implementation.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Features
+    id="wingsai-educacional"
+    tagline="Vertical 4: Education"
+    title="AI Education for Healthcare Professionals"
+    subtitle="Specialized training in AI applied to medicine"
+    items={[
+      {
+        title: 'Specialized Courses',
+        description:
+          'Medical AI training programs for healthcare professionals, from beginner to advanced.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Individual Mentoring',
+        description:
+          'Personalized guidance for physicians implementing AI in their clinical practice.',
+        icon: 'tabler:user-check',
+      },
+      {
+        title: 'Hands-on Workshops',
+        description:
+          'Hands-on training on AI tools applied to diagnostics and practice management.',
+        icon: 'tabler:tools',
+      },
+      {
+        title: 'Medical Digital Transformation',
+        description:
+          'Training on digitalization strategies for practices and clinics with AI.',
+        icon: 'tabler:device-laptop',
+      },
+    ]}
+  />
+
+  <!-- Instituto Rumo ao Topo Section -->
+
+  <Features
+    id="instituto"
+    tagline="Pillar 2"
+    title="Instituto Rumo ao Topo"
+    subtitle="Building communities focused on faith and technology"
+    items={[
+      {
+        title: 'Online Communities',
+        description:
+          'Digital platforms connecting Christian technology professionals.',
+        icon: 'tabler:world',
+      },
+      {
+        title: 'In-person Events',
+        description:
+          'Conferences and meetups on faith, ethics and technology innovation.',
+        icon: 'tabler:calendar-event',
+      },
+      {
+        title: 'Spiritual Mentoring',
+        description:
+          'Mentoring program for Christian leaders in technology.',
+        icon: 'tabler:user-heart',
+      },
+      {
+        title: 'Educational Content',
+        description:
+          'Content on integrating Christian faith and technology leadership.',
+        icon: 'tabler:book',
+      },
+    ]}
+  />
+
+  <!-- Palestras Section -->
+
+  <Content
+    tagline="Pillar 3"
+    title="Talks &amp; Keynotes"
+    items={[
+      {
+        title: 'Medical AI: The Ally, Not the Replacement',
+        description: 'How AI augments medical diagnosis without replacing the professional.',
+      },
+      {
+        title: 'Medical Image Quality Framework',
+        description: 'HC-FMUSP methodology for diagnostic optimization in ophthalmology.',
+      },
+      {
+        title: 'Bridging Medicine and Technology',
+        description: 'Strategies for integrating AI into clinical practice with evidence-based medicine.',
+      },
+      {
+        title: 'Christian Leadership in Tech',
+        description: 'Servant leadership and purpose in building health technology.',
+      },
+    ]}
+    image={{
+      src: pic07,
+      alt: 'Talks',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Medical AI Expertise</h3>
+      Speaker specialized in AI applications in medicine. More than a decade of experience + HC-FMUSP + Christian technology leadership. Topics bridging medicine and technology.
+    </Fragment>
+  </Content>
+
+  <!-- R12 EdTech Section -->
+
+  <Features
+    id="r12"
+    tagline="Pillar 4"
+    title="R12: Tech Education with Social Impact"
+    subtitle="Training young tech talent for the digital future"
+    items={[
+      {
+        title: 'Programming Education',
+        description:
+          'Full software development (Python) and service desk courses for young talent.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'AI Training',
+        description:
+          'Training in AI, machine learning and agile methodologies.',
+        icon: 'tabler:robot',
+      },
+      {
+        title: 'Digital Inclusion',
+        description:
+          'Technology inclusion programs in regions with limited tech education.',
+        icon: 'tabler:accessible',
+      },
+      {
+        title: 'Soft Skills Development',
+        description:
+          'Focus on behavioral skills, communication and neuroscience applied to learning.',
+        icon: 'tabler:users-group',
+      },
+      {
+        title: 'Job Market Readiness',
+        description:
+          'Employability and placement of young people in the tech market.',
+        icon: 'tabler:briefcase',
+      },
+      {
+        title: 'Social Impact &amp; ESG',
+        description:
+          'Aligned with UN SDGs 4, 8 and 10 for sustainable development and social responsibility.',
+        icon: 'tabler:world',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Partnership Contact',
+        href: '/en/contact',
+        icon: 'tabler:users',
+      },
+      {
+        variant: 'secondary',
+        text: 'See Talks',
+        href: '/speaking',
+        icon: 'tabler:microphone',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Interested in<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"> Collaborating?</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Get in touch to discuss partnership and investment opportunities,
+      <br class="hidden md:inline" />or collaboration on AI and innovation projects.
+    </Fragment>
+  </CallToAction>
+</Layout>

@@ -32,6 +32,26 @@ export const headerData = {
   ],
 };
 
+export const headerDataEn = {
+  links: [
+    {
+      text: "About",
+      href: getPermalink("/en"),
+    },
+    {
+      text: "CV",
+      href: getPermalink("/en/cv"),
+    },
+    {
+      text: "Business",
+      href: getPermalink("/en/business"),
+    },
+  ],
+  actions: [
+    { text: "Contact", href: getPermalink("/en/contact"), icon: "tabler:mail" },
+  ],
+};
+
 export const footerData = {
   links: [
     {
@@ -82,5 +102,34 @@ export const footerData = {
   ],
   footNote: `
     © ${new Date().getFullYear()} João Victor Pacheco Dias. Todos os direitos reservados.
+  `,
+};
+
+export const footerDataEn = {
+  links: [
+    {
+      title: "João Victor",
+      links: [
+        { text: "About", href: getPermalink("/en") },
+        { text: "CV", href: getPermalink("/en/cv") },
+        { text: "Contact", href: getPermalink("/en/contact") },
+      ],
+    },
+    {
+      title: "Ecosystem",
+      links: [
+        { text: "WingsAI", href: "https://www.wingsgroup.ai/" },
+        { text: "IA para Médicos", href: "http://cursos.iaparamedicos.com.br/" },
+        { text: "Business", href: getPermalink("/en/business") },
+      ],
+    },
+  ],
+  secondaryLinks: [
+    { text: "Terms", href: getPermalink("/terms") },
+    { text: "Privacy", href: getPermalink("/privacy") },
+  ],
+  socialLinks: footerData.socialLinks,
+  footNote: `
+    © ${new Date().getFullYear()} João Victor Pacheco Dias. All rights reserved.
   `,
 };
