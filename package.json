@@ -70,6 +70,7 @@
   "overrides": {
     "@iconify/tools": "5.0.12",
     "brace-expansion": "5.0.9",
+    "deepmerge-ts": "8.0.1",
     "fast-uri": "3.1.5",
     "h3": ">=1.15.6",
     "nanoid": "3.3.18",
