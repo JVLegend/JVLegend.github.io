@@ -66,7 +66,10 @@ export const footerData = {
       title: "Ecossistema",
       links: [
         { text: "WingsAI", href: "https://www.wingsgroup.ai/" },
-        { text: "IA para Médicos", href: "http://cursos.iaparamedicos.com.br/" },
+        {
+          text: "IA para Médicos",
+          href: "http://cursos.iaparamedicos.com.br/",
+        },
         { text: "Palestras", href: getPermalink("/speaking") },
       ],
     },
@@ -119,7 +122,10 @@ export const footerDataEn = {
       title: "Ecosystem",
       links: [
         { text: "WingsAI", href: "https://www.wingsgroup.ai/" },
-        { text: "IA para Médicos", href: "http://cursos.iaparamedicos.com.br/" },
+        {
+          text: "IA para Médicos",
+          href: "http://cursos.iaparamedicos.com.br/",
+        },
         { text: "Business", href: getPermalink("/en/business") },
       ],
     },

@@ -75,9 +75,7 @@ export const adaptOpenGraphImages = async (
     images.map(async (image) => {
       if (image?.url) {
         const resolvedImage = (await findImage(image.url)) as
-          | ImageMetadata
-          | string
-          | undefined;
+          ImageMetadata | string | undefined;
         if (!resolvedImage) {
           return {
             url: "",
