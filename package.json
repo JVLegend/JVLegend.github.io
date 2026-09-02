@@ -71,7 +71,7 @@
     "@iconify/tools": "5.0.12",
     "brace-expansion": "5.0.9",
     "deepmerge-ts": "8.0.1",
-    "fast-uri": "3.1.5",
+    "fast-uri": "3.1.6",
     "h3": ">=1.15.6",
     "nanoid": "3.3.18",
     "undici": "7.29.0",
@@ -89,6 +89,7 @@
     "picomatch": ">=4.0.4",
     "yaml": ">=2.8.3",
     "esbuild": "0.28.1",
-    "js-yaml": "4.3.1"
+    "js-yaml": "4.3.1",
+    "postcss-selector-parser@^6": "6.1.3"
   }
 }
