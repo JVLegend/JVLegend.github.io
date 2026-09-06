@@ -1,3 +1,4 @@
+/* #Tecnologia #JoaoVictor */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -106,4 +107,42 @@
 
 .dd *:first-child {
   margin-top: 0;
+}
+
+/* Keyboard navigation and readable accents on dark backgrounds. */
+:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: 4px;
+}
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 60;
+  transform: translateY(-200%);
+  padding: 0.75rem 1rem;
+  background: white;
+  color: #0f172a;
+  border-radius: 0.5rem;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+.dark .text-primary {
+  color: #60a5fa;
+}
+#header a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+}
+#header [data-aw-header-actions] {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+@media (min-width: 1280px) {
+  #header [data-aw-header-actions] {
+    padding-bottom: 0;
+  }
+}
+main {
+  scroll-margin-top: 6rem;
 }

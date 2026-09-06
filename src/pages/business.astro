@@ -1,4 +1,5 @@
 ---
+// #Tecnologia #JoaoVictor
 import Layout from '~/layouts/PageLayout.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Features from '~/components/widgets/Features.astro';
@@ -10,7 +11,8 @@ import pic07 from '~/assets/images/pic07.jpg';
 import digitalMedTwin from '~/assets/images/digitalmedtwin.png';
 
 const metadata = {
-  title: 'Ecossistema de IA Médica - João Victor Dias',
+  title: 'Projetos e negócios',
+  description: 'Projetos de João Victor Dias em inteligência artificial, saúde digital, pesquisa e educação.',
 };
 ---
 
@@ -19,8 +21,8 @@ const metadata = {
 
   <Hero2
     tagline="Ecossistema"
-    title="Arquiteto de IA Médica: uma plataforma, múltiplas verticais de impacto"
-    subtitle="Uma arquitetura tecnológica compartilhada potencializa as empresas de saúde digital do grupo. Cada CEO foca no mercado; a tecnologia nunca é o gargalo."
+    title="IA aplicada à saúde, à pesquisa e à educação"
+    subtitle="Projetos de tecnologia desenvolvidos com profissionais de saúde, pesquisadores e equipes de negócio."
     image={{ src: techBack, alt: 'IA Médica e Tecnologia' }}
   />
 
@@ -31,18 +33,21 @@ const metadata = {
     title="Como o ecossistema funciona"
   >
     <Fragment slot="content">
-      <p>Ao invés de construir uma empresa por vez, João Victor desenvolveu um modelo onde a mesma plataforma tecnológica — IA, automações, integrações médicas — alimenta múltiplas verticais simultaneamente. É a lógica de um <strong>venture studio de tecnologia</strong>: uma arquitetura central com economia de escala real, acelerando entregas em todas as empresas do ecossistema. João Victor foca exclusivamente na tecnologia — as vendas e a operação são responsabilidade dos CEOs de cada vertical.</p>
+      <p>Minha atuação combina engenharia de IA, dados e desenvolvimento de produtos. Colaboro com diferentes equipes para transformar necessidades concretas em software, automações e ferramentas de pesquisa. Os projetos abaixo têm diferentes estágios de desenvolvimento e uso.</p>
       <br />
-      <table style="width:100%; border-collapse:collapse; font-size:0.9em">
-        <thead><tr style="border-bottom:2px solid #c9a84c"><th style="text-align:left;padding:6px">Empresa</th><th style="text-align:left;padding:6px">CEO</th><th style="text-align:left;padding:6px">Outros</th></tr></thead>
+      <div class="overflow-x-auto"><table class="w-full text-left text-base">
+        <caption class="sr-only">Projetos e áreas de atuação</caption>
+        <thead><tr><th scope="col" class="p-3">Projeto</th><th scope="col" class="p-3">Atuação</th></tr></thead>
         <tbody>
-          <tr style="border-bottom:1px solid #ddd"><td style="padding:6px"><strong>IA para Médicos</strong></td><td style="padding:6px">Karine Dias</td><td style="padding:6px">—</td></tr>
-          <tr style="border-bottom:1px solid #ddd"><td style="padding:6px"><strong>WingsAI</strong></td><td style="padding:6px">Eduardo Silva</td><td style="padding:6px">—</td></tr>
-          <tr style="border-bottom:1px solid #ddd"><td style="padding:6px"><strong>GeekVision</strong></td><td style="padding:6px">Dr. Pedro Carricondo</td><td style="padding:6px">Henrique (CDO) · Dra. Maria Fernanda (Medical Advisor)</td></tr>
-          <tr style="border-bottom:1px solid #ddd"><td style="padding:6px"><strong>ConnectAI / Repport AI</strong></td><td style="padding:6px">Marcelo</td><td style="padding:6px">Raul (Dev)</td></tr>
-          <tr><td style="padding:6px"><strong>PacienteAlerta</strong></td><td style="padding:6px">Em definição</td><td style="padding:6px">·</td></tr>
+          <tr class="border-t border-gray-200 dark:border-gray-700"><th scope="row" class="p-3 font-semibold">IA para Médicos</th><td class="p-3">Aplicativos de IA, presença digital e educação</td></tr>
+          <tr class="border-t border-gray-200 dark:border-gray-700"><th scope="row" class="p-3 font-semibold">WingsAI</th><td class="p-3">Pesquisa aplicada e desenvolvimento de IA</td></tr>
+          <tr class="border-t border-gray-200 dark:border-gray-700"><th scope="row" class="p-3 font-semibold">GeekVision</th><td class="p-3">Produtos digitais e oftalmologia</td></tr>
+          <tr class="border-t border-gray-200 dark:border-gray-700"><th scope="row" class="p-3 font-semibold">ConnectAI / Repport AI</th><td class="p-3">Inteligência comercial médica e relatórios</td></tr>
+          <tr class="border-t border-gray-200 dark:border-gray-700"><th scope="row" class="p-3 font-semibold">PacienteAlerta</th><td class="p-3">Lembretes de tratamento e apoio à adesão</td></tr>
+          <tr class="border-t border-gray-200 dark:border-gray-700"><th scope="row" class="p-3 font-semibold">Lyen</th><td class="p-3">Plataforma de vagas médicas</td></tr>
+          <tr class="border-t border-gray-200 dark:border-gray-700"><th scope="row" class="p-3 font-semibold">Spero Science</th><td class="p-3">Inteligência artificial aplicada</td></tr>
         </tbody>
-      </table>
+      </table></div>
       <br />
       <p>Desde 2026, João Victor atua também como <strong>sócio e CTO da Lyen</strong> (plataforma de vagas médicas) e como <strong>CTO da Spero Science AI</strong>.</p>
     </Fragment>
@@ -67,8 +72,8 @@ const metadata = {
   <Features
     id="apps-publicados"
     tagline="Produtos"
-    title="Apps publicados na App Store"
-    subtitle="Dez apps à venda hoje. Fonte: App Store Connect, consulta em 06/07/2026."
+    title="Aplicativos do portfólio"
+    subtitle="Seleção do portfólio de aplicativos para saúde, produtividade e experiências digitais."
     items={[
       {
         title: 'AutoRefratorGeek',
@@ -117,25 +122,25 @@ const metadata = {
       {
         title: 'WingsAI',
         description:
-          '<a href="https://www.wingsgroup.ai/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">wingsgroup.ai</a> · deeptech de IA aplicada à saúde.',
+          '<a href="https://www.wingsgroup.ai/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">wingsgroup.ai</a> · deeptech de IA aplicada à saúde.',
         icon: 'tabler:world',
       },
       {
         title: 'IA para Médicos',
         description:
-          '<a href="http://cursos.iaparamedicos.com.br/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">cursos.iaparamedicos.com.br</a> · cursos e assistentes de IA para escrita científica médica.',
+          '<a href="https://iaparamedicos.com.br/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">iaparamedicos.com.br</a> · cursos e assistentes de IA para escrita científica médica.',
         icon: 'tabler:school',
       },
       {
         title: 'Protocolo Medicina',
         description:
-          '<a href="https://protocolomedicina.vercel.app/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">protocolomedicina.vercel.app</a> · análise de qualidade de imagens médicas com IA.',
+          '<a href="https://protocolomedicina.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">protocolomedicina.vercel.app</a> · análise de qualidade de imagens médicas com IA.',
         icon: 'tabler:photo',
       },
       {
         title: 'BlinkTracking',
         description:
-          '<a href="https://blinktracking.vercel.app/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">blinktracking.vercel.app</a> · análise de piscadas para pesquisa (doutorado FMUSP).',
+          '<a href="https://blinktracking.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">blinktracking.vercel.app</a> · análise de piscadas para pesquisa (doutorado FMUSP).',
         icon: 'tabler:eye-check',
       },
     ]}
@@ -185,7 +190,7 @@ const metadata = {
       },
       {
         title: 'Framework de Qualidade Diagnóstica',
-        description: 'Algoritmos de IA para avaliação automática de qualidade em imagens oftalmológicas, validados em ambiente clínico.',
+        description: 'Algoritmos de IA para avaliação automática de qualidade em imagens oftalmológicas, desenvolvidos para pesquisa e avaliação técnica.',
       },
       {
         title: 'Automação Clínica Inteligente',
@@ -203,7 +208,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Transformação Digital da Prática Médica</h3>
-      Desenvolvimento de soluções de IA para o setor de saúde, com foco em qualidade diagnóstica e evidence-based medicine. Experiência comprovada em pesquisa aplicada e implementação clínica.
+      Desenvolvimento de soluções de IA para o setor de saúde, com foco em qualidade diagnóstica e evidence-based medicine. Trabalho em pesquisa aplicada e desenvolvimento de software para profissionais de saúde.
     </Fragment>
 
     <Fragment slot="bg">

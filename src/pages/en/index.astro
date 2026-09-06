@@ -1,4 +1,5 @@
 ---
+// #Tecnologia #JoaoVictor
 import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 import Layout from '~/layouts/PageLayout.astro';
@@ -8,8 +9,9 @@ import techBack from '~/assets/images/tech_back.jpg';
 import coliriosBack from '~/assets/images/colirios_back_1.jpg';
 
 const metadata = {
-  title: 'João Victor Pacheco Dias · Medical AI Architect · PhD Candidate at FMUSP',
+  title: 'João Victor Dias · Statistician, AI and healthcare',
   ignoreTitleTemplate: true,
+  description: 'Statistician and PhD candidate at HC-FMUSP. Applied AI for healthcare, research and products, connecting technical work with practical education.',
 };
 
 const expertise = [
@@ -39,7 +41,7 @@ const expertise = [
 
 const stats = [
   { amount: '2012', label: 'Working with data and AI since' },
-  { amount: '7', label: 'Digital health companies' },
+  { amount: 'ENCE', label: 'Degree in Statistics' },
   { amount: 'FMUSP', label: 'Clinical research' },
   { amount: 'CTO', label: 'Lyen and Spero Science' },
 ];
@@ -47,18 +49,18 @@ const stats = [
 
 <Layout metadata={metadata}>
   <!-- Hero: asymmetric split, text left, portrait right -->
-  <section class="relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-12 md:pt-20 pb-16 md:pb-24">
+  <section class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-10 md:pt-16 pb-14 md:pb-16">
       <div class="grid gap-10 lg:grid-cols-12 lg:items-center motion-safe:animate-fade">
         <div class="lg:col-span-7">
           <p class="text-sm uppercase tracking-[0.18em] font-semibold text-primary mb-5">
-            Medical AI Architect · PhD Candidate at FMUSP
+            Statistician · PhD candidate at HC-FMUSP
           </p>
           <h1 class="font-heading font-bold tracking-tighter leading-none text-5xl md:text-6xl xl:text-7xl text-gray-900 dark:text-slate-100">
             João Victor Dias
           </h1>
           <p class="mt-6 text-lg md:text-xl text-gray-600 dark:text-slate-400 leading-relaxed max-w-[52ch]">
-            Clinical research, digital health products in production and medical education. Building AI that works in clinical practice since 2012.
+            I develop AI solutions with healthcare professionals and teach how to turn technical possibilities into practical applications.
           </p>
           <div class="mt-8 flex flex-col sm:flex-row gap-3 max-w-xs sm:max-w-none">
             <a class="btn-primary" href="/en/cv">
@@ -69,7 +71,7 @@ const stats = [
           </div>
         </div>
         <div class="lg:col-span-5">
-          <div class="relative max-w-sm mx-auto lg:max-w-none lg:ml-auto">
+          <div class="relative max-w-sm mx-auto lg:max-w-sm lg:ml-auto">
             <div class="absolute -inset-3 rounded-2xl bg-primary/10 dark:bg-primary/20 rotate-2" aria-hidden="true"></div>
             <Image
               src={heroImage}
@@ -77,6 +79,9 @@ const stats = [
               width={640}
               height={960}
               loading="eager"
+              fetchpriority="high"
+              widths={[320, 480, 640]}
+              sizes="(min-width: 640px) 384px, calc(100vw - 32px)"
               class="relative rounded-2xl object-cover w-full aspect-[3/4] shadow-lg"
             />
           </div>
@@ -94,24 +99,23 @@ const stats = [
             Research, product and education. One focus: healthcare.
           </h2>
           <p class="mt-6 text-gray-600 dark:text-slate-400 leading-relaxed max-w-[65ch]">
-            I design and maintain the technological backbone of a healthtech ecosystem: the same AI, the same
-            automations and medical integrations powering the group's companies. I combine clinical research at
-            HC-FMUSP with products in production.
+            I graduated in Statistics from ENCE and am a PhD candidate at HC-FMUSP. My work connects data,
+            software development and healthcare research, alongside professionals who understand the needs of clinical practice.
           </p>
         </div>
         <div class="lg:col-span-7 space-y-10 lg:pl-8 lg:border-l border-gray-200 dark:border-slate-800">
           <div>
             <h3 class="font-heading font-semibold text-xl text-gray-900 dark:text-slate-100">One architecture, multiple markets</h3>
             <p class="mt-2 text-gray-600 dark:text-slate-400 leading-relaxed">
-              AI infrastructure for an ecosystem of digital health companies: each one with a CEO focused on its
-              market, while I make sure the technology is world-class.
+              I build AI infrastructure, automations and integrations for digital health projects,
+              working with each team to define priorities, implement solutions and evaluate their use.
             </p>
           </div>
           <div>
             <h3 class="font-heading font-semibold text-xl text-gray-900 dark:text-slate-100">Research with real impact at FMUSP</h3>
             <p class="mt-2 text-gray-600 dark:text-slate-400 leading-relaxed">
-              Ongoing PhD in Ophthalmological Medical Sciences. ML pipeline for blink analysis and the NeuroGenetics
-              project (retina × APOE, p&lt;0.05). The lab feeds the products.
+              Ongoing PhD in Ophthalmological Medical Sciences, including machine learning for blink analysis.
+              I also collaborate on research at the intersection of retinal imaging and genetics.
             </p>
           </div>
           <div>
@@ -165,8 +169,7 @@ const stats = [
         Digital health ecosystem
       </h2>
       <p class="mt-4 text-gray-600 dark:text-slate-400 max-w-[65ch]">
-        Specialized verticals, each with a CEO dedicated to its market. What is built for one company benefits all
-        the others.
+        Companies and projects where I contribute to technology, research and education in healthcare.
       </p>
 
       <div class="mt-12 grid gap-4 md:grid-cols-6">
@@ -177,8 +180,8 @@ const stats = [
             <h3 class="font-heading font-bold text-2xl text-white">IA para Médicos</h3>
             <p class="text-sm text-slate-300 mt-1">CEO: Karine Dias</p>
             <p class="mt-3 text-slate-200 leading-relaxed max-w-[60ch]">
-              The group's revenue engine: NeuroApp, NeuroForm, NeuroGenetics and an educational ecosystem with
-              courses and AI assistants for medical scientific writing.
+              AI solutions for healthcare professionals, including apps, digital presence,
+              courses and tools for scientific research.
             </p>
           </div>
         </div>
@@ -214,7 +217,7 @@ const stats = [
           <div class="relative p-6 md:p-8 flex flex-col justify-end min-h-[14rem]">
             <h3 class="font-heading font-bold text-xl text-white">PacienteAlerta</h3>
             <p class="mt-3 text-slate-200 leading-relaxed">
-              Treatment reminders and adherence via WhatsApp. In clinical validation.
+              A project focused on treatment reminders and supporting adherence.
             </p>
           </div>
         </div>
@@ -235,6 +238,7 @@ const stats = [
           </p>
         </div>
       </div>
+      <p class="mt-8"><a class="btn-secondary" href="/en/business">Explore the projects</a></p>
     </div>
   </section>
 
@@ -258,10 +262,10 @@ const stats = [
   <section class="bg-blue-50/50 dark:bg-slate-900/40 border-t border-gray-200 dark:border-slate-800">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 md:py-24 text-center">
       <h2 class="font-heading font-bold tracking-tight text-3xl md:text-4xl text-gray-900 dark:text-slate-100">
-        Building medical AI with real impact?
+        Let’s talk about your next AI project
       </h2>
       <p class="mt-4 text-gray-600 dark:text-slate-400">
-        Open to conversations about technology partnerships, international grants and digital health projects.
+        For AI projects, research collaborations, talks and practical training in healthcare.
       </p>
       <div class="mt-8 flex flex-col sm:flex-row justify-center gap-3 max-w-xs sm:max-w-none mx-auto">
         <a class="btn-primary" href="/en/cv">

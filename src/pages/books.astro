@@ -1,4 +1,5 @@
 ---
+// #JoaoVictor #Tecnologia
 import Layout from '~/layouts/PageLayout.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Features from '~/components/widgets/Features.astro';
@@ -6,7 +7,8 @@ import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Livros Recomendados - João Victor Dias',
+  title: 'Livros recomendados',
+  description: 'Seleção pessoal de livros de João Victor Dias: ficção, liderança, fé e biografias.',
 };
 ---
 
@@ -46,7 +48,7 @@ const metadata = {
       <div class="max-w-3xl mx-auto">
         <p class="mb-4">Ao longo dos anos, certos livros marcaram profundamente minha trajetória pessoal e profissional. Esta é uma seleção cuidadosa de obras que influenciaram meu pensamento em liderança, fé, tecnologia e visão de mundo.</p>
 
-        <p>Cada livro aqui listado vem acompanhado de um breve comentário sobre seu impacto e por que recomendo sua leitura.</p>
+        <p>Os títulos estão organizados por tema para facilitar a exploração da lista.</p>
       </div>
     </Fragment>
   </Content>
@@ -61,33 +63,27 @@ const metadata = {
     items={[
       {
         title: 'A Primeira Lei',
-        description:
-          'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
         icon: 'tabler:book',
       },
       {
         title: 'As Crônicas de Olam',
-        description:
-          'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
         icon: 'tabler:book',
       },
       {
         title: 'Palavras de Radiância',
-        description:
-          'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
         icon: 'tabler:book',
       },
       {
         title: 'O Senhor dos Anéis',
-        description:
-          'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
         icon: 'tabler:book',
       },
       {
         title: 'Paraíso Perdido',
-        description:
-          'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
         icon: 'tabler:book',
+      },
+      {
+        title: 'A Batalha do Apocalipse',
+        icon: 'tabler:shield',
       },
     ]}
   />
@@ -103,38 +99,27 @@ const metadata = {
     items={[
       {
         title: 'As 48 Leis do Poder',
-        description: 'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
         icon: 'tabler:crown',
       },
       {
         title: 'Responsabilidade Extrema',
-        description: 'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
         icon: 'tabler:target',
       },
       {
         title: 'Surpreendido pelo Temor',
-        description: 'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
         icon: 'tabler:sparkles',
       },
       {
         title: 'Homem ao Máximo',
-        description: 'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
         icon: 'tabler:flame',
       },
       {
         title: 'Deus Responde Orações',
-        description: 'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
         icon: 'tabler:heart',
       },
       {
         title: 'O Verdadeiro Evangelho',
-        description: 'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
         icon: 'tabler:book-2',
-      },
-      {
-        title: 'A Batalha do Apocalipse',
-        description: 'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
-        icon: 'tabler:shield',
       },
     ]}
   />
@@ -149,8 +134,6 @@ const metadata = {
     items={[
       {
         title: 'Nikola Tesla',
-        description:
-          'Comentário: [Espaço para seu comentário pessoal sobre este livro]',
         icon: 'tabler:bulb',
       },
     ]}
@@ -162,8 +145,8 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Ver Mais Conteúdo',
-        href: '/blog',
+        text: 'Explorar Interesses',
+        href: '/interesses',
         icon: 'tabler:book-2',
       },
       {
@@ -179,7 +162,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      Explore mais conteúdo no blog ou entre em contato para trocar ideias
+      Explore minhas áreas de interesse ou entre em contato para trocar ideias
       <br class="hidden md:inline" />sobre livros, liderança e tecnologia.
     </Fragment>
   </CallToAction>

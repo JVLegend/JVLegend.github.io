@@ -1,3 +1,4 @@
+// #Tecnologia #JoaoVictor
 import { getPermalink, getAsset } from "./utils/permalinks";
 
 export const headerData = {
@@ -68,7 +69,7 @@ export const footerData = {
         { text: "WingsAI", href: "https://www.wingsgroup.ai/" },
         {
           text: "IA para Médicos",
-          href: "http://cursos.iaparamedicos.com.br/",
+          href: "https://iaparamedicos.com.br/",
         },
         { text: "Palestras", href: getPermalink("/speaking") },
       ],
@@ -124,15 +125,15 @@ export const footerDataEn = {
         { text: "WingsAI", href: "https://www.wingsgroup.ai/" },
         {
           text: "IA para Médicos",
-          href: "http://cursos.iaparamedicos.com.br/",
+          href: "https://iaparamedicos.com.br/",
         },
         { text: "Business", href: getPermalink("/en/business") },
       ],
     },
   ],
   secondaryLinks: [
-    { text: "Terms", href: getPermalink("/terms") },
-    { text: "Privacy", href: getPermalink("/privacy") },
+    { text: "Terms (Portuguese)", href: getPermalink("/terms") },
+    { text: "Privacy (Portuguese)", href: getPermalink("/privacy") },
   ],
   socialLinks: footerData.socialLinks,
   footNote: `

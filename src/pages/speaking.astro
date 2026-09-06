@@ -1,4 +1,5 @@
 ---
+// #Tecnologia #JoaoVictor
 import Layout from '~/layouts/PageLayout.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Features from '~/components/widgets/Features.astro';
@@ -6,7 +7,8 @@ import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Palestras - João Victor Dias',
+  title: 'Palestras e workshops',
+  description: 'Palestras e workshops de João Victor Dias sobre IA aplicada, pesquisa, saúde e liderança técnica.',
 };
 ---
 
@@ -14,7 +16,7 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero2
-    tagline="Speaking"
+    tagline="Palestras"
     title="Palestras e Keynotes"
     subtitle="Compartilhando conhecimento sobre IA, liderança e inovação"
   >
@@ -91,41 +93,26 @@ const metadata = {
     ]}
   />
 
-  <!-- Previous Events -->
+  <Features
+    tagline="CBO 2026"
+    title="Materiais de IA para oftalmologia"
+    subtitle="Aulas interativas para explorar conceitos, ferramentas e aplicações no consultório."
+    items={[
+      { title: 'Conceitos e agentes de IA', description: '<a class="underline text-blue-600 dark:text-blue-400" href="https://cbo-2026-conceitos-agentes.vercel.app/" target="_blank" rel="noopener noreferrer">Acessar a aula interativa</a>', icon: 'tabler:brain' },
+      { title: 'ChatGPT, Claude e Gemini', description: '<a class="underline text-blue-600 dark:text-blue-400" href="https://cbo-2026-plataformas.vercel.app/" target="_blank" rel="noopener noreferrer">Explorar plataformas e aplicações</a>', icon: 'tabler:device-laptop' },
+      { title: 'Como aplicar IA no meu consultório?', description: '<a class="underline text-blue-600 dark:text-blue-400" href="https://cbo-2026-drylab-consultorio.vercel.app/" target="_blank" rel="noopener noreferrer">Abrir os exercícios do DryLab</a>', icon: 'tabler:tools' },
+    ]}
+  />
 
-  <Content
-    tagline="Experiência"
-    title="Eventos Anteriores"
-  >
+  <Content tagline="Trajetória" title="Seleção de aulas e workshops">
     <Fragment slot="content">
-      <div class="space-y-6">
-        <div>
-          <h4 class="text-lg font-bold mb-2">Conferências Nacionais</h4>
-          <ul class="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300">
-            <li>FIAP Innovation Summit - "IA na Transformação Digital"</li>
-            <li>Campus Party Brasil - "Computer Vision na Prática"</li>
-            <li>Python Brasil - "ML em Produção: Desafios Reais"</li>
-          </ul>
-        </div>
-        
-        <div>
-          <h4 class="text-lg font-bold mb-2">Eventos Corporativos</h4>
-          <ul class="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300">
-            <li>Masterclass para executivos de banco de investimento</li>
-            <li>Workshop de IA para diretoria de hospital público</li>
-            <li>Keynote sobre liderança técnica para startup unicórnio</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-bold mb-2">Eventos Acadêmicos</h4>
-          <ul class="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300">
-            <li>Seminário de IA na USP - Aplicações Médicas</li>
-            <li>Congresso de Oftalmologia - Inovação Tecnológica</li>
-            <li>Simpósio de Telemedicina - Futuro da Saúde Digital</li>
-          </ul>
-        </div>
-      </div>
+      <ul class="space-y-4 text-gray-600 dark:text-gray-300">
+        <li><strong>CBO, 2025:</strong> coordenação de WetLab sobre desenvolvimento de modelos de inteligência artificial.</li>
+        <li><strong>IBGE, 2024:</strong> introdução a LLMs e RAG na 7ª Semana de Iniciação Científica.</li>
+        <li><strong>FMUSP, 2024:</strong> inteligência artificial na pesquisa científica e telemedicina aplicada à oftalmologia.</li>
+        <li><strong>Bradesco Innovation Day, 2020:</strong> inteligência artificial, privacidade e Open Banking.</li>
+      </ul>
+      <p class="mt-6"><a href="/cv" class="underline text-blue-600 dark:text-blue-400">Ver a trajetória completa no currículo</a></p>
     </Fragment>
   </Content>
 
