@@ -1,10 +1,9 @@
-import { readFile } from "node:fs/promises";
+// #JoaoVictor #SEO #Tecnologia
 import path from "path";
 import { fileURLToPath } from "url";
 
 import { defineConfig } from "astro/config";
 
-import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import partytown from "@astrojs/partytown";
@@ -13,6 +12,7 @@ import compress from "astro-compress";
 import type { AstroIntegration } from "astro";
 
 import astrowind from "./vendor/integration";
+import indexableSitemap from "./src/utils/indexableSitemap";
 
 import {
   readingTimeRemarkPlugin,
@@ -41,18 +41,7 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    sitemap({
-      filter: (page) => {
-        const path = new URL(page).pathname.replace(/\/+$/, "") || "/";
-        return !/^\/(homes|landing)(\/|$)/.test(path) && !["/pricing", "/services"].includes(path);
-      },
-      serialize: async (item) => {
-        const route = new URL(item.url).pathname.replace(/\/+$/, "");
-        const file = new URL(`./dist${route}/index.html`, import.meta.url);
-        const html = await readFile(file, "utf8").catch(() => "");
-        return /<meta[^>]*content=["'][^"']*noindex/i.test(html) ? undefined : item;
-      },
-    }),
+    indexableSitemap(),
     mdx(),
     icon({
       include: {
