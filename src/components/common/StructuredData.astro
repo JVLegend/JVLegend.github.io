@@ -1,0 +1,70 @@
+---
+// #JoaoVictor #SEO #Tecnologia
+import { getCanonical } from "~/utils/permalinks";
+import { getPageLocale } from "~/utils/i18n";
+import { getPageSeo, isDemoPath, normalizePagePath } from "~/utils/seo";
+import type { MetaData } from "~/types";
+const { metadata = {} } = Astro.props as { metadata?: MetaData };
+const path = normalizePagePath(Astro.url.pathname);
+const locale = getPageLocale(path);
+const page = getPageSeo(path);
+const canonical = String(getCanonical(path));
+const home = String(getCanonical("/"));
+const person = {
+  "@type": "Person",
+  "@id": `${home}#joao-victor`,
+  name: "João Victor Pacheco Dias",
+  alternateName: "João Victor Dias",
+  url: home,
+  sameAs: [
+    "https://www.linkedin.com/in/joaovictordias/",
+    "https://github.com/jvlegend",
+  ],
+};
+const graph: object[] = [
+  person,
+  {
+    "@type": "WebSite",
+    "@id": `${home}#website`,
+    url: home,
+    name: "João Victor Dias",
+    publisher: { "@id": person["@id"] },
+    inLanguage: ["pt-BR", "en-US"],
+  },
+  {
+    "@type": ["/cv", "/en/cv"].includes(path) ? "ProfilePage" : "WebPage",
+    "@id": `${canonical}#webpage`,
+    url: canonical,
+    name: metadata.title || page?.label || "João Victor Dias",
+    description: metadata.description || page?.description,
+    inLanguage: locale.language,
+    isPartOf: { "@id": `${home}#website` },
+    ...(["/", "/en", "/cv", "/en/cv"].includes(path)
+      ? { mainEntity: { "@id": person["@id"] } }
+      : {}),
+    ...(page ? { breadcrumb: { "@id": `${canonical}#breadcrumb` } } : {}),
+  },
+];
+if (page)
+  graph.push({
+    "@type": "BreadcrumbList",
+    "@id": `${canonical}#breadcrumb`,
+    itemListElement: page.crumbs.map((crumb, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: crumb.name,
+      item: String(getCanonical(crumb.path)),
+    })),
+  });
+const enabled =
+  !isDemoPath(path) &&
+  path !== "/404" &&
+  path !== "/404.html" &&
+  metadata.robots?.index !== false;
+const json = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": graph,
+}).replace(/</g, "\\u003c");
+---
+
+{enabled && <script is:inline type="application/ld+json" set:html={json} />}

@@ -30,7 +30,7 @@ Fonte local com licença SIL OFL: Inter Tight 400 para texto e 600 para títulos
 
 ## 4. Component Stylings
 
-Botões dourados, texto preto, altura mínima de 52 px, cantos de 4 px. Links de leitura com seta. Cards de projeto sem caixa, fotografia acima da descrição. Accordion de atuação com item aberto dourado e conteúdo preto. Menu em dialog nativo: backdrop escuro, foco contido, fechamento por Escape e retorno de foco. Rodapé com frase em movimento e alternativa sem animação quando solicitada pelo sistema.
+Botões dourados, texto preto, altura mínima de 52 px, cantos de 4 px. Links de leitura com seta. Cards de projeto sem caixa, fotografia acima da descrição. Accordion de atuação com item aberto dourado e conteúdo preto. Breadcrumbs nas páginas internas conectam início, área de interesses quando pertinente e página atual, com tipografia discreta e links tocáveis. Menu em dialog nativo: backdrop escuro, foco contido, fechamento por Escape e retorno de foco. Rodapé com frase em movimento e alternativa sem animação quando solicitada pelo sistema.
 
 ## 5. Layout Principles
 

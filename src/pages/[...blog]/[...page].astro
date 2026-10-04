@@ -1,13 +1,14 @@
 ---
-import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
+// #JoaoVictor #SEO #Tecnologia
+import type { InferGetStaticPropsType, GetStaticPaths } from "astro";
 
-import Layout from '~/layouts/PageLayout.astro';
-import BlogList from '~/components/blog/List.astro';
-import Headline from '~/components/blog/Headline.astro';
-import Pagination from '~/components/blog/Pagination.astro';
+import Layout from "~/layouts/PageLayout.astro";
+import BlogList from "~/components/blog/List.astro";
+import Headline from "~/components/blog/Headline.astro";
+import Pagination from "~/components/blog/Pagination.astro";
 // import PostTags from "~/components/blog/Tags.astro";
 
-import { blogListRobots, getStaticPathsBlogList } from '~/utils/blog';
+import { blogListRobots, getStaticPathsBlogList } from "~/utils/blog";
 
 export const prerender = true;
 
@@ -19,18 +20,22 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { page } = Astro.props as Props;
 const currentPage = page.currentPage ?? 1;
+const hasPosts = page.data.length > 0;
 
 // const allCategories = await findCategories();
 // const allTags = await findTags();
 
 const metadata = {
-  title: `Blog${currentPage > 1 ? ` — Página ${currentPage}` : ''}`,
+  title: `Blog${currentPage > 1 ? ` — Página ${currentPage}` : ""}`,
+  description: hasPosts
+    ? "Artigos de João Victor Dias sobre inteligência artificial, pesquisa e tecnologia."
+    : "Este blog ainda não tem artigos publicados. Conheça minhas teses sobre IA e saúde.",
   robots: {
-    index: blogListRobots?.index && currentPage === 1,
+    index: hasPosts && blogListRobots?.index && currentPage === 1,
     follow: blogListRobots?.follow,
   },
   openGraph: {
-    type: 'blog',
+    type: "blog",
   },
 };
 ---
@@ -42,7 +47,18 @@ const metadata = {
     >
       Blog
     </Headline>
-    <BlogList posts={page.data} />
+    {
+      hasPosts ? (
+        <BlogList posts={page.data} />
+      ) : (
+        <p class="text-center text-lg">
+          Ainda não há artigos publicados.{" "}
+          <a class="underline" href="/teses">
+            Conheça minhas teses sobre IA e saúde.
+          </a>
+        </p>
+      )
+    }
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
     <!--
       <PostTags tags={allCategories} class="mb-2" title="Search by Categories:" isCategory />

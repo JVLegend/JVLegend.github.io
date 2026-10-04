@@ -1,6 +1,7 @@
 ---
 // #JoaoVictor #Tecnologia #Branding
 import Layout from "~/layouts/Layout.astro";
+import Breadcrumbs from "~/components/common/Breadcrumbs.astro";
 import PortfolioShell from "~/components/PortfolioShell.astro";
 import type { MetaData } from "~/types";
 export interface Props {
@@ -10,6 +11,7 @@ const { metadata } = Astro.props;
 ---
 
 <Layout metadata={metadata}
-  ><PortfolioShell><div class="legacy-page"><slot /></div></PortfolioShell
+  ><PortfolioShell
+    ><div class="legacy-page"><Breadcrumbs /><slot /></div></PortfolioShell
   ></Layout
 >

@@ -1,16 +1,17 @@
 ---
-import merge from 'lodash.merge';
-import { AstroSeo } from '@astrolib/seo';
+import merge from "lodash.merge";
+import { AstroSeo } from "@astrolib/seo";
 
-import type { Props as AstroSeoProps } from '@astrolib/seo';
+import type { Props as AstroSeoProps } from "@astrolib/seo";
 
-import { SITE, METADATA } from 'astrowind:config';
-import { getPageLocale } from '~/utils/i18n';
+import { SITE, METADATA } from "astrowind:config";
+import { getPageSeo, isDemoPath } from "~/utils/seo";
+import { getPageLocale } from "~/utils/i18n";
 // #Tecnologia #JoaoVictor
-import type { MetaData } from '~/types';
-import { getCanonical } from '~/utils/permalinks';
+import type { MetaData } from "~/types";
+import { getCanonical } from "~/utils/permalinks";
 
-import { adaptOpenGraphImages } from '~/utils/images';
+import { adaptOpenGraphImages } from "~/utils/images";
 
 export interface Props extends MetaData {
   dontUseTitleTemplate?: boolean;
@@ -21,20 +22,19 @@ const {
   ignoreTitleTemplate = false,
   canonical = String(getCanonical(String(Astro.url.pathname))),
   robots = {},
-  description,
+  description = getPageSeo(Astro.url.pathname)?.description,
   openGraph = {},
   twitter = {},
 } = Astro.props;
 
 const locale = getPageLocale(Astro.url.pathname);
 // Keep legacy template demonstrations out of search results.
-const isDemo = /^\/(homes|landing)(\/|$)/.test(Astro.url.pathname) || ['/pricing', '/services'].includes(Astro.url.pathname.replace(/\/+$/, ''));
-
+const isDemo = isDemoPath(Astro.url.pathname);
 
 const seoProps: AstroSeoProps = merge(
   {
-    title: '',
-    titleTemplate: '%s',
+    title: "",
+    titleTemplate: "%s",
     canonical: canonical,
     noindex: true,
     nofollow: true,
@@ -44,41 +44,69 @@ const seoProps: AstroSeoProps = merge(
       site_name: SITE?.name,
       images: [],
       locale: locale.openGraphLocale,
-      type: 'website',
+      type: "website",
     },
     twitter: {
-      cardType: openGraph?.images?.length ? 'summary_large_image' : 'summary',
+      cardType: openGraph?.images?.length ? "summary_large_image" : "summary",
     },
   },
   {
     title: METADATA?.title?.default,
     titleTemplate: METADATA?.title?.template,
-    noindex: typeof METADATA?.robots?.index !== 'undefined' ? !METADATA.robots.index : undefined,
-    nofollow: typeof METADATA?.robots?.follow !== 'undefined' ? !METADATA.robots.follow : undefined,
+    noindex:
+      typeof METADATA?.robots?.index !== "undefined"
+        ? !METADATA.robots.index
+        : undefined,
+    nofollow:
+      typeof METADATA?.robots?.follow !== "undefined"
+        ? !METADATA.robots.follow
+        : undefined,
     description: METADATA?.description,
     openGraph: METADATA?.openGraph,
     twitter: METADATA?.twitter,
   },
   {
     title: title,
-    titleTemplate: ignoreTitleTemplate ? '%s' : undefined,
+    titleTemplate: ignoreTitleTemplate ? "%s" : undefined,
     canonical: canonical,
-    noindex: isDemo ? true : typeof robots?.index !== 'undefined' ? !robots.index : undefined,
-    nofollow: typeof robots?.follow !== 'undefined' ? !robots.follow : undefined,
+    noindex: isDemo
+      ? true
+      : typeof robots?.index !== "undefined"
+        ? !robots.index
+        : undefined,
+    nofollow:
+      typeof robots?.follow !== "undefined" ? !robots.follow : undefined,
     description: description,
     openGraph: { url: canonical, ...openGraph, locale: locale.openGraphLocale },
     twitter: twitter,
-  }
+  },
 );
 ---
 
-<AstroSeo {...{ ...seoProps, openGraph: await adaptOpenGraphImages(seoProps?.openGraph, Astro.site) }} />
+<AstroSeo
+  {...{
+    ...seoProps,
+    openGraph: await adaptOpenGraphImages(seoProps?.openGraph, Astro.site),
+  }}
+/>
 {
   locale.hasTranslation && (
     <>
-      <link rel="alternate" hreflang="pt-BR" href={String(getCanonical(locale.ptPath))} />
-      <link rel="alternate" hreflang="en" href={String(getCanonical(locale.enPath))} />
-      <link rel="alternate" hreflang="x-default" href={String(getCanonical(locale.ptPath))} />
+      <link
+        rel="alternate"
+        hreflang="pt-BR"
+        href={String(getCanonical(locale.ptPath))}
+      />
+      <link
+        rel="alternate"
+        hreflang="en"
+        href={String(getCanonical(locale.enPath))}
+      />
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href={String(getCanonical(locale.ptPath))}
+      />
     </>
   )
 }
