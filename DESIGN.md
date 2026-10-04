@@ -6,7 +6,7 @@ Referência visual: [Lawyer Portfolio Landing Page — Alex](https://jiro.build/
 
 ## 1. Visual Theme & Atmosphere
 
-Portfólio editorial escuro, com fotografia em preto e branco, tipografia condensada monumental e dourado. Hero com retrato à direita, apresentação à esquerda, nome grande na base e CTA inclinado. Seções numeradas, linhas finas, poucos contêineres fechados e bastante espaço entre assuntos.
+Portfólio editorial escuro, com fotografia em preto e branco, tipografia Inter Tight em escala editorial e dourado. Hero com retrato à direita, apresentação à esquerda, nome grande na base e CTA inclinado. Seções numeradas, linhas finas, poucos contêineres fechados e bastante espaço entre assuntos.
 
 ## 2. Color Palette & Roles
 
@@ -18,15 +18,15 @@ Portfólio editorial escuro, com fotografia em preto e branco, tipografia conden
 
 ## 3. Typography Rules
 
-Fontes locais com licença SIL OFL: Antonio 700 para nome e títulos no desktop; Inter Tight 400/600 para texto e título de abertura. No celular, títulos e nome usam Inter Tight 600, com caixa de frase e proporções menos alongadas. Fallbacks: sans-serif.
+Fonte local com licença SIL OFL: Inter Tight 400 para texto e 600 para títulos, nome, menu e destaques em todas as telas. No celular, títulos usam caixa de frase. Fallback: sans-serif.
 
-| Papel        | Desktop    | Mobile   | Regra                                      |
-| ------------ | ---------- | -------- | ------------------------------------------ |
-| Hero         | 42–66 px   | 34–40 px | Inter Tight 600; entrelinha 1,08–1,12      |
-| Nome         | até 225 px | 9vw      | Antonio no desktop; Inter Tight no celular |
-| Seção        | 38–70 px   | 30–40 px | Caixa alta no desktop; frase no celular    |
-| Texto        | 16–19 px   | 15–17 px | Entrelinha 1,6–1,7                         |
-| Etiqueta/CTA | 10–12 px   | 10–12 px | Caixa alta, tracking discreto              |
+| Papel        | Desktop    | Mobile   | Regra                                   |
+| ------------ | ---------- | -------- | --------------------------------------- |
+| Hero         | 42–66 px   | 34–40 px | Inter Tight 600; entrelinha 1,08–1,12   |
+| Nome         | até 145 px | 9vw      | Inter Tight 600 em todas as telas       |
+| Seção        | 38–70 px   | 30–40 px | Caixa alta no desktop; frase no celular |
+| Texto        | 16–19 px   | 15–17 px | Entrelinha 1,6–1,7                      |
+| Etiqueta/CTA | 10–12 px   | 10–12 px | Caixa alta, tracking discreto           |
 
 ## 4. Component Stylings
 
@@ -59,6 +59,6 @@ Usar fotos reais do JV, preservar títulos profissionais precisos e separar conv
 
 ## 9. Agent Prompt Guide
 
-“Adapte o conteúdo preservando fundo preto, dourado, fontes Antonio/Inter Tight, fotografia monocromática e seções numeradas. Use o hero da referência Alex como composição. Não invente números de sucesso ou depoimentos. Mantenha as teses em português e inglês com rotas próprias e links para cada tese.”
+“Adapte o conteúdo preservando fundo preto, dourado, fonte Inter Tight, fotografia monocromática e seções numeradas. Use o hero da referência Alex como composição. Não invente números de sucesso ou depoimentos. Mantenha as teses em português e inglês com rotas próprias e links para cada tese.”
 
 Arquivos centrais: `src/components/PortfolioShell.astro`, `PortfolioHome.astro`, `ThesesPage.astro`, `portfolio-content.ts` e `src/assets/styles/portfolio.css`. Conteúdo das teses em um único módulo para evitar divergência entre home e página completa.
