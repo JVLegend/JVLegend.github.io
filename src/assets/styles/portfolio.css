@@ -946,6 +946,7 @@ body.portfolio-menu-open {
   margin-top: 32px;
   color: var(--portfolio-gold);
   text-wrap: balance;
+  text-transform: uppercase;
 }
 .thesis-lead {
   font-size: 24px;
@@ -1024,6 +1025,7 @@ body.portfolio-menu-open {
 }
 .thesis-close h2 {
   font-size: clamp(38px, 5vw, 64px);
+  text-transform: uppercase;
   margin-top: 26px;
 }
 .thesis-close > p:not(.eyebrow) {
@@ -1046,6 +1048,7 @@ body.portfolio-menu-open {
   --tw-prose-body: var(--portfolio-muted);
   --tw-prose-headings: var(--portfolio-white);
   min-height: 65vh;
+  overflow-wrap: anywhere;
 }
 .legacy-page :is(h1, h2, h3, h4) {
   color: var(--portfolio-white);
@@ -1164,7 +1167,7 @@ body.portfolio-menu-open {
     padding-block: 80px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .portfolio-container {
     width: calc(100% - 40px);
   }
@@ -1201,16 +1204,20 @@ body.portfolio-menu-open {
     gap: 0;
   }
   .portfolio-hero {
-    height: 780px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     min-height: 0;
-    max-height: none;
   }
   .hero-content {
-    padding-top: 122px;
+    position: static;
+    order: -1;
+    height: auto;
+    padding-block: 112px 32px;
   }
   .hero-eyebrow {
-    font-size: 10px;
-    max-width: 280px;
+    font-size: 11px;
+    max-width: none;
     margin-bottom: 20px !important;
   }
   .portfolio-hero h1 {
@@ -1220,21 +1227,16 @@ body.portfolio-menu-open {
     line-height: 1.12;
   }
   .hero-portrait {
+    position: static;
     width: 100%;
-    height: 50%;
-    top: auto;
-    bottom: 0;
-    object-position: 50% 0%;
-    filter: grayscale(1) brightness(0.55);
+    height: clamp(340px, 90vw, 460px);
+    object-position: 50% 12%;
+    filter: grayscale(1) brightness(0.7);
   }
   .hero-shade {
-    background: linear-gradient(
-      180deg,
-      #10100f 20%,
-      rgba(16, 16, 15, 0.7) 40%,
-      rgba(16, 16, 15, 0.08) 66%,
-      #10100f 99%
-    );
+    inset: auto 0 0;
+    height: clamp(340px, 90vw, 460px);
+    background: linear-gradient(0deg, #10100f 0%, transparent 65%);
   }
   .hero-subtitle {
     font-size: 18px;
@@ -1246,24 +1248,41 @@ body.portfolio-menu-open {
     height: 20px;
   }
   .hero-name {
-    bottom: 30px;
-    font-size: 15.5vw;
+    bottom: 24px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 9vw;
     letter-spacing: -0.045em;
     text-align: center;
   }
   .hero-floating-cta {
-    left: 10%;
-    bottom: 100px;
-    font-size: 22px;
-    white-space: nowrap;
-    padding-right: 16px;
+    position: static;
+    width: fit-content;
+    max-width: 100%;
+    min-height: 56px;
+    margin-top: 26px;
+    padding: 12px 20px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: none;
+    white-space: normal;
     gap: 12px;
-    transform: rotate(-11deg);
+    transform: none;
+    background: var(--portfolio-gold);
+    color: #10100f !important;
+    border-radius: 4px;
+    box-shadow: none;
+  }
+  .hero-floating-cta:hover {
+    transform: none;
   }
   .hero-floating-cta > span {
-    width: 44px;
-    height: 44px;
-    font-size: 28px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background: transparent;
+    font-size: 26px;
   }
   .identity-strip {
     gap: 16px 24px;
@@ -1478,20 +1497,11 @@ body.portfolio-menu-open {
   }
 }
 @media (max-width: 359px) {
-  .portfolio-hero {
-    height: 750px;
-  }
   .portfolio-hero h1 {
     font-size: 34px;
   }
-  .hero-floating-cta {
-    left: 5%;
-    font-size: 18px;
-    gap: 8px;
-    padding: 6px 10px 6px 6px;
-  }
   .portfolio-shell :where(h2):not(:where(.legacy-page *)) {
-    font-size: 35px;
+    font-size: 30px;
   }
   .portfolio-header-name {
     font-size: 14px;
@@ -1506,7 +1516,7 @@ body.portfolio-menu-open {
     transition: none !important;
   }
   .hero-floating-cta:hover {
-    transform: rotate(-15deg);
+    transform: none;
   }
   html {
     scroll-behavior: auto !important;
@@ -1524,10 +1534,148 @@ body.portfolio-menu-open {
   color: var(--portfolio-gold);
 }
 
-@media (max-width: 359px) {
-  .hero-floating-cta > span {
-    width: 36px;
-    height: 36px;
-    font-size: 25px;
+/* Comfortable reading and touch navigation on phones, including content pages. */
+.portfolio-header .portfolio-monogram,
+.language-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+.portfolio-container > *,
+.legacy-page .grid > * {
+  min-width: 0;
+}
+.legacy-page .overflow-x-auto {
+  max-width: 100%;
+  overscroll-behavior-x: contain;
+  scroll-margin-top: 100px;
+}
+.legacy-page .overflow-x-auto:focus-visible {
+  outline: 2px solid var(--portfolio-gold);
+  outline-offset: 4px;
+}
+@media (max-width: 767px) {
+  html:root,
+  html.dark {
+    --aw-font-heading: "Inter Tight", sans-serif;
+  }
+  .portfolio-header {
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+    gap: 8px;
+  }
+  .portfolio-shell :is(h2, h3, h4),
+  .legacy-page :is(h1, h2, h3, h4),
+  .about-text blockquote,
+  .portfolio-menu nav a {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.035em;
+    text-transform: none;
+    overflow-wrap: anywhere;
+  }
+  .portfolio-shell :where(h2):not(:where(.legacy-page *)) {
+    font-size: clamp(30px, 8.5vw, 40px);
+  }
+  .portfolio-intro h2,
+  .about-text blockquote {
+    font-size: clamp(28px, 8vw, 36px);
+  }
+  .thesis-preview h3,
+  .expertise-list summary h3,
+  .resource-grid h3 {
+    font-size: 26px;
+  }
+  .legacy-page h1,
+  .thesis-page h1 {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: clamp(34px, 9vw, 44px);
+    line-height: 1.15;
+    text-transform: none;
+  }
+  .legacy-page h2 {
+    font-size: 30px;
+  }
+  .legacy-page h3 {
+    font-size: 26px;
+  }
+  .thesis-article h2,
+  .thesis-close h2 {
+    font-size: 30px;
+    text-transform: none;
+  }
+  .thesis-actions {
+    flex-direction: column;
+  }
+  .thesis-actions .portfolio-button {
+    width: 100%;
+    flex: none;
+  }
+  .portfolio-menu {
+    width: calc(100% - 24px);
+    max-height: calc(100dvh - 24px);
+    padding: 16px 20px;
+  }
+  .portfolio-menu nav a {
+    font-size: 22px;
+    min-height: 52px;
+    gap: 12px;
+  }
+  .portfolio-menu .nav-number {
+    font-size: 12px;
+  }
+  .portfolio-button {
+    min-height: 52px;
+    font-size: 12px;
+  }
+  .footer-bottom nav a,
+  .footer-social a,
+  .menu-email,
+  .contact-email,
+  .expertise-details a,
+  .legacy-page a[aria-label],
+  .legacy-page a[href^="mailto:"] {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding-block: 10px;
+  }
+  .footer-bottom nav,
+  .footer-social {
+    gap: 4px 20px;
+  }
+  .legacy-page .overflow-x-auto table {
+    min-width: 36rem;
+    overflow-wrap: normal;
+  }
+  .legacy-page .p-8 {
+    padding: 24px;
+  }
+}
+
+.mobile-table-hint {
+  display: none;
+}
+@media (max-width: 767px) {
+  .portfolio-header-name {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .legacy-page .mobile-table-hint {
+    display: block;
+    color: var(--portfolio-muted);
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .portfolio-header-name {
+    display: none;
   }
 }

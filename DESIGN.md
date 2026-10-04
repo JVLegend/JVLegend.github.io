@@ -18,15 +18,15 @@ Portfólio editorial escuro, com fotografia em preto e branco, tipografia conden
 
 ## 3. Typography Rules
 
-Fontes locais com licença SIL OFL: Antonio 700 para nome e títulos; Inter Tight 400/600 para texto e título de abertura. Fallbacks: sans-serif.
+Fontes locais com licença SIL OFL: Antonio 700 para nome e títulos no desktop; Inter Tight 400/600 para texto e título de abertura. No celular, títulos e nome usam Inter Tight 600, com caixa de frase e proporções menos alongadas. Fallbacks: sans-serif.
 
-| Papel        | Desktop    | Mobile   | Regra                                 |
-| ------------ | ---------- | -------- | ------------------------------------- |
-| Hero         | 42–66 px   | 34–40 px | Inter Tight 600; entrelinha 1,08–1,12 |
-| Nome         | até 225 px | 15,5vw   | Antonio 700; uma linha                |
-| Seção        | 38–70 px   | 35–40 px | Antonio 700; caixa alta               |
-| Texto        | 16–19 px   | 15–17 px | Entrelinha 1,6–1,7                    |
-| Etiqueta/CTA | 10–12 px   | 10–12 px | Caixa alta, tracking discreto         |
+| Papel        | Desktop    | Mobile   | Regra                                      |
+| ------------ | ---------- | -------- | ------------------------------------------ |
+| Hero         | 42–66 px   | 34–40 px | Inter Tight 600; entrelinha 1,08–1,12      |
+| Nome         | até 225 px | 9vw      | Antonio no desktop; Inter Tight no celular |
+| Seção        | 38–70 px   | 30–40 px | Caixa alta no desktop; frase no celular    |
+| Texto        | 16–19 px   | 15–17 px | Entrelinha 1,6–1,7                         |
+| Etiqueta/CTA | 10–12 px   | 10–12 px | Caixa alta, tracking discreto              |
 
 ## 4. Component Stylings
 
@@ -51,11 +51,11 @@ Usar fotos reais do JV, preservar títulos profissionais precisos e separar conv
 
 ## 8. Responsive Behavior
 
-- Até 700 px: coluna única, retrato abaixo da abertura, credencial lateral oculta e navegação modal.
-- 701–1.050 px: margens menores, duas colunas quando viável, credencial lateral oculta.
+- Até 767 px: coluna única, hero com altura automática, retrato abaixo da abertura e CTA horizontal no fluxo. Credencial lateral oculta e navegação modal rolável, inclusive em telas baixas.
+- 768–1.050 px: margens menores, duas colunas quando viável, credencial lateral oculta.
 - Acima de 1.050 px: composição completa do hero, colunas editoriais e credencial lateral.
 - Controles principais com área de toque de ao menos 44 px; botões de ação de 52 px.
-- Nome dimensionado com viewport; e-mail pode quebrar linha. Respeitar `prefers-reduced-motion`.
+- Nome dimensionado com viewport; e-mail pode quebrar linha. Tabelas de CV e negócios rolam em contêiner próprio com instrução de deslizar e foco por teclado; o nome central do header some abaixo de 401 px. Respeitar `prefers-reduced-motion`.
 
 ## 9. Agent Prompt Guide
 
