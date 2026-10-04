@@ -1,3 +1,4 @@
+import { readFile } from "node:fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 
@@ -40,7 +41,18 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    sitemap(),
+    sitemap({
+      filter: (page) => {
+        const path = new URL(page).pathname.replace(/\/+$/, "") || "/";
+        return !/^\/(homes|landing)(\/|$)/.test(path) && !["/pricing", "/services"].includes(path);
+      },
+      serialize: async (item) => {
+        const route = new URL(item.url).pathname.replace(/\/+$/, "");
+        const file = new URL(`./dist${route}/index.html`, import.meta.url);
+        const html = await readFile(file, "utf8").catch(() => "");
+        return /<meta[^>]*content=["'][^"']*noindex/i.test(html) ? undefined : item;
+      },
+    }),
     mdx(),
     icon({
       include: {
