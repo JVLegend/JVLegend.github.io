@@ -1,0 +1,123 @@
+---
+// #JoaoVictor #Tecnologia #Saude
+import { theses } from "./portfolio-content";
+const { english: en = false } = Astro.props;
+---
+
+<div class="portfolio-container thesis-page portfolio-section">
+  <p class="eyebrow">
+    {en ? "JOÃO VICTOR DIAS / MY THESES" : "JOÃO VICTOR DIAS / MINHAS TESES"}
+  </p>
+  <h1>
+    {
+      en
+        ? "THE FUTURE OF HEALTHCARE I CHOOSE TO BUILD."
+        : "O FUTURO DA SAÚDE QUE ESCOLHO CONSTRUIR."
+    }
+  </h1>
+  <p class="thesis-lead">
+    {
+      en
+        ? "AI is changing what we can build. My direction is to put that capability at the service of care, connecting science, software and people."
+        : "A IA está mudando o que podemos construir. Minha direção é colocar essa capacidade a serviço do cuidado, conectando ciência, software e pessoas."
+    }
+  </p>
+  <p class="thesis-context">
+    {
+      en
+        ? "These are convictions that guide my work and hypotheses I want to investigate. I revisit them as I learn from research and practice."
+        : "Estas são convicções que orientam meu trabalho e hipóteses que quero investigar. Revisito cada uma conforme aprendo com a pesquisa e a prática."
+    }
+  </p>
+  <nav
+    class="thesis-toc"
+    aria-label={en ? "The four theses" : "As quatro teses"}
+  >
+    {
+      theses[en ? "en" : "pt"].map((t, i) => (
+        <a href={`#tese-${i + 1}`}>
+          0{i + 1}{" "}
+          <>
+            <span>{t.title}</span>
+            <span aria-hidden="true">↓</span>
+          </>
+        </a>
+      ))
+    }
+  </nav>
+  {
+    theses[en ? "en" : "pt"].map((t, i) => (
+      <article id={`tese-${i + 1}`} class="thesis-article">
+        <>
+          <p class="section-index">
+            <span>0{i + 1}</span> {en ? "THESIS" : "TESE"}
+          </p>
+          <div>
+            <>
+              <h2>{t.title}</h2>
+              <p class="thesis-opening">{t.text}</p>
+              <p>{t.detail}</p>
+              <div class="thesis-practice">
+                <>
+                  <p class="eyebrow">{en ? "IN PRACTICE" : "NA PRÁTICA"}</p>
+                  <p>{t.practice}</p>
+                </>
+              </div>
+            </>
+          </div>
+        </>
+      </article>
+    ))
+  }
+  <section class="thesis-close">
+    <p class="eyebrow">
+      {en ? "SCIENCE · SOFTWARE · PEOPLE" : "CIÊNCIA · SOFTWARE · PESSOAS"}
+    </p><h2>
+      {
+        en
+          ? "THIS IS WHERE I CHOOSE TO STUDY, BUILD AND SHARE."
+          : "É NESSA DIREÇÃO QUE ESCOLHO ESTUDAR, CONSTRUIR E COMPARTILHAR."
+      }
+    </h2><p>
+      {
+        en
+          ? "Explore my research and professional journey, or get in touch to exchange ideas."
+          : "Conheça minha pesquisa e trajetória profissional, ou entre em contato para trocar ideias."
+      }
+    </p><div class="thesis-actions">
+      <a class="portfolio-button" href={en ? "/en/cv" : "/cv"}
+        >{en ? "Explore my CV" : "Conheça meu CV"} ↗</a
+      ><a
+        class="portfolio-button outline"
+        href={en ? "/en/contact" : "/contact"}
+        >{en ? "Let’s talk" : "Vamos conversar"} ↗</a
+      ><button class="portfolio-button outline" type="button" data-copy-theses
+        >{en ? "Copy link" : "Copiar link"} ↗</button>
+    </div><p class="copy-feedback" role="status" aria-live="polite"></p>
+  </section>
+</div>
+<script>
+  document.addEventListener("click", async (event) => {
+    if (
+      !(event.target instanceof Element) ||
+      !event.target.closest("[data-copy-theses]")
+    )
+      return;
+    const feedback = document.querySelector(".copy-feedback");
+    const en = document.documentElement.lang.startsWith("en");
+    try {
+      await navigator.clipboard.writeText(
+        window.location.origin + window.location.pathname,
+      );
+      if (feedback)
+        feedback.textContent = en
+          ? "Link copied. Ready to share."
+          : "Link copiado. Pronto para compartilhar.";
+    } catch {
+      if (feedback)
+        feedback.textContent = en
+          ? "Copy the address from your browser to share this page."
+          : "Copie o endereço do navegador para compartilhar esta página.";
+    }
+  });
+</script>

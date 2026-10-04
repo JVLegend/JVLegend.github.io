@@ -1,0 +1,565 @@
+---
+// #JoaoVictor #Tecnologia #Saude
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import portrait from "~/assets/images/jv-perfil-olhando-frentecima.jpg";
+import profile from "~/assets/images/jv-perfil-2025.jpeg";
+import technology from "~/assets/images/tech_back.jpg";
+import twin from "~/assets/images/digitalmedtwin.png";
+import clinical from "~/assets/images/colirios_back_1.jpg";
+import { theses } from "./portfolio-content";
+const { english: en = false } = Astro.props;
+const prefix = en ? "/en" : "";
+const thesisUrl = en ? "/en/theses" : "/teses";
+const areas = en
+  ? [
+      {
+        label: "Applied AI",
+        title: "From a real problem to working software.",
+        text: "AI infrastructure, automation and integrations for healthcare teams and organizations.",
+        points: [
+          "Computer vision and language models",
+          "Workflow automation and integrations",
+          "Technical architecture and deployment",
+        ],
+        tags: ["AI engineering", "Software", "Automation"],
+      },
+      {
+        label: "Research",
+        title: "Clinical questions. Statistical rigor.",
+        text: "PhD research in Ophthalmological Medical Sciences at HC-FMUSP, connecting statistics, machine learning and medical images.",
+        points: [
+          "Machine learning for blink analysis",
+          "Retinal images and genetics",
+          "Oculomics and research collaboration",
+        ],
+        tags: ["Statistics", "Ophthalmology", "Machine learning"],
+      },
+      {
+        label: "Education",
+        title: "Technology people can understand and use.",
+        text: "Talks, workshops and practical training for physicians and researchers who want to put AI to work.",
+        points: [
+          "Practical AI for healthcare professionals",
+          "Scientific research workflows",
+          "Technical guidance for teams",
+        ],
+        tags: ["Workshops", "Speaking", "Research methods"],
+      },
+    ]
+  : [
+      {
+        label: "IA aplicada",
+        title: "Do problema real ao sistema rodando.",
+        text: "Infraestrutura de IA, automações e integrações para equipes e empresas de saúde.",
+        points: [
+          "Visão computacional e modelos de linguagem",
+          "Automação de fluxos e integrações",
+          "Arquitetura técnica e implantação",
+        ],
+        tags: ["Engenharia de IA", "Software", "Automação"],
+      },
+      {
+        label: "Pesquisa",
+        title: "Perguntas clínicas. Rigor estatístico.",
+        text: "Doutorado em Ciências Médicas Oftalmológicas no HC-FMUSP, conectando estatística, aprendizado de máquina e imagens médicas.",
+        points: [
+          "Aprendizado de máquina para análise de piscadas",
+          "Imagens da retina e genética",
+          "Oculômica e colaboração em pesquisa",
+        ],
+        tags: ["Estatística", "Oftalmologia", "Machine learning"],
+      },
+      {
+        label: "Educação",
+        title: "Tecnologia que as pessoas entendem e usam.",
+        text: "Palestras, workshops e formação prática para médicos e pesquisadores que querem aplicar IA no seu trabalho.",
+        points: [
+          "IA na prática para profissionais de saúde",
+          "Fluxos de pesquisa científica",
+          "Orientação técnica para equipes",
+        ],
+        tags: ["Workshops", "Palestras", "Método científico"],
+      },
+    ];
+const projects = [
+  {
+    name: "ARB",
+    area: en
+      ? "Education · Software · Research"
+      : "Educação · Software · Laboratório",
+    text: en
+      ? "My company for training, custom software and applied AI research."
+      : "Minha empresa de tecnologia para treinamentos, software sob medida e pesquisa aplicada em IA.",
+    image: technology,
+    alt: en
+      ? "Technology and software development"
+      : "Tecnologia e desenvolvimento de software",
+    href: `${prefix}/business#arb`,
+  },
+  {
+    name: "WingsAI",
+    area: en ? "Applied healthcare R&D" : "P&D aplicado à saúde",
+    text: en
+      ? "Deeptech connecting research, AI development and digital healthcare products."
+      : "Deeptech que conecta pesquisa, desenvolvimento de IA e produtos de saúde digital.",
+    image: twin,
+    alt: en
+      ? "Digital models for medical research"
+      : "Modelos digitais para pesquisa em medicina",
+    href: `${prefix}/business#wingsai-aihouse`,
+  },
+  {
+    name: "IA para Médicos",
+    area: en
+      ? "Practical education · Digital tools"
+      : "Educação prática · Ferramentas digitais",
+    text: en
+      ? "Applications, courses and tools for healthcare professionals and scientific research."
+      : "Aplicativos, cursos e ferramentas para profissionais de saúde e pesquisa científica.",
+    image: clinical,
+    alt: en ? "Clinical care materials" : "Materiais de cuidado clínico",
+    href: "https://iaparamedicos.com.br/",
+  },
+  {
+    name: "Lyen & Spero Science",
+    area: en ? "Technical leadership" : "Liderança técnica",
+    text: en
+      ? "As CTO, I work on medical career platforms and applied AI software."
+      : "Como CTO, atuo em plataformas de carreira médica e software de IA aplicada.",
+    image: profile,
+    alt: en
+      ? "João Victor Dias working on software"
+      : "João Victor Dias trabalhando com software",
+    href: `${prefix}/business`,
+  },
+];
+---
+
+<!-- Section: Hero -->
+<section class="portfolio-hero" aria-labelledby="hero-title">
+  <Image
+    class="hero-portrait"
+    width={1280}
+    height={1920}
+    src={portrait}
+    alt="João Victor Dias"
+    widths={[640, 960, 1280]}
+    sizes="(max-width: 700px) 100vw, 65vw"
+    loading="eager"
+    fetchpriority="high"
+  />
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="portfolio-container hero-content">
+    <p class="eyebrow hero-eyebrow">
+      {
+        en
+          ? "Statistician · PhD candidate at HC-FMUSP"
+          : "Estatístico · Doutorando no HC-FMUSP"
+      }
+    </p>
+    <h1 id="hero-title">
+      {
+        en
+          ? "I build and deploy AI that works in healthcare."
+          : "Construo e implanto IA que funciona na saúde."
+      }
+    </h1>
+    <p class="hero-subtitle">
+      <Icon name="tabler:sparkles" aria-hidden="true" />{
+        en
+          ? "Research, technology and purpose."
+          : "Pesquisa, tecnologia e propósito."
+      }
+    </p>
+    <div class="hero-credential">
+      <Icon name="tabler:brain" aria-hidden="true" /><p>
+        {en ? "FROM STATISTICS" : "DA ESTATÍSTICA"}<strong
+          >{en ? "TO MEDICAL AI" : "À IA MÉDICA"}</strong
+        >
+      </p><ul>
+        <li>{en ? "ENCE · Statistics" : "ENCE · Estatística"}</li><li>
+          HC-FMUSP · {en ? "Research" : "Pesquisa"}
+        </li><li>{en ? "Applied technology" : "Tecnologia aplicada"}</li>
+      </ul>
+    </div>
+    <p class="hero-name">JOÃO VICTOR DIAS</p>
+    <a class="hero-floating-cta" href={`${prefix}/contact`}
+      ><span aria-hidden="true">↗</span>{
+        en ? "Let’s build together" : "Vamos construir juntos"
+      }</a
+    >
+  </div>
+</section>
+<!-- Section: Context -->
+<div
+  class="identity-strip"
+  aria-label={en ? "Fields of work" : "Campos de atuação"}
+>
+  <span>✳ {en ? "Statistics" : "Estatística"}</span><span
+    >↗ {en ? "Artificial intelligence" : "Inteligência artificial"}</span
+  ><span>⊕ {en ? "Healthcare" : "Saúde"}</span><span
+    >✳ {en ? "Research" : "Pesquisa"}</span
+  ><span>↗ {en ? "Education" : "Educação"}</span>
+</div>
+<section class="portfolio-container portfolio-intro">
+  <h2>
+    {en ? "RESEARCH. PRODUCTS. PEOPLE." : "PESQUISA. PRODUTO. PESSOAS."}
+  </h2><p>
+    {
+      en
+        ? "I connect data, software and healthcare research. Working with professionals who understand clinical practice, I turn technical possibilities into practical applications."
+        : "Conecto dados, software e pesquisa em saúde. Ao lado de profissionais que conhecem a prática clínica, transformo possibilidades técnicas em aplicações práticas."
+    }
+  </p>
+</section>
+<!-- Section: About -->
+<section id="sobre" class="portfolio-container portfolio-section">
+  <div class="section-heading">
+    <p class="section-index">
+      <span>(01)</span>
+      {en ? "ABOUT ME" : "SOBRE MIM"}
+    </p><h2>
+      {
+        en
+          ? "TECHNOLOGY SHOULD SERVE THE PEOPLE WHO CARE FOR PEOPLE."
+          : "TECNOLOGIA A SERVIÇO DE QUEM CUIDA DE PESSOAS."
+      }
+    </h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-photo">
+      <Image
+        src={profile}
+        alt="João Victor Dias"
+        widths={[480, 800]}
+        sizes="(max-width: 700px) 100vw, 40vw"
+        loading="lazy"
+      /><span
+        >JOÃO VICTOR DIAS <small
+          >{
+            en ? "STATISTICIAN & AI BUILDER" : "ESTATÍSTICO & CONSTRUTOR DE IA"
+          }</small
+        ></span
+      >
+    </div><div class="about-text">
+      <p class="eyebrow">
+        {en ? "(MY PHILOSOPHY)" : "(MINHA FILOSOFIA)"}
+      </p><blockquote>
+        {
+          en
+            ? "“AI is a tool to extend human capabilities.”"
+            : "“IA é ferramenta de amplificação da capacidade humana.”"
+        }
+      </blockquote><p>
+        {
+          en
+            ? "I am a statistician trained at ENCE and a PhD candidate at HC-FMUSP, researching AI in ophthalmology. I build software, collaborate on research and teach people to use technology with purpose."
+            : "Sou estatístico pela ENCE e doutorando no HC-FMUSP, com pesquisa em IA para oftalmologia. Desenvolvo software, colaboro em pesquisas e ensino pessoas a usar tecnologia com propósito."
+        }
+      </p><p>
+        {
+          en
+            ? "I founded ARB and work as a technical partner in healthcare startups. My work brings research, products and education together."
+            : "Fundei a ARB e atuo como sócio técnico em startups de saúde. Meu trabalho aproxima pesquisa, produto e educação."
+        }
+      </p><a class="portfolio-button" href={`${prefix}/cv`}
+        >{en ? "Explore my journey" : "Conheça minha trajetória"}
+        <span aria-hidden="true">↗</span></a
+      >
+    </div>
+  </div>
+</section>
+<!-- Section: Theses -->
+<section id="teses" class="theses-section">
+  <div class="portfolio-container portfolio-section">
+    <div class="section-heading">
+      <p class="section-index">
+        <span>(02)</span>
+        {en ? "MY THESES" : "MINHAS TESES"}
+      </p><div>
+        <h2>
+          {
+            en
+              ? "THE FUTURE I CHOOSE TO BUILD."
+              : "O FUTURO QUE ESCOLHO CONSTRUIR."
+          }
+        </h2><p class="section-description">
+          {
+            en
+              ? "Four convictions that guide what I research, teach and build in healthcare."
+              : "Quatro convicções que orientam o que pesquiso, ensino e construo na saúde."
+          }
+        </p>
+      </div>
+    </div><div class="thesis-grid">
+      {
+        theses[en ? "en" : "pt"].map((thesis, i) => (
+          <a class="thesis-preview" href={`${thesisUrl}#tese-${i + 1}`}>
+            <>
+              <span class="thesis-number">
+                0{i + 1} <span aria-hidden="true">↗</span>
+              </span>
+              <h3>{thesis.title}</h3>
+              <p>{thesis.text}</p>
+            </>
+          </a>
+        ))
+      }
+    </div><a class="portfolio-button" href={thesisUrl}
+      >{en ? "Read my full theses" : "Leia minhas teses completas"}
+      <span aria-hidden="true">↗</span></a
+    >
+  </div>
+</section>
+<!-- Section: Expertise -->
+<section id="atuacao" class="portfolio-container portfolio-section">
+  <div class="section-heading">
+    <p class="section-index">
+      <span>(03)</span>
+      {en ? "WHAT I DO" : "MINHA ATUAÇÃO"}
+    </p><div>
+      <h2>
+        {
+          en
+            ? "DATA, AI AND HEALTHCARE. FROM IDEA TO PRACTICE."
+            : "DADOS, IA E SAÚDE. DA IDEIA À PRÁTICA."
+        }
+      </h2><p class="section-description">
+        {
+          en
+            ? "Three connected areas of work, with ophthalmology as a field of research and application."
+            : "Três frentes conectadas, com a oftalmologia como campo de pesquisa e aplicação."
+        }
+      </p>
+    </div>
+  </div><div class="expertise-grid">
+    <div class="expertise-list">
+      {
+        areas.map((area, i) => (
+          <details name="expertise" open={i === 0}>
+            <>
+              <summary>
+                <>
+                  <span class="eyebrow">
+                    0{i + 1}. {area.label}
+                  </span>
+                  <h3>{area.title}</h3>
+                  <span class="accordion-sign" aria-hidden="true">
+                    +
+                  </span>
+                </>
+              </summary>
+              <div class="expertise-details">
+                <>
+                  <p>{area.text}</p>
+                  <ul>
+                    {area.points.map((point) => (
+                      <li>
+                        <span aria-hidden="true">↗</span>
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                  <div class="portfolio-tags">
+                    {area.tags.map((tag) => (
+                      <span>{tag}</span>
+                    ))}
+                  </div>
+                  <a
+                    href={
+                      i === 1
+                        ? `${prefix}/cv`
+                        : i === 2
+                          ? "/speaking"
+                          : `${prefix}/contact`
+                    }
+                  >
+                    {en ? "Learn more" : "Saiba mais"} ↗
+                  </a>
+                </>
+              </div>
+            </>
+          </details>
+        ))
+      }
+    </div><div class="expertise-image">
+      <Image
+        src={technology}
+        alt={en
+          ? "Technology development environment"
+          : "Ambiente de desenvolvimento de tecnologia"}
+        widths={[640, 960]}
+        sizes="(max-width: 700px) 100vw, 45vw"
+        loading="lazy"
+      /><span
+        >{en ? "FROM DIAGNOSIS TO DEPLOYMENT" : "DO DIAGNÓSTICO À IMPLANTAÇÃO"} ↗</span
+      >
+    </div>
+  </div>
+</section>
+<!-- Section: Projects -->
+<section id="projetos" class="projects-section">
+  <div class="portfolio-container portfolio-section">
+    <div class="projects-heading">
+      <div>
+        <p class="eyebrow">
+          ⌜ {en ? "SELECTED PROJECTS" : "PROJETOS & ECOSSISTEMA"}
+        </p><h2>
+          {
+            en
+              ? "RESEARCH THAT CONNECTS. TECHNOLOGY THAT WORKS."
+              : "PESQUISA QUE CONECTA. TECNOLOGIA QUE FUNCIONA."
+          }
+        </h2>
+      </div><span class="dossier">2026 · {en ? "PORTFOLIO" : "PORTFÓLIO"}</span>
+    </div><div class="project-grid">
+      {
+        projects.map((project) => (
+          <a
+            class="project-card"
+            href={project.href}
+            target={project.href.startsWith("https") ? "_blank" : undefined}
+            rel={
+              project.href.startsWith("https")
+                ? "noopener noreferrer"
+                : undefined
+            }
+          >
+            <>
+              <div class="project-image">
+                <>
+                  <Image
+                    src={project.image}
+                    alt={project.alt}
+                    widths={[480, 800]}
+                    sizes="(max-width: 700px) 100vw, 45vw"
+                    loading="lazy"
+                  />
+                  <span aria-hidden="true">↗</span>
+                </>
+              </div>
+              <p class="eyebrow">{project.area}</p>
+              <h3>{project.name}</h3>
+              <p>{project.text}</p>
+            </>
+          </a>
+        ))
+      }
+    </div><p class="ecosystem-note">
+      {
+        en
+          ? "Also in my ecosystem: GeekVision, ConnectAI / Repport AI and PacienteAlerta."
+          : "Também no meu ecossistema: GeekVision, ConnectAI / Repport AI e PacienteAlerta."
+      }
+    </p><a class="portfolio-button" href={`${prefix}/business`}
+      >{en ? "Explore the ecosystem" : "Conheça o ecossistema"}
+      <span aria-hidden="true">↗</span></a
+    >
+  </div>
+</section>
+<!-- Section: Background -->
+<section class="portfolio-container portfolio-section background-section">
+  <p class="eyebrow">
+    ✳ {en ? "EXPERIENCE WITH PURPOSE" : "TRAJETÓRIA COM PROPÓSITO"}
+  </p><h2>
+    {
+      en
+        ? "STATISTICS AS A FOUNDATION. HEALTHCARE AS A DIRECTION."
+        : "ESTATÍSTICA COMO BASE. SAÚDE COMO DIREÇÃO."
+    }
+  </h2><dl class="portfolio-stats">
+    <div>
+      <dd>2012</dd><dt>
+        {en ? "Working in data and AI since" : "Em dados e IA desde"}
+      </dt>
+    </div><div>
+      <dd>ENCE</dd><dt>
+        {en ? "Degree in Statistics" : "Formação em Estatística"}
+      </dt>
+    </div><div>
+      <dd>FMUSP</dd><dt>
+        {en ? "PhD research in progress" : "Pesquisa de doutorado em andamento"}
+      </dt>
+    </div>
+  </dl>
+</section>
+<!-- Section: Resources -->
+<section class="resources-section">
+  <div class="portfolio-container portfolio-section">
+    <div class="section-heading">
+      <p class="section-index">
+        <span>(04)</span>
+        {en ? "IDEAS & RESOURCES" : "IDEIAS & REPERTÓRIO"}
+      </p><h2>
+        {
+          en
+            ? "SHARING WHAT I LEARN ALONG THE WAY."
+            : "COMPARTILHO O QUE APRENDO NO CAMINHO."
+        }
+      </h2>
+    </div><div class="resource-grid">
+      <a href="/speaking"
+        ><span>01 / {en ? "TEACHING" : "ENSINO"}</span><h3>
+          {en ? "Talks & workshops" : "Palestras e workshops"}
+        </h3><p>
+          {
+            en
+              ? "Practical AI, research and healthcare."
+              : "IA na prática, pesquisa e saúde."
+          }
+        </p><span aria-hidden="true">↗</span></a
+      ><a href="/books"
+        ><span>02 / {en ? "READING" : "LEITURAS"}</span><h3>
+          {en ? "Books worth sharing" : "Livros que recomendo"}
+        </h3><p>
+          {
+            en
+              ? "Ideas that broaden my perspective."
+              : "Ideias que ampliam minha perspectiva."
+          }
+        </p><span aria-hidden="true">↗</span></a
+      ><a href="/interesses"
+        ><span>03 / {en ? "EXPLORATION" : "EXPLORAÇÃO"}</span><h3>
+          {en ? "Areas of interest" : "Áreas de interesse"}
+        </h3><p>
+          {
+            en
+              ? "Questions I want to investigate."
+              : "Perguntas que quero investigar."
+          }
+        </p><span aria-hidden="true">↗</span></a
+      >
+    </div>
+  </div>
+</section>
+<!-- Section: Contact -->
+<section
+  id="contato"
+  class="portfolio-container portfolio-section contact-section"
+>
+  <div class="contact-photo">
+    <Image
+      src={profile}
+      alt="João Victor Dias"
+      widths={[480, 800]}
+      sizes="(max-width: 700px) 100vw, 40vw"
+      loading="lazy"
+    />
+  </div><div>
+    <p class="eyebrow">{en ? "(LET’S TALK)" : "(VAMOS CONVERSAR)"}</p><h2>
+      {en ? "WHAT COULD WE BUILD TOGETHER?" : "O QUE PODEMOS CONSTRUIR JUNTOS?"}
+    </h2><p>
+      {
+        en
+          ? "Projects in AI, research collaboration, talks and practical healthcare training. Tell me about the problem you want to solve."
+          : "Projetos de IA, colaboração em pesquisa, palestras e formação prática em saúde. Conte o problema que você quer resolver."
+      }
+    </p><a class="contact-email" href="mailto:joao.victor@wingsgroup.ai"
+      >joao.victor@wingsgroup.ai ↗</a
+    ><a class="portfolio-button" href={`${prefix}/contact`}
+      >{en ? "Get in touch" : "Entre em contato"}
+      <span aria-hidden="true">↗</span></a
+    >
+  </div>
+</section>

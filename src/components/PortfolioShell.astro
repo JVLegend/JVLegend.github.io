@@ -1,0 +1,196 @@
+---
+// #JoaoVictor #Tecnologia #Branding
+import "~/assets/styles/portfolio.css";
+import { getPageLocale } from "~/utils/i18n";
+const {
+  isEnglish: en,
+  hasTranslation,
+  ptPath,
+  enPath,
+} = getPageLocale(Astro.url.pathname);
+const home = en ? "/en/" : "/";
+const prefix = en ? "/en" : "";
+const isHome =
+  Astro.url.pathname === "/" || /^\/en\/?$/.test(Astro.url.pathname);
+const nav = [
+  { text: en ? "About" : "Sobre", href: `${home}#sobre` },
+  {
+    text: en ? "My theses" : "Minhas teses",
+    href: en ? "/en/theses" : "/teses",
+  },
+  { text: en ? "Expertise" : "Atuação", href: `${home}#atuacao` },
+  { text: en ? "Projects" : "Projetos", href: `${prefix}/business` },
+  { text: "CV", href: `${prefix}/cv` },
+  { text: en ? "Speaking" : "Palestras", href: "/speaking" },
+  { text: en ? "Books & interests" : "Livros e interesses", href: "/books" },
+  { text: en ? "Contact" : "Contato", href: `${prefix}/contact` },
+];
+const languageHref = hasTranslation
+  ? en
+    ? ptPath
+    : enPath
+  : en
+    ? "/"
+    : "/en/";
+---
+
+<div class="portfolio-shell">
+  <a class="portfolio-skip" href="#main-content"
+    >{en ? "Skip to content" : "Pular para o conteúdo"}</a
+  >
+  <header class:list={["portfolio-header", { "on-hero": isHome }]}>
+    <a
+      class="portfolio-monogram"
+      href={home}
+      aria-label={en ? "João Victor Dias — home" : "João Victor Dias — início"}
+      >JV<span>↗</span></a
+    >
+    <a class="portfolio-header-name" href={home}>JOÃO VICTOR DIAS</a>
+    <div class="portfolio-header-actions">
+      <a class="language-link" href={languageHref} lang={en ? "pt-BR" : "en"}
+        >{en ? "PT" : "EN"}</a
+      >
+      <button
+        class="portfolio-menu-toggle"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="portfolio-menu"
+        aria-expanded="false"
+        aria-label={en ? "Open menu" : "Abrir menu"}
+        >MENU <span class="menu-lines" aria-hidden="true"></span></button
+      >
+    </div>
+  </header>
+  <dialog
+    id="portfolio-menu"
+    class="portfolio-menu"
+    aria-labelledby="menu-title"
+  >
+    <div class="menu-top">
+      <span id="menu-title">{en ? "Explore" : "Explore"}</span><button
+        type="button"
+        class="menu-close"
+        aria-label={en ? "Close menu" : "Fechar menu"}
+        >{en ? "CLOSE" : "FECHAR"} <span aria-hidden="true">×</span></button
+      >
+    </div>
+    <nav aria-label={en ? "Main navigation" : "Navegação principal"}>
+      {
+        nav.map(({ text, href }, i) => (
+          <a href={href}>
+            <span class="nav-number">0{i + 1}</span>
+            {text}
+            <span aria-hidden="true">↗</span>
+          </a>
+        ))
+      }
+    </nav>
+    <a class="menu-email" href="mailto:joao.victor@wingsgroup.ai"
+      >joao.victor@wingsgroup.ai</a
+    >
+  </dialog>
+  <main id="main-content" tabindex="-1"><slot /></main>
+  <footer class="portfolio-footer">
+    <div class="footer-marquee" aria-hidden="true">
+      <div>
+        {en ? "LET’S BUILD THE FUTURE" : "VAMOS CONSTRUIR O FUTURO"}
+        <span>✳</span>
+        {en ? "LET’S BUILD THE FUTURE" : "VAMOS CONSTRUIR O FUTURO"}
+        <span>✳</span>
+        {en ? "LET’S BUILD THE FUTURE" : "VAMOS CONSTRUIR O FUTURO"}
+        <span>✳</span>
+      </div>
+    </div>
+    <div class="portfolio-container footer-cta">
+      <span class="portfolio-monogram">JV↗</span><a
+        class="portfolio-button"
+        href={`${prefix}/contact`}
+        >{en ? "Let’s talk" : "Vamos conversar"}
+        <span aria-hidden="true">↗</span></a
+      >
+    </div>
+    <div class="portfolio-container footer-bottom">
+      <nav aria-label={en ? "Footer" : "Rodapé"}>
+        <a href={home}>{en ? "Home" : "Início"}</a><a
+          href={en ? "/en/theses" : "/teses"}>{en ? "Theses" : "Teses"}</a
+        ><a href={`${prefix}/cv`}>CV</a><a href="/books"
+          >{en ? "Books" : "Livros"}</a
+        ><a href="/interesses">{en ? "Interests" : "Interesses"}</a><a
+          href="/privacy">{en ? "Privacy" : "Privacidade"}</a
+        ><a href="/terms">{en ? "Terms" : "Termos"}</a>
+      </nav>
+      <div class="footer-social">
+        <a
+          href="https://www.linkedin.com/in/joaovictordias/"
+          target="_blank"
+          rel="noopener noreferrer">LinkedIn ↗</a
+        ><a
+          href="https://github.com/jvlegend"
+          target="_blank"
+          rel="noopener noreferrer">GitHub ↗</a
+        ><a
+          href="https://twitter.com/joaovictor_ac"
+          target="_blank"
+          rel="noopener noreferrer">X ↗</a
+        >
+      </div>
+      <p>
+        © {new Date().getFullYear()} João Victor Pacheco Dias. {
+          en ? "All rights reserved." : "Todos os direitos reservados."
+        }
+      </p>
+    </div>
+  </footer>
+</div>
+<script>
+  let controller: AbortController | undefined;
+  function initializePortfolioMenu() {
+    controller?.abort();
+    controller = new AbortController();
+    const { signal } = controller;
+    const dialog = document.querySelector<HTMLDialogElement>("#portfolio-menu");
+    const toggle = document.querySelector<HTMLButtonElement>(
+      ".portfolio-menu-toggle",
+    );
+    if (!dialog || !toggle) return;
+    const close = () => dialog.close();
+    toggle.addEventListener(
+      "click",
+      () => {
+        dialog.showModal();
+        toggle.setAttribute("aria-expanded", "true");
+        document.body.classList.add("portfolio-menu-open");
+      },
+      { signal },
+    );
+    dialog
+      .querySelector(".menu-close")
+      ?.addEventListener("click", close, { signal });
+    dialog
+      .querySelectorAll("a")
+      .forEach((a) => a.addEventListener("click", close, { signal }));
+    dialog.addEventListener(
+      "close",
+      () => {
+        toggle.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("portfolio-menu-open");
+        toggle.focus();
+      },
+      { signal },
+    );
+    dialog.addEventListener(
+      "click",
+      (event) => {
+        if (event.target === dialog) close();
+      },
+      { signal },
+    );
+  }
+  document.addEventListener("astro:page-load", initializePortfolioMenu);
+  document.addEventListener("astro:before-swap", () => {
+    document.querySelector<HTMLDialogElement>("#portfolio-menu")?.close();
+    document.body.classList.remove("portfolio-menu-open");
+    controller?.abort();
+  });
+  initializePortfolioMenu();
+</script>

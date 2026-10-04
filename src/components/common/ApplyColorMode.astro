@@ -5,15 +5,16 @@ import { UI } from "astrowind:config";
 
 <script is:inline define:vars={{ defaultTheme: UI.theme || "system" }}>
   (() => {
+    const pageTheme = document.documentElement.dataset.awTheme || defaultTheme;
     let saved;
     try {
       saved = localStorage.getItem("theme");
     } catch {
       /* Use the system preference when storage is blocked. */
     }
-    const selected = defaultTheme.endsWith(":only")
-      ? defaultTheme.replace(":only", "")
-      : saved || defaultTheme;
+    const selected = pageTheme.endsWith(":only")
+      ? pageTheme.replace(":only", "")
+      : saved || pageTheme;
     document.documentElement.classList.toggle(
       "dark",
       selected === "dark" ||

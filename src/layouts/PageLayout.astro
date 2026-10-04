@@ -1,32 +1,15 @@
 ---
-import Layout from '~/layouts/Layout.astro';
-import Header from '~/components/widgets/Header.astro';
-import Footer from '~/components/widgets/Footer.astro';
-
-import { headerData, headerDataEn, footerData, footerDataEn } from '~/navigation';
-
-import type { MetaData } from '~/types';
-import { getPageLocale } from '~/utils/i18n';
-// #Tecnologia #JoaoVictor
-
+// #JoaoVictor #Tecnologia #Branding
+import Layout from "~/layouts/Layout.astro";
+import PortfolioShell from "~/components/PortfolioShell.astro";
+import type { MetaData } from "~/types";
 export interface Props {
   metadata?: MetaData;
 }
-
 const { metadata } = Astro.props;
-
-const { isEnglish: isEn } = getPageLocale(Astro.url.pathname);
 ---
 
-<Layout metadata={metadata}>
-  <a href="#main-content" class="skip-link">{isEn ? 'Skip to content' : 'Pular para o conteúdo'}</a>
-  <slot name="header">
-    <Header {...(isEn ? headerDataEn : headerData)} isSticky showRssFeed showToggleTheme />
-  </slot>
-  <main id="main-content" tabindex="-1">
-    <slot />
-  </main>
-  <slot name="footer">
-    <Footer {...(isEn ? footerDataEn : footerData)} />
-  </slot>
-</Layout>
+<Layout metadata={metadata}
+  ><PortfolioShell><div class="legacy-page"><slot /></div></PortfolioShell
+  ></Layout
+>
