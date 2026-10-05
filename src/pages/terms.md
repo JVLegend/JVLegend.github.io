@@ -98,7 +98,7 @@ Podemos atualizar nossos Termos de Uso periodicamente. Notificaremos sobre quais
 
 Se você tiver dúvidas sobre estes Termos de Uso, entre em contato conosco:
 
-- **E-mail**: contato@joaovictordias.org
+- **E-mail**: contato@iaparamedicos.com.br
 - **Website**: www.joaovictordias.org/contact
 
 ## Conformidade com LGPD
@@ -108,3 +108,5 @@ Estes termos estão em conformidade com a Lei Geral de Proteção de Dados (LGPD
 ---
 
 _Ao usar nosso Serviço, você reconhece que leu, entendeu e concorda em ficar vinculado a estes Termos de Uso._
+
+<!-- #JoaoVictor #Tecnologia -->

@@ -92,7 +92,7 @@ Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos so
 
 Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco:
 
-- **E-mail**: contato@joaovictordias.org
+- **E-mail**: contato@iaparamedicos.com.br
 - **Website**: www.joaovictordias.org/contact
 
 ## Legislação Aplicável
@@ -102,3 +102,5 @@ Esta política é regida pelas leis brasileiras, incluindo a Lei Geral de Prote�
 ---
 
 _Esta política foi elaborada para garantir transparência sobre como tratamos suas informações pessoais e está em conformidade com a legislação brasileira de proteção de dados._
+
+<!-- #JoaoVictor #Tecnologia -->
