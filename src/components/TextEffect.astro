@@ -1,0 +1,29 @@
+---
+// #JoaoVictor #Tecnologia #Branding
+interface Props {
+  text: string;
+  effect?: "reveal" | "highlight";
+  accentWords?: number;
+}
+
+const { text, effect = "reveal", accentWords = 0 } = Astro.props;
+const words = text.trim().split(/\s+/);
+---
+
+<span class="text-effect" data-text-effect={effect}>
+  {
+    words.map((word, index) => (
+      <>
+        <span
+          class:list={[
+            "text-word",
+            { "is-accent": index >= words.length - accentWords },
+          ]}
+        >
+          {word}
+        </span>
+        {index < words.length - 1 ? " " : null}
+      </>
+    ))
+  }
+</span>

@@ -20,6 +20,8 @@ Portfólio editorial escuro, com fotografia em preto e branco, tipografia Inter 
 
 Fonte local com licença SIL OFL: Inter Tight 400 para texto e 600 para títulos, nome, menu e destaques em todas as telas. No celular, títulos usam caixa de frase. Fallback: sans-serif.
 
+Efeitos de texto inspirados na referência Alex: títulos selecionados na home e nas teses entram por palavras com desfoque de 4 px e subida curta (560 ms, atraso máximo de 240 ms), uma vez por visita à página. A frase da filosofia ganha destaque branco e dourado conforme a rolagem. O nome do hero recebe um brilho dourado de 1,8 s, uma única vez. Não alterar fonte, conteúdo ou altura dos textos durante a animação. HTML completo e legível sem JavaScript; preferência por movimento reduzido desativa entrada, brilho e atualização por rolagem, inclusive quando alterada durante a visita. Eventos e animações limpos nas transições do Astro.
+
 | Papel        | Desktop    | Mobile   | Regra                                   |
 | ------------ | ---------- | -------- | --------------------------------------- |
 | Hero         | 42–66 px   | 34–40 px | Inter Tight 600; entrelinha 1,08–1,12   |

@@ -137,9 +137,13 @@ const languageHref = hasTranslation ? (en ? ptPath : enPath) : en ? "/" : "/en";
   </footer>
 </div>
 <script>
+  import { initializeTextEffects } from "~/utils/textEffects";
   let controller: AbortController | undefined;
+  let stopTextEffects: (() => void) | undefined;
   function initializePortfolioMenu() {
     controller?.abort();
+    stopTextEffects?.();
+    stopTextEffects = initializeTextEffects();
     controller = new AbortController();
     const { signal } = controller;
     const dialog = document.querySelector<HTMLDialogElement>("#portfolio-menu");
@@ -185,6 +189,7 @@ const languageHref = hasTranslation ? (en ? ptPath : enPath) : en ? "/" : "/en";
     document.querySelector<HTMLDialogElement>("#portfolio-menu")?.close();
     document.body.classList.remove("portfolio-menu-open");
     controller?.abort();
+    stopTextEffects?.();
   });
   initializePortfolioMenu();
 </script>

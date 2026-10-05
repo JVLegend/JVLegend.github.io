@@ -1,4 +1,49 @@
 /* #JoaoVictor #Tecnologia #Branding */
+/* Text stays visible by default; motion is added progressively by the browser. */
+.text-word {
+  display: inline-block;
+  max-width: 100%;
+}
+.text-effect[data-text-effect="highlight"].is-enhanced .text-word {
+  color: var(--portfolio-muted);
+  transition: color 0.22s ease;
+}
+.text-effect[data-text-effect="highlight"].is-enhanced .text-word.is-lit {
+  color: var(--portfolio-white);
+}
+.text-effect[data-text-effect="highlight"]:not(.is-enhanced)
+  .text-word.is-accent,
+.text-effect[data-text-effect="highlight"].is-enhanced
+  .text-word.is-lit.is-accent {
+  color: var(--portfolio-gold);
+}
+@supports (background-clip: text) {
+  .portfolio-shell .hero-name {
+    background: linear-gradient(
+      110deg,
+      var(--portfolio-gold) 30%,
+      #f3e0a2 46%,
+      var(--portfolio-gold) 62%
+    );
+    background-size: 250% 100%;
+    background-clip: text;
+    color: transparent;
+    animation: portfolio-text-shine 1.8s ease-out 0.3s both;
+  }
+}
+@keyframes portfolio-text-shine {
+  from {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: 0% 50%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .text-effect[data-text-effect="highlight"].is-enhanced .text-word {
+    color: var(--portfolio-white);
+  }
+}
 @font-face {
   font-family: "Inter Tight";
   src: url("/fonts/inter-tight-400.ttf") format("truetype");

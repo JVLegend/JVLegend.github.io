@@ -8,6 +8,7 @@ import technology from "~/assets/images/tech_back.jpg";
 import twin from "~/assets/images/digitalmedtwin.png";
 import clinical from "~/assets/images/colirios_back_1.jpg";
 import { theses } from "./portfolio-content";
+import TextEffect from "./TextEffect.astro";
 const { english: en = false } = Astro.props;
 const prefix = en ? "/en" : "";
 const thesisUrl = en ? "/en/theses" : "/teses";
@@ -159,11 +160,11 @@ const projects = [
       }
     </p>
     <h1 id="hero-title">
-      {
-        en
+      <TextEffect
+        text={en
           ? "I build and deploy AI that works in healthcare."
-          : "Construo e implanto IA que funciona na saúde."
-      }
+          : "Construo e implanto IA que funciona na saúde."}
+      />
     </h1>
     <p class="hero-subtitle">
       <Icon name="tabler:sparkles" aria-hidden="true" />{
@@ -204,7 +205,9 @@ const projects = [
 </div>
 <section class="portfolio-container portfolio-intro">
   <h2>
-    {en ? "Research. Products. People." : "Pesquisa. Produto. Pessoas."}
+    <TextEffect
+      text={en ? "Research. Products. People." : "Pesquisa. Produto. Pessoas."}
+    />
   </h2><p>
     {
       en
@@ -220,11 +223,11 @@ const projects = [
       <span>(01)</span>
       {en ? "ABOUT ME" : "SOBRE MIM"}
     </p><h2>
-      {
-        en
+      <TextEffect
+        text={en
           ? "Technology should serve the people who care for people."
-          : "Tecnologia a serviço de quem cuida de pessoas."
-      }
+          : "Tecnologia a serviço de quem cuida de pessoas."}
+      />
     </h2>
   </div>
   <div class="about-grid">
@@ -246,11 +249,13 @@ const projects = [
       <p class="eyebrow">
         {en ? "(MY PHILOSOPHY)" : "(MINHA FILOSOFIA)"}
       </p><blockquote>
-        {
-          en
+        <TextEffect
+          effect="highlight"
+          accentWords={3}
+          text={en
             ? "“AI is a tool to extend human capabilities.”"
-            : "“IA é ferramenta de amplificação da capacidade humana.”"
-        }
+            : "“IA é ferramenta de amplificação da capacidade humana.”"}
+        />
       </blockquote><p>
         {
           en
@@ -279,11 +284,11 @@ const projects = [
         {en ? "MY THESES" : "MINHAS TESES"}
       </p><div>
         <h2>
-          {
-            en
+          <TextEffect
+            text={en
               ? "The future I choose to build."
-              : "O futuro que escolho construir."
-          }
+              : "O futuro que escolho construir."}
+          />
         </h2><p class="section-description">
           {
             en
@@ -320,11 +325,11 @@ const projects = [
       {en ? "WHAT I DO" : "MINHA ATUAÇÃO"}
     </p><div>
       <h2>
-        {
-          en
+        <TextEffect
+          text={en
             ? "Data, AI and healthcare. From idea to practice."
-            : "Dados, IA e saúde. Da ideia à prática."
-        }
+            : "Dados, IA e saúde. Da ideia à prática."}
+        />
       </h2><p class="section-description">
         {
           en
@@ -406,11 +411,11 @@ const projects = [
         <p class="eyebrow">
           ⌜ {en ? "SELECTED PROJECTS" : "PROJETOS & ECOSSISTEMA"}
         </p><h2>
-          {
-            en
+          <TextEffect
+            text={en
               ? "Research that connects. Technology that works."
-              : "Pesquisa que conecta. Tecnologia que funciona."
-          }
+              : "Pesquisa que conecta. Tecnologia que funciona."}
+          />
         </h2>
       </div><span class="dossier">2026 · {en ? "PORTFOLIO" : "PORTFÓLIO"}</span>
     </div><div class="project-grid">
