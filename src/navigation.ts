@@ -19,14 +19,6 @@ export const headerData = {
       text: "Palestras",
       href: getPermalink("/speaking"),
     },
-    {
-      text: "Livros",
-      href: getPermalink("/books"),
-    },
-    {
-      text: "Interesses",
-      href: getPermalink("/interesses"),
-    },
   ],
   actions: [
     { text: "Contato", href: getPermalink("/contact"), icon: "tabler:mail" },
@@ -74,18 +66,8 @@ export const footerData = {
         { text: "Palestras", href: getPermalink("/speaking") },
       ],
     },
-    {
-      title: "Recursos",
-      links: [
-        { text: "Livros Recomendados", href: getPermalink("/books") },
-        { text: "Áreas de Interesse", href: getPermalink("/interesses") },
-      ],
-    },
   ],
-  secondaryLinks: [
-    { text: "Termos de Uso", href: getPermalink("/terms") },
-    { text: "Privacidade", href: getPermalink("/privacy") },
-  ],
+  secondaryLinks: [],
   socialLinks: [
     {
       ariaLabel: "LinkedIn",
@@ -131,10 +113,7 @@ export const footerDataEn = {
       ],
     },
   ],
-  secondaryLinks: [
-    { text: "Terms (Portuguese)", href: getPermalink("/terms") },
-    { text: "Privacy (Portuguese)", href: getPermalink("/privacy") },
-  ],
+  secondaryLinks: [],
   socialLinks: footerData.socialLinks,
   footNote: `
     © ${new Date().getFullYear()} João Victor Pacheco Dias. All rights reserved.
