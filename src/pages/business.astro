@@ -7,8 +7,6 @@ import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 import techBack from '~/assets/images/tech_back.jpg';
-import pic07 from '~/assets/images/pic07.jpg';
-import digitalMedTwin from '~/assets/images/digitalmedtwin.png';
 
 const metadata = {
   title: 'Projetos e negócios',
@@ -53,12 +51,12 @@ const metadata = {
     </Fragment>
   </Content>
 
-<section id="arb" class="scroll-mt-24 py-16 md:py-20"><div class="max-w-7xl mx-auto px-4 sm:px-6"><h2 class="text-3xl md:text-4xl font-bold font-heading mb-6 dark:text-white">ARB · Educação, Software e Laboratório</h2><div class="text-lg text-gray-600 dark:text-gray-300 max-w-4xl"><p>Fundei a ARB e atuo em Dados e IA. Com Karine Dias como CEO, a empresa de tecnologia reúne treinamentos e masterminds, software sob medida e as linhas ARB Stok, ARB Fin, ARB Equip e ARB CRM, além de um laboratório para artigos, competições e inovação. Raul Primo integra a equipe como Engenheiro de Software.</p><p class="mt-4"><a class="text-blue-600 dark:text-blue-400 hover:underline" href="https://arb-studio.vercel.app/" target="_blank" rel="noopener noreferrer">ARB ↗</a></p></div></div></section>
+<section id="arb" class="scroll-mt-24 py-16 md:py-20"><div class="max-w-7xl mx-auto px-4 sm:px-6"><h2 class="text-3xl md:text-4xl font-bold font-heading mb-6 dark:text-white">ARB · Educação, Software e Laboratório</h2><div class="text-lg text-gray-600 dark:text-gray-300 max-w-4xl"><p>Cofundei a ARB, onde sou CTO. Com Karine Dias como CEO, a empresa de tecnologia reúne treinamentos e masterminds, software sob medida e as linhas ARB Stok, ARB Fin, ARB Equip e ARB CRM, além de um laboratório para artigos, competições e inovação. Raul Primo integra a equipe como Engenheiro de Software.</p><p class="mt-4"><a class="text-blue-600 dark:text-blue-400 hover:underline" href="https://arb-studio.vercel.app/" target="_blank" rel="noopener noreferrer">ARB ↗</a></p></div></div></section>
 
   <!-- Wings AI Section -->
 
   <Content
-    tagline="Empresa 1"
+    tagline="Empresa"
     title="WingsAI"
     image={{
       src: techBack,
@@ -66,7 +64,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Deeptech · P&amp;D · Grants</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Deeptech · P&amp;D</h3>
       <p class="mb-4">Portfólio integrado de soluções de inteligência artificial abrangendo múltiplos setores, desde micro-SaaS até educação especializada em saúde.</p>
     </Fragment>
   </Content>
@@ -144,225 +142,6 @@ const metadata = {
         description:
           '<a href="https://blinktracking.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">blinktracking.vercel.app</a> · análise de piscadas para pesquisa (doutorado FMUSP).',
         icon: 'tabler:eye-check',
-      },
-    ]}
-  />
-
-  <Features
-    id="wingsai-aihouse"
-    tagline="Vertical 2: AI House"
-    title="Soluções Customizadas de IA"
-    subtitle="Desenvolvimento sob medida de sistemas de inteligência artificial para empresas"
-    items={[
-      {
-        title: 'Consultoria em IA',
-        description:
-          'Assessoria estratégica para implementação de soluções de inteligência artificial.',
-        icon: 'tabler:bulb',
-      },
-      {
-        title: 'Desenvolvimento Customizado',
-        description:
-          'Criação de modelos de IA personalizados para necessidades específicas de negócio.',
-        icon: 'tabler:code',
-      },
-      {
-        title: 'Integração de Sistemas',
-        description:
-          'Integração de IA em infraestruturas tecnológicas existentes.',
-        icon: 'tabler:plug',
-      },
-      {
-        title: 'Automação Inteligente',
-        description:
-          'Implementação de processos automatizados com machine learning e IA.',
-        icon: 'tabler:robot',
-      },
-    ]}
-  />
-
-  <Content
-    isReversed
-    tagline="Vertical 3: HealthTech"
-    title="IA Aplicada à Medicina"
-    items={[
-      {
-        title: 'Protocolo Nacional de Imagens Médicas',
-        description: 'Framework nacional para padronização e otimização de qualidade em imagens médicas, desenvolvido com metodologia científica rigorosa.',
-      },
-      {
-        title: 'Framework de Qualidade Diagnóstica',
-        description: 'Algoritmos de IA para avaliação automática de qualidade em imagens oftalmológicas, desenvolvidos para pesquisa e avaliação técnica.',
-      },
-      {
-        title: 'Automação Clínica Inteligente',
-        description: 'Sistemas de apoio à decisão médica com IA para otimização de diagnósticos e resultados clínicos.',
-      },
-      {
-        title: 'Telemedicina com IA',
-        description: 'Plataforma de atendimento remoto integrada com ferramentas de inteligência artificial para triagem e análise.',
-      },
-    ]}
-    image={{
-      src: digitalMedTwin,
-      alt: 'HealthTech AI',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Transformação Digital da Prática Médica</h3>
-      Desenvolvimento de soluções de IA para o setor de saúde, com foco em qualidade diagnóstica e evidence-based medicine. Trabalho em pesquisa aplicada e desenvolvimento de software para profissionais de saúde.
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <Features
-    id="wingsai-educacional"
-    tagline="Vertical 4: Educacional"
-    title="Educação em IA para Profissionais de Saúde"
-    subtitle="Capacitação especializada em inteligência artificial aplicada à medicina"
-    items={[
-      {
-        title: 'Cursos Especializados',
-        description:
-          'Programas de formação em IA médica para profissionais da saúde, do básico ao avançado.',
-        icon: 'tabler:school',
-      },
-      {
-        title: 'Mentorias Individuais',
-        description:
-          'Acompanhamento personalizado para médicos implementarem IA em suas práticas clínicas.',
-        icon: 'tabler:user-check',
-      },
-      {
-        title: 'Workshops Práticos',
-        description:
-          'Treinamentos hands-on sobre ferramentas de IA aplicadas ao diagnóstico e gestão médica.',
-        icon: 'tabler:tools',
-      },
-      {
-        title: 'Transformação Digital Médica',
-        description:
-          'Capacitação em estratégias de digitalização de consultórios e clínicas com IA.',
-        icon: 'tabler:device-laptop',
-      },
-    ]}
-  />
-
-  <!-- Instituto Rumo ao Topo Section -->
-
-  <Features
-    id="instituto"
-    tagline="Pilar 2"
-    title="Instituto Rumo ao Topo"
-    subtitle="Construção de comunidades focadas em fé e tecnologia"
-    items={[
-      {
-        title: 'Comunidades Online',
-        description:
-          'Plataformas digitais para conectar profissionais cristãos da área de tecnologia.',
-        icon: 'tabler:world',
-      },
-      {
-        title: 'Eventos Presenciais',
-        description:
-          'Organização de conferências e meetups sobre fé, ética e inovação tecnológica.',
-        icon: 'tabler:calendar-event',
-      },
-      {
-        title: 'Mentoria Espiritual',
-        description:
-          'Programa de mentoria para líderes cristãos em posições de destaque na tecnologia.',
-        icon: 'tabler:user-heart',
-      },
-      {
-        title: 'Conteúdo Educacional',
-        description:
-          'Produção de material sobre integração entre fé cristã e liderança tecnológica.',
-        icon: 'tabler:book',
-      },
-    ]}
-  />
-
-  <!-- Palestras Section -->
-
-  <Content
-    tagline="Pilar 3"
-    title="Palestras e Keynotes"
-    items={[
-      {
-        title: 'IA Médica: A Aliada, Não Substituta',
-        description: 'Como a Inteligência Artificial potencializa o diagnóstico médico sem substituir o profissional.',
-      },
-      {
-        title: 'Framework de Qualidade em Imagens Médicas',
-        description: 'Metodologia HC-FMUSP para otimização diagnóstica em oftalmologia.',
-      },
-      {
-        title: 'Ponte Medicina-Tecnologia',
-        description: 'Estratégias para integração de IA na prática clínica com evidence-based medicine.',
-      },
-      {
-        title: 'Liderança Cristã em Tech',
-        description: 'Servo-liderança e propósito na construção de soluções tecnológicas para saúde.',
-      },
-    ]}
-    image={{
-      src: pic07,
-      alt: 'Palestras',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Expertise em IA Médica</h3>
-      Palestrante especialista em aplicações de IA na medicina. Mais de uma década de experiência + HC-FMUSP + liderança em tecnologia cristã. Temas alinhados com ponte medicina-tecnologia.
-    </Fragment>
-  </Content>
-
-  <!-- R12 EdTech Section -->
-
-  <Features
-    id="r12"
-    tagline="Pilar 4"
-    title="R12: Educação Tech com Impacto Social"
-    subtitle="Formação de jovens talentos em tecnologia para o futuro digital"
-    items={[
-      {
-        title: 'Formação em Programação',
-        description:
-          'Cursos completos de desenvolvimento de software (Python) e service desk para jovens talentos.',
-        icon: 'tabler:code',
-      },
-      {
-        title: 'Capacitação em IA',
-        description:
-          'Treinamento em inteligência artificial, machine learning e metodologias ágeis.',
-        icon: 'tabler:robot',
-      },
-      {
-        title: 'Inclusão Digital',
-        description:
-          'Programas de inclusão tecnológica em regiões com baixa oferta de educação em tech.',
-        icon: 'tabler:accessible',
-      },
-      {
-        title: 'Desenvolvimento de Soft Skills',
-        description:
-          'Foco em habilidades comportamentais, comunicação e neurociência aplicada à aprendizagem.',
-        icon: 'tabler:users-group',
-      },
-      {
-        title: 'Preparação para o Mercado',
-        description:
-          'Empregabilidade e inserção produtiva de jovens no mercado de tecnologia.',
-        icon: 'tabler:briefcase',
-      },
-      {
-        title: 'Impacto Social e ESG',
-        description:
-          'Alinhamento com ODS 4, 8 e 10 da ONU para desenvolvimento sustentável e responsabilidade social.',
-        icon: 'tabler:world',
       },
     ]}
   />
