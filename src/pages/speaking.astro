@@ -17,13 +17,13 @@ const metadata = {
 
   <Hero2
     tagline="Palestras"
-    title="Palestras e Keynotes"
-    subtitle="Compartilhando conhecimento sobre IA, liderança e inovação"
+    title="Palestras e workshops"
+    subtitle="IA na prática para médicos, pesquisadores e equipes de saúde."
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Flexibilidade e Personalização</h3>
-      Todas as apresentações podem ser customizadas para o público-alvo específico,
-      incluindo adaptação de conteúdo, duração e nível técnico conforme necessário.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Conteúdo sob medida</h3>
+      Adapto conteúdo, duração e nível técnico ao público e ao formato do evento:
+      congresso, aula, curso ou workshop prático.
     </Fragment>
 
     <Fragment slot="bg">
@@ -49,46 +49,46 @@ const metadata = {
 
   <Features
     id="audience"
-    tagline="Público-Alvo"
-    title="Para Quem São as Palestras"
-    subtitle="Conteúdo adaptado para diferentes perfis profissionais"
+    tagline="Público"
+    title="Para quem são"
+    subtitle="Temas ligados à rotina de quem participa."
     noAnimation={true}
     items={[
       {
-        title: 'C-Level e Executivos',
+        title: 'Médicos e equipes clínicas',
         description:
-          'Visão estratégica sobre IA, ROI e impacto nos negócios.',
-        icon: 'tabler:crown',
+          'IA no consultório: ferramentas, limites e uso seguro no dia a dia.',
+        icon: 'tabler:stethoscope',
       },
       {
-        title: 'CTOs e Diretores de TI',
+        title: 'Pesquisadores e pós-graduandos',
         description:
-          'Implementação técnica, arquitetura e gestão de projetos de IA.',
-        icon: 'tabler:settings',
+          'IA na pesquisa científica: revisão de literatura, análise de dados e escrita.',
+        icon: 'tabler:microscope',
       },
       {
-        title: 'Gestores de Produto',
+        title: 'Gestores de serviços de saúde',
         description:
-          'Como integrar IA em produtos e serviços, UX com IA.',
-        icon: 'tabler:package',
+          'Como avaliar, implantar e acompanhar projetos de IA em clínicas e hospitais.',
+        icon: 'tabler:building-hospital',
       },
       {
-        title: 'Profissionais de Dados',
+        title: 'Profissionais de dados e tecnologia',
         description:
-          'Técnicas avançadas, melhores práticas e evolução na carreira.',
+          'Visão computacional, modelos de linguagem e como levar modelos à produção.',
         icon: 'tabler:database',
       },
       {
-        title: 'Empreendedores',
+        title: 'Empreendedores em saúde',
         description:
-          'Oportunidades de negócio, validação de ideias e funding.',
+          'Da ideia ao produto em healthtechs, com foco em validação e uso real.',
         icon: 'tabler:bulb',
       },
       {
-        title: 'Profissionais de Saúde',
+        title: 'Lideranças e executivos',
         description:
-          'Aplicações específicas de IA na medicina e impacto no atendimento.',
-        icon: 'tabler:stethoscope',
+          'Onde a IA gera valor, quanto custa e como medir resultado.',
+        icon: 'tabler:crown',
       },
     ]}
   />
@@ -124,25 +124,25 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Solicitar Proposta',
+        text: 'Solicitar proposta',
         href: '/contact',
         icon: 'tabler:mail',
       },
       {
         variant: 'secondary',
-        text: 'Ver Portfolio',
+        text: 'Ver currículo',
         href: '/cv',
         icon: 'tabler:file-text',
       },
     ]}
   >
     <Fragment slot="title">
-      Quer levar conteúdo de <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">qualidade para seu evento?</span>
+      Quer levar este tema <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">ao seu evento?</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Entre em contato para discutir sua necessidade específica, customizar o conteúdo
-      <br class="hidden md:inline" />e agendar uma apresentação memorável.
+      Conte o público, o formato e a data.
+      <br class="hidden md:inline" />Eu adapto o conteúdo ao seu evento.
     </Fragment>
   </CallToAction>
 </Layout>
