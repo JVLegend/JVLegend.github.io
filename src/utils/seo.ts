@@ -6,10 +6,7 @@ export const normalizePagePath = (pathname: string) =>
 
 export function isDemoPath(pathname: string) {
   const path = normalizePagePath(pathname);
-  return (
-    /^\/(homes|landing)(\/|$)/.test(path) ||
-    ["/pricing", "/services"].includes(path)
-  );
+  return /^\/(homes|landing)(\/|$)/.test(path) || ["/pricing"].includes(path);
 }
 
 const pages: Record<
@@ -24,43 +21,8 @@ const pages: Record<
   "/en/business": { label: "Projects and business" },
   "/en/contact": { label: "Contact" },
   "/en/theses": { label: "My theses" },
-  "/books": { label: "Livros recomendados" },
   "/speaking": { label: "Palestras e workshops" },
-  "/interesses": { label: "Áreas de interesse" },
-  "/ia": {
-    label: "Inteligência artificial",
-    parent: "/interesses",
-    description:
-      "Conceitos de inteligência artificial, machine learning e AGI, aplicações e referências reunidas por João Victor Dias.",
-  },
-  "/longevidade": {
-    label: "Longevidade",
-    parent: "/interesses",
-    description:
-      "Panorama de temas e referências sobre envelhecimento saudável, healthspan e longevidade, uma área de interesse de João Victor Dias.",
-  },
-  "/progresso": {
-    label: "Progresso e inovação",
-    parent: "/interesses",
-    description:
-      "Ideias sobre progresso tecnológico, inovação e a Grande Estagnação, com referências e temas de interesse de João Victor Dias.",
-  },
-  "/startups": {
-    label: "Startups e empreendedorismo",
-    parent: "/interesses",
-    description:
-      "Princípios de criação de startups, cultura e empreendedorismo, com referências e leituras reunidas por João Victor Dias.",
-  },
-  "/privacy": {
-    label: "Política de Privacidade",
-    description:
-      "Política de privacidade do site de João Victor Dias: tratamento de informações, cookies, contato e direitos dos visitantes.",
-  },
-  "/terms": {
-    label: "Termos de Uso",
-    description:
-      "Termos de uso do site de João Victor Dias: condições de acesso, uso do conteúdo, propriedade intelectual e contato.",
-  },
+  "/en/speaking": { label: "Talks and workshops" },
 };
 
 export function getPageSeo(pathname: string) {

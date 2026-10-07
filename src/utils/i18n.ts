@@ -5,6 +5,7 @@ const translatedPaths = new Map([
   ["/business", "/en/business"],
   ["/contact", "/en/contact"],
   ["/teses", "/en/theses"],
+  ["/speaking", "/en/speaking"],
 ]);
 
 export function getPageLocale(pathname: string) {

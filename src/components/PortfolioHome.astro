@@ -265,8 +265,8 @@ const projects = [
       </p><p>
         {
           en
-            ? "I founded ARB and work as a technical partner in healthcare startups. My work brings research, products and education together."
-            : "Fundei a ARB e atuo como sócio técnico em startups de saúde. Meu trabalho aproxima pesquisa, produto e educação."
+            ? "I co-founded ARB, where I am CTO, and work as a technical partner in healthcare startups. My work brings research, products and education together."
+            : "Cofundei a ARB, onde sou CTO, e atuo como sócio técnico em startups de saúde. Meu trabalho aproxima pesquisa, produto e educação."
         }
       </p><a class="portfolio-button" href={`${prefix}/cv`}
         >{en ? "Explore my journey" : "Conheça minha trajetória"}
@@ -376,7 +376,7 @@ const projects = [
                       i === 1
                         ? `${prefix}/cv`
                         : i === 2
-                          ? "/speaking"
+                          ? `${prefix}/speaking`
                           : `${prefix}/contact`
                     }
                   >
@@ -504,7 +504,7 @@ const projects = [
         }
       </h2>
     </div><div class="resource-grid">
-      <a href="/speaking"
+      <a href={`${prefix}/speaking`}
         ><span>01 / {en ? "TEACHING" : "ENSINO"}</span><h3>
           {en ? "Talks & workshops" : "Palestras e workshops"}
         </h3><p>
@@ -512,26 +512,6 @@ const projects = [
             en
               ? "Practical AI, research and healthcare."
               : "IA na prática, pesquisa e saúde."
-          }
-        </p><span aria-hidden="true">↗</span></a
-      ><a href="/books"
-        ><span>02 / {en ? "READING" : "LEITURAS"}</span><h3>
-          {en ? "Books worth sharing" : "Livros que recomendo"}
-        </h3><p>
-          {
-            en
-              ? "Ideas that broaden my perspective."
-              : "Ideias que ampliam minha perspectiva."
-          }
-        </p><span aria-hidden="true">↗</span></a
-      ><a href="/interesses"
-        ><span>03 / {en ? "EXPLORATION" : "EXPLORAÇÃO"}</span><h3>
-          {en ? "Areas of interest" : "Áreas de interesse"}
-        </h3><p>
-          {
-            en
-              ? "Questions I want to investigate."
-              : "Perguntas que quero investigar."
           }
         </p><span aria-hidden="true">↗</span></a
       >

@@ -21,8 +21,7 @@ const nav = [
   { text: en ? "Expertise" : "Atuação", href: `${home}#atuacao` },
   { text: en ? "Projects" : "Projetos", href: `${prefix}/business` },
   { text: "CV", href: `${prefix}/cv` },
-  { text: en ? "Speaking" : "Palestras", href: "/speaking" },
-  { text: en ? "Books & interests" : "Livros e interesses", href: "/books" },
+  { text: en ? "Speaking" : "Palestras", href: `${prefix}/speaking` },
   { text: en ? "Contact" : "Contato", href: `${prefix}/contact` },
 ];
 const languageHref = hasTranslation ? (en ? ptPath : enPath) : en ? "/" : "/en";
@@ -107,11 +106,7 @@ const languageHref = hasTranslation ? (en ? ptPath : enPath) : en ? "/" : "/en";
       <nav aria-label={en ? "Footer" : "Rodapé"}>
         <a href={home}>{en ? "Home" : "Início"}</a><a
           href={en ? "/en/theses" : "/teses"}>{en ? "Theses" : "Teses"}</a
-        ><a href={`${prefix}/cv`}>CV</a><a href="/books"
-          >{en ? "Books" : "Livros"}</a
-        ><a href="/interesses">{en ? "Interests" : "Interesses"}</a><a
-          href="/privacy">{en ? "Privacy" : "Privacidade"}</a
-        ><a href="/terms">{en ? "Terms" : "Termos"}</a>
+        ><a href={`${prefix}/cv`}>CV</a>
       </nav>
       <div class="footer-social">
         <a
