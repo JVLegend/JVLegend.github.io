@@ -9,3 +9,7 @@ node_modules/
 
 # Dependency files
 package-lock.json
+
+# Preserve upstream source/test formatting for backport review
+vendor/braces-backport/source/
+vendor/braces-backport/upstream-tests/

@@ -6,10 +6,7 @@ export const normalizePagePath = (pathname: string) =>
 
 export function isDemoPath(pathname: string) {
   const path = normalizePagePath(pathname);
-  return (
-    /^\/(homes|landing)(\/|$)/.test(path) ||
-    ["/pricing"].includes(path)
-  );
+  return /^\/(homes|landing)(\/|$)/.test(path) || ["/pricing"].includes(path);
 }
 
 const pages: Record<

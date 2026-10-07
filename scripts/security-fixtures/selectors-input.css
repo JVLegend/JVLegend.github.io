@@ -1,0 +1,12 @@
+@tailwind components;
+@tailwind utilities;
+.card,
+.panel {
+  &:hover,
+  &[data-state="open"] {
+    color: red;
+  }
+  & :is(.item, .label) {
+    color: blue;
+  }
+}
