@@ -8,7 +8,7 @@ export function isDemoPath(pathname: string) {
   const path = normalizePagePath(pathname);
   return (
     /^\/(homes|landing)(\/|$)/.test(path) ||
-    ["/pricing", "/services"].includes(path)
+    ["/pricing"].includes(path)
   );
 }
 
@@ -25,6 +25,7 @@ const pages: Record<
   "/en/contact": { label: "Contact" },
   "/en/theses": { label: "My theses" },
   "/speaking": { label: "Palestras e workshops" },
+  "/en/speaking": { label: "Talks and workshops" },
 };
 
 export function getPageSeo(pathname: string) {

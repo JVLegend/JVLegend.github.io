@@ -39,6 +39,10 @@ export const headerDataEn = {
       text: "Business",
       href: getPermalink("/en/business"),
     },
+    {
+      text: "Speaking",
+      href: getPermalink("/en/speaking"),
+    },
   ],
   actions: [
     { text: "Contact", href: getPermalink("/en/contact"), icon: "tabler:mail" },

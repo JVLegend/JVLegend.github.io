@@ -1,0 +1,148 @@
+---
+// #Tecnologia #JoaoVictor
+import Layout from '~/layouts/PageLayout.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Talks and workshops',
+  description: 'Talks and workshops by João Victor Dias on applied AI, research, healthcare and technical leadership.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero2
+    tagline="Speaking"
+    title="Talks and workshops"
+    subtitle="Practical AI for physicians, researchers and healthcare teams."
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Tailored content</h3>
+      I adapt content, length and technical depth to the audience and the event format:
+      conference, lecture, course or hands-on workshop.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-900/30 via-indigo-900/30 to-purple-900/30"></div>
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="speaking-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <circle cx="50" cy="30" r="8" stroke="white" stroke-width="2" fill="none" opacity="0.5"/>
+            <line x1="50" y1="38" x2="50" y2="55" stroke="white" stroke-width="2" opacity="0.5"/>
+            <line x1="50" y1="55" x2="35" y2="75" stroke="white" stroke-width="2" opacity="0.5"/>
+            <line x1="50" y1="55" x2="65" y2="75" stroke="white" stroke-width="2" opacity="0.5"/>
+            <line x1="50" y1="45" x2="35" y2="50" stroke="white" stroke-width="2" opacity="0.5"/>
+            <line x1="50" y1="45" x2="65" y2="50" stroke="white" stroke-width="2" opacity="0.5"/>
+            <path d="M30,20 Q50,10 70,20" stroke="white" stroke-width="1.5" fill="none" opacity="0.4"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#speaking-pattern)"/>
+      </svg>
+    </Fragment>
+  </Hero2>
+
+  <!-- Audience Section -->
+
+  <Features
+    id="audience"
+    tagline="Audience"
+    title="Who it is for"
+    subtitle="Topics connected to the daily work of the audience."
+    noAnimation={true}
+    items={[
+      {
+        title: 'Physicians and clinical teams',
+        description:
+          'AI in the clinic: tools, limitations and safe everyday use.',
+        icon: 'tabler:stethoscope',
+      },
+      {
+        title: 'Researchers and graduate students',
+        description:
+          'AI in scientific research: literature review, data analysis and writing.',
+        icon: 'tabler:microscope',
+      },
+      {
+        title: 'Healthcare managers',
+        description:
+          'How to evaluate, deploy and monitor AI projects in clinics and hospitals.',
+        icon: 'tabler:building-hospital',
+      },
+      {
+        title: 'Data and technology professionals',
+        description:
+          'Computer vision, language models and taking models to production.',
+        icon: 'tabler:database',
+      },
+      {
+        title: 'Healthcare entrepreneurs',
+        description:
+          'From idea to product in healthtech, with a focus on validation and real-world use.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Leaders and executives',
+        description:
+          'Where AI creates value, what it costs and how to measure results.',
+        icon: 'tabler:crown',
+      },
+    ]}
+  />
+
+  <Features
+    tagline="CBO 2026"
+    title="AI materials for ophthalmology"
+    subtitle="Interactive lessons on concepts, tools and clinical applications (in Portuguese)."
+    items={[
+      { title: 'AI concepts and agents', description: '<a class="underline text-blue-600 dark:text-blue-400" href="https://cbo-2026-conceitos-agentes.vercel.app/" target="_blank" rel="noopener noreferrer">Open the interactive lesson</a>', icon: 'tabler:brain' },
+      { title: 'ChatGPT, Claude and Gemini', description: '<a class="underline text-blue-600 dark:text-blue-400" href="https://cbo-2026-plataformas.vercel.app/" target="_blank" rel="noopener noreferrer">Explore platforms and applications</a>', icon: 'tabler:device-laptop' },
+      { title: 'How to apply AI in my practice', description: '<a class="underline text-blue-600 dark:text-blue-400" href="https://cbo-2026-drylab-consultorio.vercel.app/" target="_blank" rel="noopener noreferrer">Open the DryLab exercises</a>', icon: 'tabler:tools' },
+    ]}
+  />
+
+  <Content tagline="Track record" title="Selected lectures and workshops">
+    <Fragment slot="content">
+      <ul class="space-y-4 text-gray-600 dark:text-gray-300">
+        <li><strong>CBO, 2025:</strong> coordinated a WetLab on developing artificial intelligence models.</li>
+        <li><strong>IBGE, 2024:</strong> introduction to LLMs and RAG at the 7th Scientific Initiation Week.</li>
+        <li><strong>FMUSP, 2024:</strong> artificial intelligence in scientific research and telemedicine applied to ophthalmology.</li>
+        <li><strong>Bradesco Innovation Day, 2020:</strong> artificial intelligence, privacy and Open Banking.</li>
+      </ul>
+      <p class="mt-6"><a href="/en/cv" class="underline text-blue-600 dark:text-blue-400">See the full track record in my CV</a></p>
+    </Fragment>
+  </Content>
+
+  <!-- Testimonials would go here if we had them -->
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Request a proposal',
+        href: '/en/contact',
+        icon: 'tabler:mail',
+      },
+      {
+        variant: 'secondary',
+        text: 'View CV',
+        href: '/en/cv',
+        icon: 'tabler:file-text',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Bring this topic <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">to your event?</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Tell me the audience, format and date.
+      <br class="hidden md:inline" />I will tailor the content to your event.
+    </Fragment>
+  </CallToAction>
+</Layout>
