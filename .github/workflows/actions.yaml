@@ -45,6 +45,7 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm run check:security-compat
+      - run: npm run check:braces-backport
       - name: Audit all installed dependencies
         shell: bash
         run: npm audit --json | tee audit.json

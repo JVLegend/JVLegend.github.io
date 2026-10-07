@@ -20,7 +20,8 @@
     "fix": "npm run fix:eslint && npm run fix:prettier",
     "fix:eslint": "eslint --fix .",
     "fix:prettier": "prettier -w .",
-    "check:security-compat": "node scripts/check-security-compat.mjs"
+    "check:security-compat": "node scripts/check-security-compat.mjs",
+    "check:braces-backport": "python3 scripts/package-braces-backport.py && node scripts/check-braces-backport.mjs && node scripts/test-braces-upstream.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
@@ -66,7 +67,8 @@
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3",
     "typescript-eslint": "8.71.1",
-    "unist-util-visit": "^5.0.0"
+    "unist-util-visit": "^5.0.0",
+    "braces": "file:vendor/braces-backport/braces-3.0.3-depth-guard.1.tgz"
   },
   "overrides": {
     "@iconify/tools": "5.0.12",
@@ -104,6 +106,7 @@
     },
     "@tailwindcss/typography": {
       "postcss-selector-parser": "7.1.6"
-    }
+    },
+    "braces": "$braces"
   }
 }

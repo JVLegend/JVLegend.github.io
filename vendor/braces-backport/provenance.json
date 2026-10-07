@@ -1,0 +1,14 @@
+{
+  "upstream_package": "braces",
+  "upstream_version": "3.0.3",
+  "upstream_commit": "74b2db2938fad48a2ea54a9c8bf27a37a62c350d",
+  "upstream_tarball": "https://registry.npmjs.org/braces/-/braces-3.0.3.tgz",
+  "upstream_integrity": "sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==",
+  "upstream_sha256": "1cd18e862c8640b4568b1425a7df4ee030ff201d45b2da8f9f222d2987494ffc",
+  "license": "MIT",
+  "advisory": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+  "patch_id": "depth-guard.1",
+  "upstream_tests_commit": "74b2db2938fad48a2ea54a9c8bf27a37a62c350d",
+  "upstream_source_archive": "https://codeload.github.com/micromatch/braces/tar.gz/74b2db2938fad48a2ea54a9c8bf27a37a62c350d",
+  "upstream_source_archive_sha256": "697311aa470de468a1e5cac70ab227262dce9e38f5a4e0eef306d515b71222af"
+}
