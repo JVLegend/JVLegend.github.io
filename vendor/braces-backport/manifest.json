@@ -1,0 +1,35 @@
+{
+  "patch_id": "depth-guard.1",
+  "package_name": "braces",
+  "package_version": "3.0.3",
+  "archive_sha256": "919a91c9ccbdedff3d1d974a1a735a09e690f24fbe4e01207cc3e751ab7b33bf",
+  "source_sha256": {
+    "BACKPORT.md": "9249e03d38f7c1c47927fca91e3356a0ce4bc577e9c753ee05937bb386661cb2",
+    "LICENSE": "35bdd8a44339719441900fb50fbefc5e2dca1ca662cbaed7a687de842c8b70f2",
+    "README.md": "947b0fc3cc12eaaa070207126213fbdf9ab2bf8cd13dcc6e4007b36b79309866",
+    "index.js": "332ea07c7b006361aad12aa994ca75dc1db8e8382b884909e2f38f10b85c88a4",
+    "lib/compile.js": "61e9f981df1a3080b77a5886a49bd00a986e0aec8e84260adaded4c9f0fe26ad",
+    "lib/constants.js": "c18ac5adb57308f1ce42a28552da3a31f5d83709743ebd9a636336813a744d4b",
+    "lib/depth.js": "6d20a9442b4bc9072aaabb41253e32e4278116aa17347e8daaf04191ef003fd7",
+    "lib/expand.js": "f8a23b38719bb01bdeb70913d5f91e2b6fa31fddd5e1893ae214a64c0cb896d2",
+    "lib/parse.js": "52a41299e9d10932bed07adca2d9a0f205cd44b32b05dde423bf369ddccfe443",
+    "lib/stringify.js": "5d1bca7958e3f7a3f945a2ac9f4e5a5ab77d7b27e5cdb35eb4d1f98b2b1c8685",
+    "lib/utils.js": "b5a7596aa67730412b3c029ef09e84e6b67b8e445cffd35d1d295549c89066c7",
+    "package.json": "dba7f4004e49da3f6e8377b49a732554e624f2086f5404f7efbbeead2362ddd5"
+  },
+  "patch_sha256": "bf5e7901b6f2ce34a4e2dc8d7eb9f493c2e30dd14c04e1aada0897570847490d",
+  "upstream_test_sha256": {
+    "test/bash-compiled-ranges.js": "7e8a10ed467f19dd3723ebcb02c33ff13c973115ea101c8504b2fd32f9b3e9e3",
+    "test/bash-compiled-sets.js": "ff2dda0bdd8d1db4994f814d75117494e53b2a83cafd957048ddc9bca619d669",
+    "test/bash-expanded-ranges.js": "69c55956b57fe27160ce9dfab92a0a552001ee7aa992dc8d077410a282b92097",
+    "test/bash-expanded-sets.js": "b0759bb53728d98a71e4b06f566301f5aa3ccf28e8f99eaa2634fda8d877f96c",
+    "test/bash-spec.js": "c5208d38999e0fd0ac12e4bde7240b8e93890dff160ddb78ac62883f7ef632f4",
+    "test/braces.compile.js": "c47a9565c0be7287958667f31f64a060a38f91fbe98d27953b770ee2736ff077",
+    "test/braces.expand.js": "a6d70d8bec87025c58a6e14fffa9dcb3c0ae890fc2232e8b0af0966190fa733b",
+    "test/braces.parse.js": "4688e08098264b7851f03ea894d30bd992fea307f8a334bf833a4e2bdae30a87",
+    "test/minimatch.js": "6b65901c2a0a2b680dbe1178311578037ee6601eab1631929ac2d10b2e37dd08",
+    "test/multiples.js": "d0b779166faf40693b5898a3766ae6c91aec600a714cf1b36a8b85067e90b7ac",
+    "test/readme.js": "91202e5e3e926d47b11ebe5f2b04db560c1048aac97e67f61d521ce0cb220b15",
+    "test/regression.js": "1595ae9cea47947b1ea258673151c2428a780859fc1efd5d9d92b035f1887470"
+  }
+}

@@ -1,0 +1,200 @@
+--- a/BACKPORT.md
++++ b/BACKPORT.md
+@@ -0,0 +1,33 @@
++# Local depth-guard backport, revision 1
++
++This is `braces` 3.0.3 (MIT, Jon Schlinkert), modified locally for
++[GHSA-vfj7-8cjw-p6xm](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm).
++The original name and version are retained, with `jvSecurityPatch: depth-guard.1`.
++This is not a release endorsed by upstream. Do not publish it to a registry.
++
++The parser rejects nesting of braces **and parentheses** over 100 containers,
++before allocating the next container. Recursive compile/expand/stringify walkers
++perform an iterative AST preflight, including for directly supplied ASTs.
++The preflight caps container depth at 100 and total visits at 20,010, and rejects
++child cycles and cyclic/deep parent chains. Original parent links retained by
++upstream while flattening invalid braces remain supported.
++`maxDepth` can tighten the depth bound (integer 1–100), never disable or raise it.
++Depth errors are `RangeError` with code `ERR_BRACES_DEPTH`, not a native stack
++exhaustion. AST/option/budget errors have distinct `ERR_BRACES_*` codes.
++
++Intentional compatibility change: patterns/ASTs exceeding these limits now fail
++with a controlled error. CommonJS, normal outputs and existing options are kept.
++Callers processing untrusted input must catch validation errors; an uncaught
++validation exception can still terminate their application, just as upstream's
++existing type/length/range errors can. The patch prevents unbounded recursion,
++not every possible resource exhaustion. Existing input-length and numeric range
++limits remain. Aggregate Cartesian expansion size, input-array length, huge
++literal values in caller-created ASTs, accessors/proxies and hostile object
++behavior are outside this patch; use external quotas/isolation for such input.
++Caller-supplied ASTs are expected to be ordinary data objects, not executable
++objects. Resource tests run in memory/stack/time-limited subprocesses.
++
++See the enclosing provenance manifest, patch diff, tests and reproducible local
++package artifact. Registry audit tools may still report 3.0.3, or omit a local
++artifact; neither outcome establishes whether this patch is correct. Independent
++source-integrity, regression, upstream and actual-consumer tests are required.
+--- a/lib/compile.js
++++ b/lib/compile.js
+@@ -1,9 +1,12 @@
+ 'use strict';
++
++const depthGuard = require('./depth');
+ 
+ const fill = require('fill-range');
+ const utils = require('./utils');
+ 
+ const compile = (ast, options = {}) => {
++  depthGuard.assert(ast, options);
+   const walk = (node, parent = {}) => {
+     const invalidBlock = utils.isInvalidBrace(parent);
+     const invalidNode = node.invalid === true && options.escapeInvalid === true;
+--- a/lib/depth.js
++++ b/lib/depth.js
+@@ -0,0 +1,69 @@
++'use strict';
++
++// Local security backport for GHSA-vfj7-8cjw-p6xm; see BACKPORT.md.
++const MAX_DEPTH = 100;
++const MAX_NODES = 20010;
++
++const failure = (code, message) => {
++  const error = new RangeError(message);
++  error.code = code;
++  return error;
++};
++
++const limit = options => {
++  const depth = options && options.maxDepth !== undefined ? options.maxDepth : MAX_DEPTH;
++  if (!Number.isInteger(depth) || depth < 1 || depth > MAX_DEPTH) {
++    throw failure('ERR_BRACES_DEPTH_OPTION', `maxDepth must be an integer from 1 to ${MAX_DEPTH}`);
++  }
++  return depth;
++};
++
++const check = (depth, max) => {
++  if (depth > max) {
++    throw failure('ERR_BRACES_DEPTH', `Brace AST nesting exceeds maximum depth (${max})`);
++  }
++};
++
++// Iterative preflight: never recurse over an unvalidated, caller-supplied AST.
++const assert = (ast, options) => {
++  const max = limit(options);
++  const active = new Set();
++  const frames = [{ node: ast, parent: null, depth: ast.type === 'root' ? 0 : 1, index: -1 }];
++  let count = 0;
++  while (frames.length) {
++    const frame = frames[frames.length - 1];
++    const node = frame.node;
++    if (frame.index === -1) {
++      if (++count > MAX_NODES) {
++        throw failure('ERR_BRACES_NODES', `Brace AST exceeds maximum nodes (${MAX_NODES})`);
++      }
++      if (active.has(node)) throw failure('ERR_BRACES_AST', 'Cyclic brace AST');
++      const parents = new Set();
++      let parent = node;
++      while (parent) {
++        if (parents.has(parent)) throw failure('ERR_BRACES_AST', 'Cyclic brace AST parent');
++        parents.add(parent);
++        // Upstream may retain old parent links when flattening invalid braces.
++        // Validate their bound, rather than requiring structural equality.
++        check(parents.size - 2, max);
++        parent = parent.parent;
++      }
++      if (node.nodes) {
++        check(frame.depth, max);
++        if (!Array.isArray(node.nodes)) throw failure('ERR_BRACES_AST', 'Expected AST nodes array');
++      }
++      active.add(node);
++      frame.index = 0;
++    }
++    if (node.nodes && frame.index < node.nodes.length) {
++      const child = node.nodes[frame.index++];
++      frames.push({ node: child, parent: node, depth: frame.depth + 1, index: -1 });
++    } else {
++      active.delete(node);
++      frames.pop();
++    }
++  }
++
++};
++
++module.exports = { MAX_DEPTH, MAX_NODES, limit, check, assert };
+--- a/lib/expand.js
++++ b/lib/expand.js
+@@ -1,4 +1,6 @@
+ 'use strict';
++
++const depthGuard = require('./depth');
+ 
+ const fill = require('fill-range');
+ const stringify = require('./stringify');
+@@ -31,6 +33,7 @@
+ };
+ 
+ const expand = (ast, options = {}) => {
++  depthGuard.assert(ast, options);
+   const rangeLimit = options.rangeLimit === undefined ? 1000 : options.rangeLimit;
+ 
+   const walk = (node, parent = {}) => {
+--- a/lib/parse.js
++++ b/lib/parse.js
+@@ -1,6 +1,7 @@
+ 'use strict';
+ 
+ const stringify = require('./stringify');
++const depthGuard = require('./depth');
+ 
+ /**
+  * Constants
+@@ -39,6 +40,8 @@
+     throw new SyntaxError(`Input length (${input.length}), exceeds max characters (${max})`);
+   }
+ 
++  const maxDepth = depthGuard.limit(opts);
++
+   const ast = { type: 'root', input, nodes: [] };
+   const stack = [ast];
+   let block = ast;
+@@ -143,6 +146,7 @@
+      */
+ 
+     if (value === CHAR_LEFT_PARENTHESES) {
++      depthGuard.check(stack.length, maxDepth);
+       block = push({ type: 'paren', nodes: [] });
+       stack.push(block);
+       push({ type: 'text', value });
+@@ -195,6 +199,7 @@
+      */
+ 
+     if (value === CHAR_LEFT_CURLY_BRACE) {
++      depthGuard.check(stack.length, maxDepth);
+       depth++;
+ 
+       const dollar = prev.value && prev.value.slice(-1) === '$' || block.dollar === true;
+--- a/lib/stringify.js
++++ b/lib/stringify.js
+@@ -1,8 +1,11 @@
+ 'use strict';
++
++const depthGuard = require('./depth');
+ 
+ const utils = require('./utils');
+ 
+ module.exports = (ast, options = {}) => {
++  depthGuard.assert(ast, options);
+   const stringify = (node, parent = {}) => {
+     const invalidBlock = options.escapeInvalid && utils.isInvalidBrace(parent);
+     const invalidNode = node.invalid === true && options.escapeInvalid === true;
+--- a/package.json
++++ b/package.json
+@@ -73,5 +73,7 @@
+     "plugins": [
+       "gulp-format-md"
+     ]
+-  }
++  },
++  "private": true,
++  "jvSecurityPatch": "depth-guard.1"
+ }

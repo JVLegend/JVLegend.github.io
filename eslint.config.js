@@ -59,6 +59,8 @@ export default [
       "node_modules",
       ".github",
       "types.generated.d.ts",
+      "vendor/braces-backport/source/**",
+      "vendor/braces-backport/upstream-tests/**",
       ".astro",
     ],
   },
